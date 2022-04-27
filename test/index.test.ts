@@ -1,6 +1,7 @@
 import { supplyFetchers } from "../src";
 
 test("test supply fetchers", async () => {
+  jest.setTimeout(30_000);
   const onlyTest = process.env["ONLY_TEST"];
   if (onlyTest) {
     const fetcher = supplyFetchers[onlyTest];

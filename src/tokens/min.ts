@@ -1,4 +1,5 @@
-import { blockFrost, SupplyFetcher } from "..";
+import { SupplyFetcher } from "..";
+import { getAmountInAddresses } from "../utils";
 
 const MIN = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e";
 const TREASURY_ADDRESSES = [
@@ -9,18 +10,10 @@ const TREASURY_ADDRESSES = [
 
 const fetcher: SupplyFetcher = async () => {
   const total = 5e9; // 5 billion
-  const treasuryBalances: number[] = await Promise.all(
-    TREASURY_ADDRESSES.map(async (addr: string): Promise<number> => {
-      const balance = await blockFrost.addresses(addr);
-      const minBalance = balance.amount.find(
-        ({ unit }) => unit === MIN
-      )?.quantity;
-      return Number(minBalance ?? "0") / 1e6;
-    })
-  );
-  const treasuryTotal = treasuryBalances.reduce((sum, x) => sum + x, 0);
+  const treasury =
+    Number(await getAmountInAddresses(MIN, TREASURY_ADDRESSES)) / 1e6;
   return {
-    circulating: (total - treasuryTotal).toString(),
+    circulating: (total - treasury).toString(),
     total: total.toString(),
   };
 };

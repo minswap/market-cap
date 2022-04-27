@@ -1,14 +1,7 @@
-import { BlockFrostAPI } from "@blockfrost/blockfrost-js";
-
 import agixFetcher from "./tokens/agix";
 import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import ntxFetcher from "./tokens/ntx";
-
-export const blockFrost = new BlockFrostAPI({
-  projectId: process.env["BLOCKFROST_PROJECT_ID"] ?? "",
-  isTestnet: false,
-});
 
 export type SupplyFetcher = () => Promise<{
   circulating: string;
