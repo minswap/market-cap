@@ -8,6 +8,6 @@ test("test supply fetchers", async () => {
     // eslint-disable-next-line no-console
     console.debug(await fetcher());
   } else {
-    await Promise.all(Object.values(supplyFetchers));
+    await Promise.all(Object.values(supplyFetchers).map((f) => f()));
   }
 });

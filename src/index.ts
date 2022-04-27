@@ -1,4 +1,11 @@
+import { BlockFrostAPI } from "@blockfrost/blockfrost-js";
+
 import minFetcher from "./tokens/min";
+
+export const blockFrost = new BlockFrostAPI({
+  projectId: process.env["BLOCKFROST_PROJECT_ID"] ?? "",
+  isTestnet: false,
+});
 
 export type SupplyFetcher = () => Promise<{
   circulating: bigint;
