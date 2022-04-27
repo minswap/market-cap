@@ -13,7 +13,7 @@ You can use [Blockfrost Adapter](https://github.com/minswap/blockfrost-adapter) 
 
 ## How to add my token
 
-1. Create a file in `src/tokens` with your token's name and export default a function of type `SupplyFetcher`. **Note that supply returns must be in full unit without decimals.**
+1. Create a file in `src/tokens` with your token's name and export default a function of type `SupplyFetcher`.
 2. Import the function into `src/index.ts` and add the corresponding entry in `supplyFetchers` map with the key being the concatenation of your token's policyID and assetName
 3. Test your function:
 

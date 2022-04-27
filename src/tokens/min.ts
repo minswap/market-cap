@@ -8,20 +8,20 @@ const TREASURY_ADDRESSES = [
 ];
 
 const fetcher: SupplyFetcher = async () => {
-  const total = 5_000_000_000_000_000n; // 5M
-  const treasuryBalances: bigint[] = await Promise.all(
-    TREASURY_ADDRESSES.map(async (addr: string): Promise<bigint> => {
+  const total = 5e9; // 5 billion
+  const treasuryBalances: number[] = await Promise.all(
+    TREASURY_ADDRESSES.map(async (addr: string): Promise<number> => {
       const balance = await blockFrost.addresses(addr);
       const minBalance = balance.amount.find(
         ({ unit }) => unit === MIN
       )?.quantity;
-      return BigInt(minBalance ?? "0");
+      return Number(minBalance ?? "0") / 1e6;
     })
   );
-  const treasuryTotal = treasuryBalances.reduce((sum, x) => sum + x, 0n);
+  const treasuryTotal = treasuryBalances.reduce((sum, x) => sum + x, 0);
   return {
-    circulating: total - treasuryTotal,
-    total,
+    circulating: (total - treasuryTotal).toString(),
+    total: total.toString(),
   };
 };
 
