@@ -12,6 +12,23 @@ Fully-diluted market cap = Total supply \* Market price
 
 You can use [Blockfrost Adapter](https://github.com/minswap/blockfrost-adapter) to query market price from Minswap.
 
+## Install
+
+- NPM: `npm install @minswap/market-cap`
+- Yarn: `yarn add @minswap/market-cap`
+
+## Usage
+
+```ts
+import { supplyFetchers } from "@minswap/market-cap";
+
+const minInfo = await supplyFetchers[
+  "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e"
+]();
+console.log(minInfo);
+// { circulating: '240813714.66121483', total: '5000000000' }
+```
+
 ## How to add my token
 
 1. Create a file in `src/tokens` with your token's name and export default a function of type `SupplyFetcher`.
