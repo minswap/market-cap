@@ -7,6 +7,7 @@ Transparent, accurate and open-sourced circulating supply and market cap calcula
 This package doesn't expose market cap by itself, but only circulating supply and total supply.
 
 Market cap = Circulating supply \* Market price
+
 Fully-diluted market cap = Total supply \* Market price
 
 You can use [Blockfrost Adapter](https://github.com/minswap/blockfrost-adapter) to query market price from Minswap.
