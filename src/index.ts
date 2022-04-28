@@ -1,5 +1,6 @@
 import aadaFetcher from "./tokens/aada";
 import agixFetcher from "./tokens/agix";
+import clapFetcher from "./tokens/clap";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -25,4 +26,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     sundaeFetcher,
   "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441":
     aadaFetcher,
+  db30c7905f598ed0154de14f970de0f61f0cb3943ed82c891968480a434c4150: clapFetcher,
 };
