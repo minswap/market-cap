@@ -1,11 +1,16 @@
-import { SupplyFetcher } from "..";
-import { getAmountInAddresses } from "../utils";
+import {
+  defaultFetcherOptions,
+  getAmountInAddresses,
+  getBlockFrostInstance,
+  SupplyFetcher,
+} from "../utils";
 
 const AADA = "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441";
 
-const fetcher: SupplyFetcher = async () => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+  const blockFrost = getBlockFrostInstance(options);
   const total = 29_500_000;
-  const treasuryRaw = await getAmountInAddresses(AADA, [
+  const treasuryRaw = await getAmountInAddresses(blockFrost, AADA, [
     "addr1qysm5h2w24tlffmpscazkymz746tp72hyq7tgdx6j3ca4p60mv7emuks64z8l55krwm68n59574j7cdfk7ja2s684fvqm72l6y",
     "addr1qxka8z8c4qglsjuzpl5llfkrgwklhh7mg245jfpgauwqgvqkwvwuue8g9j06a4jpprgu59xf02d8x2dperyd9dglrxdsl04fwp",
   ]);

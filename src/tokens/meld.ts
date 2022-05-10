@@ -1,8 +1,11 @@
-import axios from "axios";
+import {
+  defaultFetcherOptions,
+  getAxiosInstance,
+  SupplyFetcher,
+} from "../utils";
 
-import { SupplyFetcher } from "..";
-
-const fetcher: SupplyFetcher = async () => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+  const axios = getAxiosInstance(options);
   const circulating = await axios(
     "https://app-backend.meld.com/api/market/meld/supply"
   ).then((res) => res.data);
