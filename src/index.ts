@@ -7,11 +7,7 @@ import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import ntxFetcher from "./tokens/ntx";
 import sundaeFetcher from "./tokens/sundae";
-
-export type SupplyFetcher = () => Promise<{
-  circulating: string;
-  total: string;
-}>;
+import { SupplyFetcher } from "./utils";
 
 export const supplyFetchers: Record<string, SupplyFetcher> = {
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,

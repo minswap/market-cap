@@ -1,8 +1,11 @@
-import axios from "axios";
+import {
+  defaultFetcherOptions,
+  getAxiosInstance,
+  SupplyFetcher,
+} from "../utils";
 
-import { SupplyFetcher } from "..";
-
-const fetcher: SupplyFetcher = async () => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+  const axios = getAxiosInstance(options);
   const circulating = await axios(
     "https://tokensupply.singularitynet.io/tokensupply?tokensymbol=agix&q=circulatingsupply"
   ).then((res) => res.data);
