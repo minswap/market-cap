@@ -1,8 +1,7 @@
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import {
-  defaultFetcherOptions,
   getAmountInAddresses,
   getBlockFrostInstance,
-  SupplyFetcher,
 } from "../utils";
 
 const MILK = "8a1cfae21368b8bebbbed9800fec304e95cce39a2a57dc35e2e3ebaa4d494c4b";

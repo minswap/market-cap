@@ -1,8 +1,7 @@
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import {
-  defaultFetcherOptions,
   getAmountInAddresses,
   getBlockFrostInstance,
-  SupplyFetcher,
 } from "../utils";
 
 const SUNDAE =

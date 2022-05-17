@@ -1,8 +1,7 @@
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import {
-  defaultFetcherOptions,
   getAmountInAddresses,
   getBlockFrostInstance,
-  SupplyFetcher,
 } from "../utils";
 
 const LQ = "da8c30857834c6ae7203935b89278c532b3995245295456f993e1d244c51";

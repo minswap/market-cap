@@ -1,7 +1,6 @@
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import {
-  defaultFetcherOptions,
   getAxiosInstance,
-  SupplyFetcher,
 } from "../utils";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
