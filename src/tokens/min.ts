@@ -3,6 +3,7 @@ import {
   getAmountInAddresses,
   getBlockFrostInstance,
   SupplyFetcher,
+  SupplyFetcherResponse,
 } from "../utils";
 
 const MIN = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e";
@@ -12,7 +13,7 @@ const TREASURY_ADDRESSES = [
   "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // yield farming
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions): Promise<SupplyFetcherResponse> => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 5e9; // 5 billion
   const treasury =
