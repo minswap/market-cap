@@ -1,4 +1,3 @@
-
 export type FetcherOptions = {
   /**
    * Fetch timeout in milliseconds. Default to 20s
@@ -13,6 +12,8 @@ export const defaultFetcherOptions: FetcherOptions = {
 export type SupplyFetcherResponse = {
   circulating: string;
   total: string;
-}
+};
 
-export type SupplyFetcher = (options?: FetcherOptions) => Promise<SupplyFetcherResponse>;
+export type SupplyFetcher = (
+  options?: FetcherOptions
+) => Promise<SupplyFetcherResponse>;
