@@ -2,9 +2,10 @@ import {
   defaultFetcherOptions,
   getAxiosInstance,
   SupplyFetcher,
+  SupplyFetcherResponse,
 } from "../utils";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions): Promise<SupplyFetcherResponse> => {
   const axios = getAxiosInstance(options);
   const circulating = await axios(
     "https://app-backend.meld.com/api/market/meld/supply"

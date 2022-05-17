@@ -12,10 +12,12 @@ export const defaultFetcherOptions: FetcherOptions = {
   timeout: 20_000,
 };
 
-export type SupplyFetcher = (options?: FetcherOptions) => Promise<{
+export type SupplyFetcherResponse = {
   circulating: string;
   total: string;
-}>;
+}
+
+export type SupplyFetcher = (options?: FetcherOptions) => Promise<SupplyFetcherResponse>;
 
 export function getBlockFrostInstance(options: FetcherOptions): BlockFrostAPI {
   return new BlockFrostAPI({

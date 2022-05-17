@@ -3,12 +3,13 @@ import {
   getAmountInAddresses,
   getBlockFrostInstance,
   SupplyFetcher,
+  SupplyFetcherResponse,
 } from "../utils";
 
 const CNETA =
   "b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions): Promise<SupplyFetcherResponse> => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 1_000_000_000n;
   const treasury = await getAmountInAddresses(blockFrost, CNETA, [
