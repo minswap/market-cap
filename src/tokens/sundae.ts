@@ -1,9 +1,5 @@
-import {
-  defaultFetcherOptions,
-  getAmountInAddresses,
-  getBlockFrostInstance,
-  SupplyFetcher,
-} from "../utils";
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const SUNDAE =
   "9a9693a9a37912a5097918f97918d15240c92ab729a0b7c4aa144d7753554e444145";

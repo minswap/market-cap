@@ -1,10 +1,5 @@
-import {
-  defaultFetcherOptions,
-  getAmountInAddresses,
-  getBlockFrostInstance,
-  SupplyFetcher,
-  SupplyFetcherResponse,
-} from "../utils";
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const MINT = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74";
 const TREASURY_ADDRESSES = [
@@ -12,7 +7,7 @@ const TREASURY_ADDRESSES = [
   "addr1w9p9akyhpqsy0xq79g8hspy90xl9htxfrd3mama6py42jjgtvfgn8", // DripDropz
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions): Promise<SupplyFetcherResponse> => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 100_000_000;
   const treasury =

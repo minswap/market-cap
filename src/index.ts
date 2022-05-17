@@ -9,7 +9,9 @@ import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import ntxFetcher from "./tokens/ntx";
 import sundaeFetcher from "./tokens/sundae";
-import { SupplyFetcher } from "./utils";
+import { SupplyFetcher } from "./types";
+
+export * from "./types";
 
 export const supplyFetchers: Record<string, SupplyFetcher> = {
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
@@ -27,5 +29,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   db30c7905f598ed0154de14f970de0f61f0cb3943ed82c891968480a434c4150: clapFetcher,
   b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441:
     cnetaFetcher,
-  "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74": mintFetcher,
+  "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74":
+    mintFetcher,
 };

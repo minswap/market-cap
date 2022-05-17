@@ -1,9 +1,5 @@
-import {
-  defaultFetcherOptions,
-  getAmountInAddresses,
-  getBlockFrostInstance,
-  SupplyFetcher,
-} from "../utils";
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const MIN = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e";
 const TREASURY_ADDRESSES = [
