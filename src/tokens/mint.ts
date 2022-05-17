@@ -9,7 +9,7 @@ import {
 const MINT = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74";
 const TREASURY_ADDRESSES = [
   "addr1v9urht2tqg7ncs7r545qdj2wn5tpam5l04t7eyermpmyvmg5xf2mt", // FISO
-  "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // yield farming
+  "addr1w9p9akyhpqsy0xq79g8hspy90xl9htxfrd3mama6py42jjgtvfgn8", // DripDropz
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions): Promise<SupplyFetcherResponse> => {
