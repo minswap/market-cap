@@ -3,12 +3,11 @@ import {
   getAmountInAddresses,
   getBlockFrostInstance,
   SupplyFetcher,
-  SupplyFetcherResponse,
 } from "../utils";
 
 const AADA = "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions): Promise<SupplyFetcherResponse> => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 29_500_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, AADA, [

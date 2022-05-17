@@ -1,14 +1,27 @@
 import { supplyFetchers } from "../src";
+import { SupplyFetcher } from "../src/utils";
 
-test("test supply fetchers", async () => {
-  jest.setTimeout(30_000);
-  const onlyTest = process.env["ONLY_TEST"];
-  if (onlyTest) {
-    const fetcher = supplyFetchers[onlyTest];
+describe("supply fetchers", () => {
+  const fetchers: [string, SupplyFetcher][] = [];
+  if (process.env["ONLY_TEST"]) {
+    const token = process.env["ONLY_TEST"];
+    const fetcher = supplyFetchers[token];
     expect(fetcher).toBeDefined();
-    // eslint-disable-next-line no-console
-    console.debug(await fetcher());
+    fetchers.push([token, fetcher]);
   } else {
-    await Promise.all(Object.values(supplyFetchers).map((f) => f()));
+    fetchers.push(...Object.entries(supplyFetchers));
   }
+
+  test.concurrent.each(fetchers)(
+    `test fetcher for token %s`,
+    async (_, fetcher) => {
+      const resp = await fetcher({ timeout: 20_000 });
+      expect(typeof resp.circulating).toBe("string");
+      expect(typeof resp.total).toBe("string");
+      if (process.env["ONLY_TEST"]) {
+        // eslint-disable-next-line no-console
+        console.debug(resp);
+      }
+    }
+  );
 });
