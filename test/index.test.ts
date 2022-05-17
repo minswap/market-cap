@@ -12,9 +12,16 @@ describe("supply fetchers", () => {
     fetchers.push(...Object.entries(supplyFetchers));
   }
 
-  test.each(fetchers)(`test fetcher for token %s`, async (_, fetcher) => {
-    const resp = await fetcher({ timeout: 20_000 });
-    expect(typeof resp.circulating).toBe("string");
-    expect(typeof resp.total).toBe("string");
-  });
+  test.concurrent.each(fetchers)(
+    `test fetcher for token %s`,
+    async (_, fetcher) => {
+      const resp = await fetcher({ timeout: 20_000 });
+      expect(typeof resp.circulating).toBe("string");
+      expect(typeof resp.total).toBe("string");
+      if (process.env["ONLY_TEST"]) {
+        // eslint-disable-next-line no-console
+        console.debug(resp);
+      }
+    }
+  );
 });
