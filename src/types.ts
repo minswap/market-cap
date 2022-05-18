@@ -10,8 +10,8 @@ export const defaultFetcherOptions: FetcherOptions = {
 };
 
 export type SupplyFetcherResponse = {
-  circulating: string;
-  total: string;
+  total?: string;
+  circulating?: string;
 };
 
 export type SupplyFetcher = (
