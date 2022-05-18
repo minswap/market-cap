@@ -23,9 +23,13 @@ export async function getAmountInAddresses(
 ): Promise<bigint> {
   const amounts = await Promise.all(
     addresses.map(async (addr): Promise<bigint> => {
-      const resp = await blockFrost.addresses(addr);
-      const amount = resp.amount.find(({ unit }) => unit === token)?.quantity;
-      return BigInt(amount ?? "0");
+      const value = addr.startsWith("stake")
+        ? await blockFrost.accountsAddressesAssetsAll(addr)
+        : await blockFrost.addresses(addr).then((resp) => resp.amount);
+      const amount = value
+        .filter(({ unit }) => unit === token)
+        .reduce((sum, x) => sum + BigInt(x.quantity), 0n);
+      return amount;
     })
   );
   return amounts.reduce((sum, x) => sum + x, 0n);
