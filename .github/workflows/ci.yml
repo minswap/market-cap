@@ -18,11 +18,11 @@ jobs:
           node-version: 14.x
       - name: Install dependencies
         run: npm ci
+      - name: Check format
+        run: npm run check-format
       - name: Run build
         run: npm run build
       - name: Run test
         run: npm test
         env:
           BLOCKFROST_PROJECT_ID: ${{ secrets.BLOCKFROST_PROJECT_ID }}
-      - name: Run lint
-        run: npm run lint

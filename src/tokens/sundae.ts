@@ -1,8 +1,12 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
+<<<<<<< HEAD
 import {
   getAmountInAddresses,
   getBlockFrostInstance,
 } from "../utils";
+=======
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+>>>>>>> d9e0e13f51538fd05e5ff70205d3b74f9d109897
 
 const SUNDAE =
   "9a9693a9a37912a5097918f97918d15240c92ab729a0b7c4aa144d7753554e444145";

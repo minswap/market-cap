@@ -1,8 +1,12 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
+<<<<<<< HEAD
 import {
   getAmountInAddresses,
   getBlockFrostInstance,
 } from "../utils";
+=======
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+>>>>>>> d9e0e13f51538fd05e5ff70205d3b74f9d109897
 
 const CLAP = "db30c7905f598ed0154de14f970de0f61f0cb3943ed82c891968480a434c4150";
 

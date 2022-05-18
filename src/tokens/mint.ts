@@ -1,8 +1,12 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
+<<<<<<< HEAD
 import {
   getAmountInAddresses,
   getBlockFrostInstance,
 } from "../utils";
+=======
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+>>>>>>> d9e0e13f51538fd05e5ff70205d3b74f9d109897
 
 const MINT = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74";
 const TREASURY_ADDRESSES = [

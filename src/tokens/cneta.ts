@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { SupplyFetcher } from "../types";
+=======
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+>>>>>>> d9e0e13f51538fd05e5ff70205d3b74f9d109897
 
 
 
