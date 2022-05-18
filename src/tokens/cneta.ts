@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 import { SupplyFetcher } from "../types";
-=======
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
->>>>>>> d9e0e13f51538fd05e5ff70205d3b74f9d109897
-
-
 
 const _CNETA =
   "b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441";

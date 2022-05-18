@@ -1,12 +1,5 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
-<<<<<<< HEAD
-import {
-  getAmountInAddresses,
-  getBlockFrostInstance,
-} from "../utils";
-=======
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
->>>>>>> d9e0e13f51538fd05e5ff70205d3b74f9d109897
 
 const AADA = "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441";
 
