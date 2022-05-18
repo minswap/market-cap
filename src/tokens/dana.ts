@@ -1,14 +1,14 @@
-import { SupplyFetcher } from "../types";
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
+import { getAxiosInstance } from "../utils";
 
-const _DANA =
-  "c88bbd1848db5ea665b1fffbefba86e8dcd723b5085348e8a8d2260f44414e41";
-
-/**
- * Reference: https://docs.ardana.org/dana-token/tokenomics
- */
-const fetcher: SupplyFetcher = async () => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+  const axios = getAxiosInstance(options);
   const total = 125_000_000;
+  const circulating: number = await axios(
+    "https://api.coingecko.com/api/v3/coins/ardana"
+  ).then((res) => res.data.market_data.circulating_supply);
   return {
+    circulating: circulating.toString(),
     total: total.toString(),
   };
 };
