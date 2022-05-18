@@ -2,6 +2,7 @@ import aadaFetcher from "./tokens/aada";
 import agixFetcher from "./tokens/agix";
 import clapFetcher from "./tokens/clap";
 import cnetaFetcher from "./tokens/cneta";
+import danaFetcher from "./tokens/dana";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -9,6 +10,7 @@ import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import ntxFetcher from "./tokens/ntx";
 import sundaeFetcher from "./tokens/sundae";
+import wmtFetcher from "./tokens/wmt";
 import { SupplyFetcher } from "./types";
 
 export * from "./types"
@@ -30,4 +32,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441:
     cnetaFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74": mintFetcher,
+  "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e776f726c646d6f62696c65746f6b656e": wmtFetcher,
+  "c88bbd1848db5ea665b1fffbefba86e8dcd723b5085348e8a8d2260f44414e41": danaFetcher,
 };
