@@ -6,7 +6,6 @@ import { FetcherOptions } from "./types";
 export function getBlockFrostInstance(options: FetcherOptions): BlockFrostAPI {
   return new BlockFrostAPI({
     projectId: process.env["BLOCKFROST_PROJECT_ID"] ?? "",
-    isTestnet: false,
     requestTimeout: options.timeout,
   });
 }
