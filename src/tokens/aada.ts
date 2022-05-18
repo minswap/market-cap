@@ -7,8 +7,8 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 29_500_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, AADA, [
-    "addr1qysm5h2w24tlffmpscazkymz746tp72hyq7tgdx6j3ca4p60mv7emuks64z8l55krwm68n59574j7cdfk7ja2s684fvqm72l6y",
-    "addr1qxka8z8c4qglsjuzpl5llfkrgwklhh7mg245jfpgauwqgvqkwvwuue8g9j06a4jpprgu59xf02d8x2dperyd9dglrxdsl04fwp",
+    "stake1u98ak0va7tgd23rl62tphdare6z602e0vx5m0fw4gdr65kq875eec",
+    "stake1uyt8x8wwvn5ze8aw6eqs35w2znyh4xnn9xsu3jxjk503nxcmdkjuz",
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
