@@ -4,6 +4,7 @@ import clapFetcher from "./tokens/clap";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
+import hoskyFetcher from "./tokens/hosky";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -12,6 +13,7 @@ import mintFetcher from "./tokens/mint";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import sundaeFetcher from "./tokens/sundae";
+import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import { SupplyFetcher } from "./types";
 
@@ -42,4 +44,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     paviaFetcher,
   b6a7467ea1deb012808ef4e87b5ff371e85f7142d7b356a40d9b42a0436f726e75636f70696173205b76696120436861696e506f72742e696f5d:
     copiFetcher,
+  "804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f56594649":
+    vyfiFetcher,
+  a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235484f534b59:
+    hoskyFetcher,
 };
