@@ -9,6 +9,7 @@ import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import ntxFetcher from "./tokens/ntx";
+import paviaFetcher from "./tokens/pavia";
 import sundaeFetcher from "./tokens/sundae";
 import wmtFetcher from "./tokens/wmt";
 import { SupplyFetcher } from "./types";
@@ -36,4 +37,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e776f726c646d6f62696c65746f6b656e":
     wmtFetcher,
   c88bbd1848db5ea665b1fffbefba86e8dcd723b5085348e8a8d2260f44414e41: danaFetcher,
+  "884892bcdc360bcef87d6b3f806e7f9cd5ac30d999d49970e7a903ae5041564941":
+    paviaFetcher,
 };
