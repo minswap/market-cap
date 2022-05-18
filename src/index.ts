@@ -5,8 +5,10 @@ import clapFetcher from "./tokens/clap";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
+import empFetcher from "./tokens/emp";
 import geroFetcher from "./tokens/gero";
 import hoskyFetcher from "./tokens/hosky";
+import iagFetcher from "./tokens/iag";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -57,4 +59,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     c3Fetcher,
   "078eafce5cd7edafdf63900edef2c1ea759e77f30ca81d6bbdeec92479756d6d69":
     yummiFetcher,
+  "5d16cc1a177b5d9ba9cfa9793b07e60f1fb70fea1f8aef064415d114494147": iagFetcher,
+  "6c8642400e8437f737eb86df0fc8a8437c760f48592b1ba8f5767e81456d706f7761":
+    empFetcher,
 };
