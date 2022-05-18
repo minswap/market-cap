@@ -1,9 +1,11 @@
 import aadaFetcher from "./tokens/aada";
 import agixFetcher from "./tokens/agix";
+import c3Fetcher from "./tokens/c3";
 import clapFetcher from "./tokens/clap";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
+import geroFetcher from "./tokens/gero";
 import hoskyFetcher from "./tokens/hosky";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
@@ -48,4 +50,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     vyfiFetcher,
   a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235484f534b59:
     hoskyFetcher,
+  "10a49b996e2402269af553a8a96fb8eb90d79e9eca79e2b4223057b64745524f":
+    geroFetcher,
+  "8e51398904a5d3fc129fbf4f1589701de23c7824d5c90fdb9490e15a434841524c4933":
+    c3Fetcher,
 };
