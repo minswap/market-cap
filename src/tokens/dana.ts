@@ -8,10 +8,8 @@ const _DANA =
  */
 const fetcher: SupplyFetcher = async () => {
   const total = 125_000_000;
-  const circulating = 3_468_750;
   return {
     total: total.toString(),
-    circulating: circulating.toString(),
   };
 };
 
