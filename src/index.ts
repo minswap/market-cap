@@ -17,6 +17,7 @@ import paviaFetcher from "./tokens/pavia";
 import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
+import yummiFetcher from "./tokens/yummi";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -54,4 +55,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     geroFetcher,
   "8e51398904a5d3fc129fbf4f1589701de23c7824d5c90fdb9490e15a434841524c4933":
     c3Fetcher,
+  "078eafce5cd7edafdf63900edef2c1ea759e77f30ca81d6bbdeec92479756d6d69":
+    yummiFetcher,
 };
