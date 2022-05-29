@@ -23,7 +23,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   );
   const total = 1e10;
   const staking = Number(
-    await getAmountInAddresses(blockFrost, YUMMI, [STAKING_ADDRESS,MIN_ADDRESS,SUNDAE_ADDRESS,DRIPDROP_ADDRESS])
+    await getAmountInAddresses(blockFrost, YUMMI, [STAKING_ADDRESS, MIN_ADDRESS, SUNDAE_ADDRESS, DRIPDROP_ADDRESS])
   );
   return {
     circulating: (circulating - staking).toString(),
