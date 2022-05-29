@@ -41,6 +41,8 @@ export BLOCKFROST_PROJECT_ID=<your_blockfrost_key>
 ONLY_TEST=<your_policy_id_concat_with_asset_name> npm test
 ```
 
+4. Run format: `npm run format`
+
 ### Example
 
 1. MIN token fetcher: [src/tokens/min.ts](src/tokens/min.ts)

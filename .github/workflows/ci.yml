@@ -25,4 +25,4 @@ jobs:
       - name: Run test
         run: npm test
         env:
-          BLOCKFROST_PROJECT_ID: ${{ secrets.BLOCKFROST_PROJECT_ID }}
+          BLOCKFROST_PROJECT_ID: mainnetTV9qV3mfZXbE6e44TVGMe1UoRlLrpSQt
