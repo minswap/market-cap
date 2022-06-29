@@ -14,6 +14,7 @@ import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
+import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import sundaeFetcher from "./tokens/sundae";
@@ -62,4 +63,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "5d16cc1a177b5d9ba9cfa9793b07e60f1fb70fea1f8aef064415d114494147": iagFetcher,
   "6c8642400e8437f737eb86df0fc8a8437c760f48592b1ba8f5767e81456d706f7761":
     empFetcher,
+  "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52":
+    nmkrFetcher,
 };
