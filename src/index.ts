@@ -17,6 +17,7 @@ import mintFetcher from "./tokens/mint";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
+import prsprFetcher from "./tokens/prspr";
 import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -65,4 +66,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     empFetcher,
   "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52":
     nmkrFetcher,
+  "52489ea87bbceaf6375cc22f74c19382a3d5da3f8b9b15d2537044b95052535052":
+    prsprFetcher,
 };
