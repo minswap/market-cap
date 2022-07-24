@@ -1,4 +1,5 @@
 import aadaFetcher from "./tokens/aada";
+import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import c3Fetcher from "./tokens/c3";
 import clapFetcher from "./tokens/clap";
@@ -22,7 +23,6 @@ import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import yummiFetcher from "./tokens/yummi";
-import agcFetcher from "./tokens/agc";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
