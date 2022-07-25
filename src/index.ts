@@ -1,4 +1,5 @@
 import aadaFetcher from "./tokens/aada";
+import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import c3Fetcher from "./tokens/c3";
 import clapFetcher from "./tokens/clap";
@@ -68,4 +69,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     nmkrFetcher,
   "52489ea87bbceaf6375cc22f74c19382a3d5da3f8b9b15d2537044b95052535052":
     prsprFetcher,
+  e5602dec7811774ee560859292c20c3694a19d5daf72ccd94fc1a18d414743: agcFetcher,
 };
