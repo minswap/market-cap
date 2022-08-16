@@ -7,6 +7,7 @@ const TREASURY_ADDRESSES = [
   "addr1v9urht2tqg7ncs7r545qdj2wn5tpam5l04t7eyermpmyvmg5xf2mt", // FISO
   "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // yield farming
   "addr1vx00uxlpkzgkrga47zdypj40a3yjs0u3wad88kdy9l3rekcrmyz69", // vesting bot for MINt conversion
+  "addr1wx5p836jswavyfd3nuwscz53fkyu43kmn2wwje73qhf48mqw02kqx", // vesting contract
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
