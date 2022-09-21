@@ -6,6 +6,7 @@ import clapFetcher from "./tokens/clap";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
+import dingFetcher from "./tokens/ding";
 import empFetcher from "./tokens/emp";
 import geroFetcher from "./tokens/gero";
 import hoskyFetcher from "./tokens/hosky";
@@ -23,7 +24,6 @@ import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import yummiFetcher from "./tokens/yummi";
-import dingFetcher from "./tokens/ding";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
