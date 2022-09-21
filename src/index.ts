@@ -23,6 +23,7 @@ import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import yummiFetcher from "./tokens/yummi";
+import dingFetcher from "./tokens/ding";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -70,4 +71,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "52489ea87bbceaf6375cc22f74c19382a3d5da3f8b9b15d2537044b95052535052":
     prsprFetcher,
   e5602dec7811774ee560859292c20c3694a19d5daf72ccd94fc1a18d414743: agcFetcher,
+  ce5b9e0f8a88255b65f2e4d065c6e716e9fa9a8a86dfb86423dd1ac044494e47: dingFetcher,
 };
