@@ -7,6 +7,7 @@ import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
 import dingFetcher from "./tokens/ding";
+import discoFetcher from "./tokens/disco";
 import empFetcher from "./tokens/emp";
 import geroFetcher from "./tokens/gero";
 import hoskyFetcher from "./tokens/hosky";
@@ -42,6 +43,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441":
     aadaFetcher,
   db30c7905f598ed0154de14f970de0f61f0cb3943ed82c891968480a434c4150: clapFetcher,
+  "5612bee388219c1b76fd527ed0fa5aa1d28652838bcab4ee4ee63197446973636f696e": discoFetcher,
   b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441:
     cnetaFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74":
