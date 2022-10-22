@@ -20,6 +20,7 @@ import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import prsprFetcher from "./tokens/prspr";
+import snowFetcher from "./tokens/snow";
 import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -72,4 +73,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     prsprFetcher,
   e5602dec7811774ee560859292c20c3694a19d5daf72ccd94fc1a18d414743: agcFetcher,
   ce5b9e0f8a88255b65f2e4d065c6e716e9fa9a8a86dfb86423dd1ac044494e47: dingFetcher,
+  "8f52f6a88acf6127bc4758a16b6047afc4da7887feae121ec217b75a534e4f57":
+    snowFetcher,
 };
