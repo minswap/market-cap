@@ -1,8 +1,8 @@
-
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const DISCO = "5612bee388219c1b76fd527ed0fa5aa1d28652838bcab4ee4ee63197446973636f696e";
+const DISCO =
+  "5612bee388219c1b76fd527ed0fa5aa1d28652838bcab4ee4ee63197446973636f696e";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
@@ -13,7 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1xxy8exmrl37hk2pyct5mgc45tjh53udzfhqfxavzlc743vug0jdk8lra0v5zfshfk33tgh90frc6ynwqjd6c9l3atzesqljg09",
     "addr1xy306nxnhkseaw4rlgfa55skyd342z4mtq5k2j4jux7k4kfzl4xd80dpn6a287snmffpvgmr259tkkpfv49t9cdadtvssms0kr",
   ]);
-  const treasury = treasuryRaw / 1e6;
+  const treasury = Number(treasuryRaw) / 1e8;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),
