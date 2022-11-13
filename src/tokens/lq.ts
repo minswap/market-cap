@@ -7,7 +7,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 21_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, LQ, [
-    "addr1q9qpk9suska6ugxcr76ek2l7u7d4twmugsppl3e7gkzsgu5pvftpwnj9wytn4h9e3kgdw60pwtffa6jqsll0jr5gjxnqrnmd24",
+    "stake1uxqky4shfezhz9e6mjucmyxhd8sh9557afqg0lhep6yfrfsmvq4zd",
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
