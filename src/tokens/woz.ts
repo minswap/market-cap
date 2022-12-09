@@ -1,4 +1,3 @@
-
 import { SupplyFetcher } from "../types";
 
 const fetcher: SupplyFetcher = async () => {
