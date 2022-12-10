@@ -79,5 +79,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   ce5b9e0f8a88255b65f2e4d065c6e716e9fa9a8a86dfb86423dd1ac044494e47: dingFetcher,
   "8f52f6a88acf6127bc4758a16b6047afc4da7887feae121ec217b75a534e4f57":
     snowFetcher,
-  "32bc130691066340caf48ef53d52c684a0e497ffc935d2fd6741efe0574f5a": wozFetcher
+  "32bc130691066340caf48ef53d52c684a0e497ffc935d2fd6741efe0574f5a": wozFetcher,
 };
