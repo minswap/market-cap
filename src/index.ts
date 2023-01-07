@@ -1,7 +1,7 @@
 import aadaFetcher from "./tokens/aada";
-import agcFetcher from "./tokens/agc";
+import agcFetcher from "./tokens/agc";  
 import agixFetcher from "./tokens/agix";
-import c3Fetcher from "./tokens/c3";
+import c3Fetcher from "./tokens/c3";    
 import clapFetcher from "./tokens/clap";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
@@ -69,7 +69,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "078eafce5cd7edafdf63900edef2c1ea759e77f30ca81d6bbdeec92479756d6d69":
     yummiFetcher,
   "5d16cc1a177b5d9ba9cfa9793b07e60f1fb70fea1f8aef064415d114494147": iagFetcher,
-  "533bb94a8850ee3ccbe483106489399112b74c905342cb1792a797a0494e4459": indyFetcher,
+  "533bb94a8850ee3ccbe483106489399112b74c905342cb1792a797a0494e4459":
+    indyFetcher,
   "6c8642400e8437f737eb86df0fc8a8437c760f48592b1ba8f5767e81456d706f7761":
     empFetcher,
   "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52":
