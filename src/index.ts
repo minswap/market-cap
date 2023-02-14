@@ -27,6 +27,7 @@ import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import yummiFetcher from "./tokens/yummi";
+import moaiFetcher from "./tokens/moai";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -68,6 +69,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     c3Fetcher,
   "078eafce5cd7edafdf63900edef2c1ea759e77f30ca81d6bbdeec92479756d6d69":
     yummiFetcher,
+  "482fb00dc32186a4c587dca2df3c7cf2bc455332ab581d51967306e14d4f4149":
+    moaiFetcher,
   "5d16cc1a177b5d9ba9cfa9793b07e60f1fb70fea1f8aef064415d114494147": iagFetcher,
   "533bb94a8850ee3ccbe483106489399112b74c905342cb1792a797a0494e4459":
     indyFetcher,
