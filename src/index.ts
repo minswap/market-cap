@@ -18,6 +18,7 @@ import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
+import moaiFetcher from "./tokens/moai";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
@@ -27,7 +28,6 @@ import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import yummiFetcher from "./tokens/yummi";
-import moaiFetcher from "./tokens/moai";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
