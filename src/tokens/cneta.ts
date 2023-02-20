@@ -7,7 +7,7 @@ const CNETA =
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   // source: https://docs.anetabtc.io/docs/user-guides/tokenomics/
-  const total = 2_000_000_000n;
+  const total = 1_000_000_000n;
   const totalOnCardano = 1_000_000_000n;
   const treasury = await getAmountInAddresses(blockFrost, CNETA, [
     "stake1u8ypd7vtdsst25v65ddqgdgt7w9plww0zyqgktfrr0apscqepfcnm",
