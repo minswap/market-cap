@@ -12,7 +12,7 @@ const TREASURY_ADDRESSES = [
   "addr1z87vw6ts32hywu4j4kyk9qfgd36zhzx3y7fc786vgzlc57zj2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq9rwl7c", // dev fund
   "addr1z9wdv59sq7zzy2l6gchq3247lz7ssfsxs45nj4njhwsp5uzj2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pqzygnta", // DAO
   "addr1z9mjhq5c4s0smv2c92g9yvecpju3p8cfaneu8jzwq97ry62j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pqw9pw55", // incentives & partnerships
-  "addr1zx39ca5sm9jtnd66ejep4rmykqjzvanhsw4nktr3a3fqlpjj2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pqzzvz08", // yield farming treasury
+  "addr1zx0wxal6dz7rjzxk2mwfvj9564rp9uajqrscftx44tp6ha6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq83j9cv", // yield farming treasury
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
