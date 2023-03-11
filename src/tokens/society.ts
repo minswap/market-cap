@@ -1,9 +1,6 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAxiosInstance } from "../utils";
 
-const SOCIETY =
-  "25f0fc240e91bd95dcdaebd2ba7713fc5168ac77234a3d79449fc20c534f4349455459";
-
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 700_000_000;
   const PROJECTOR_REWARDS = 56_000_000;
