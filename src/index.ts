@@ -30,7 +30,6 @@ import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
 import yummiFetcher from "./tokens/yummi";
-
 import clayFetcher from "./tokens/clay";
 
 import { SupplyFetcher } from "./types";
