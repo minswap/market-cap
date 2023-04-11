@@ -3,6 +3,7 @@ import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import c3Fetcher from "./tokens/c3";
 import clapFetcher from "./tokens/clap";
+import clayFetcher from "./tokens/clay";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
@@ -92,4 +93,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     societyFetcher,
   df1d850c46d6c9d12cbf6181c35db9225a91b77c8a646b7f636f8ae40014df104e494e4a415a:
     ninjazFetcher,
+  "38ad9dc3aec6a2f38e220142b9aa6ade63ebe71f65e7cc2b7d8a8535434c4159":
+    clayFetcher,
 };
