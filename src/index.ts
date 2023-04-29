@@ -32,6 +32,8 @@ import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
 import yummiFetcher from "./tokens/yummi";
+import djedFetcher from "./tokens/djed";
+import shenFetcher from "./tokens/shen";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -95,4 +97,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     ninjazFetcher,
   "38ad9dc3aec6a2f38e220142b9aa6ade63ebe71f65e7cc2b7d8a8535434c4159":
     clayFetcher,
+  "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd61446a65644d6963726f555344":
+    djedFetcher,
+  "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd615368656e4d6963726f555344":
+    shenFetcher,
 };
