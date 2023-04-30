@@ -11,8 +11,6 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1uyhr6j0v95y3nwemsfyw8l3ant90wruclgwe9ktnm5ptk8qhfnyt6", // charles
     "stake1uxgekrcht2nz7eag9kffkh5s2hcpqswaakf9synqdhs82zg6x25pc", // tbd
     "stake1u87awjfd5mdufylf0zzeuwz6vpllp0wz0elklphl833mqrchvwzys", // rugpool
-    "stake1ux7fgdkwjwgyer0ldfdh89fmq0n2awjzsy0jzkuyp4wxcmqn5239v", // founder 1
-    "stake1u87gsquxhu2lp59n09tr3pmj0yqll5s3kearzpvlnxgj5xq35pufw", // founder 2
     "stake1u83p8p9uvdcglucefnxxjc79u54zv3e3qptsx5qjcwxq5rcjzrlwk", // meme
   ]);
   const treasury = Number(treasuryRaw);
