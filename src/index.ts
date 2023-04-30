@@ -25,6 +25,7 @@ import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import prsprFetcher from "./tokens/prspr";
+import rjvFetcher from "./tokens/rjv";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import sundaeFetcher from "./tokens/sundae";
@@ -95,4 +96,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     ninjazFetcher,
   "38ad9dc3aec6a2f38e220142b9aa6ade63ebe71f65e7cc2b7d8a8535434c4159":
     clayFetcher,
+  "8cfd6893f5f6c1cc954cec1a0a1460841b74da6e7803820dde62bb78524a56": rjvFetcher,
 };
