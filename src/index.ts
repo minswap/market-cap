@@ -11,6 +11,7 @@ import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
 import empFetcher from "./tokens/emp";
 import geroFetcher from "./tokens/gero";
+import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import iagFetcher from "./tokens/iag";
 import indyFetcher from "./tokens/indy";
@@ -95,4 +96,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     ninjazFetcher,
   "38ad9dc3aec6a2f38e220142b9aa6ade63ebe71f65e7cc2b7d8a8535434c4159":
     clayFetcher,
+  bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a48455242: herbFetcher,
 };
