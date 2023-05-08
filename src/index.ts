@@ -1,8 +1,8 @@
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
+import ashibFetcher from "./tokens/ashib";
 import c3Fetcher from "./tokens/c3";
-import cblpFetcher from "./tokens/cblp";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
 import cnetaFetcher from "./tokens/cneta";
@@ -12,7 +12,6 @@ import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
 import empFetcher from "./tokens/emp";
 import geroFetcher from "./tokens/gero";
-import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import iagFetcher from "./tokens/iag";
 import indyFetcher from "./tokens/indy";
@@ -22,13 +21,11 @@ import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import moaiFetcher from "./tokens/moai";
-import newmFetcher from "./tokens/newm";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import prsprFetcher from "./tokens/prspr";
-import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import sundaeFetcher from "./tokens/sundae";
@@ -99,10 +96,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     ninjazFetcher,
   "38ad9dc3aec6a2f38e220142b9aa6ade63ebe71f65e7cc2b7d8a8535434c4159":
     clayFetcher,
-  ee0633e757fdd1423220f43688c74678abde1cead7ce265ba8a24fcd43424c50: cblpFetcher,
-  "682fe60c9918842b3323c43b5144bc3d52a23bd2fb81345560d73f634e45574d":
-    newmFetcher,
-  bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a48455242: herbFetcher,
-  "279c909f348e533da5808898f87f9a14bb2c3dfbbacccd631d927a3f534e454b":
-    snekFetcher,
+  "afc910d7a306d20c12903979d4935ae4307241d03245743548e767834153484942": ashibFectcher,
 };
