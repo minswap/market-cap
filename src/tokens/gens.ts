@@ -1,7 +1,8 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const GENS = "dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53"
+const GENS =
+  "dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
@@ -15,7 +16,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1xy9g0r758h52mnnps0eqdrzgy573anh4t0mrmn3w8k95n3g2s78ag00g4h8xrqljq6xysffarm802klk8h8zu0vtf8zsw5shk9",
     "addr1x9wrenxj9acmzfhqns27v7mgdwl2kuull2hdjszyxnr5pwju8nxdytm3kynwp8q4ueaks6a74deel74wm9qygdx8gzaqjap2uz",
     "addr1xysfxc60v6vdwzddeen22ur4u9atdk4k499yfc8e4fsh5u3qjd357e5c6uy6mnnx54c8tct6kmdtd222gns0n2np0feqjzv4eq",
-    "addr1xys8w4jtrzqyqhecamqzp9ntlx5ehmt29ehjhf3988nxdweqwatykxyqgp0n3mkqyztxh7dfn0kk5tn09wnz2w0xv6asu4c2g6"
+    "addr1xys8w4jtrzqyqhecamqzp9ntlx5ehmt29ehjhf3988nxdweqwatykxyqgp0n3mkqyztxh7dfn0kk5tn09wnz2w0xv6asu4c2g6",
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
