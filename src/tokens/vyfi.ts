@@ -1,7 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const VYFI = "804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f";
+const VYFI = "804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f56594649";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
