@@ -2,16 +2,20 @@ import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import c3Fetcher from "./tokens/c3";
+import cblpFetcher from "./tokens/cblp";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import danaFetcher from "./tokens/dana";
+import dgafFetcher from "./tokens/dgaf";
 import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
 import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
+import gensFetcher from "./tokens/gens";
 import geroFetcher from "./tokens/gero";
+import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import iagFetcher from "./tokens/iag";
 import indyFetcher from "./tokens/indy";
@@ -21,12 +25,14 @@ import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import moaiFetcher from "./tokens/moai";
+import newmFetcher from "./tokens/newm";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import prsprFetcher from "./tokens/prspr";
 import shenFetcher from "./tokens/shen";
+import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import sundaeFetcher from "./tokens/sundae";
@@ -69,6 +75,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     vyfiFetcher,
   a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235484f534b59:
     hoskyFetcher,
+  dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53:
+    gensFetcher,
   "10a49b996e2402269af553a8a96fb8eb90d79e9eca79e2b4223057b64745524f":
     geroFetcher,
   "8e51398904a5d3fc129fbf4f1589701de23c7824d5c90fdb9490e15a434841524c4933":
@@ -101,4 +109,12 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     djedFetcher,
   "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd615368656e4d6963726f555344":
     shenFetcher,
+  ee0633e757fdd1423220f43688c74678abde1cead7ce265ba8a24fcd43424c50: cblpFetcher,
+  "682fe60c9918842b3323c43b5144bc3d52a23bd2fb81345560d73f634e45574d":
+    newmFetcher,
+  bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a48455242: herbFetcher,
+  "279c909f348e533da5808898f87f9a14bb2c3dfbbacccd631d927a3f534e454b":
+    snekFetcher,
+  "64c3ebd40ed377989aa3069a2936e07c6ce82df46688c473d921520664676166":
+    dgafFetcher,
 };
