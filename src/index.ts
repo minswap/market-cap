@@ -18,7 +18,10 @@ import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import iagFetcher from "./tokens/iag";
+import ibtcFetcher from "./tokens/ibtc";
+import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
+import iusdFetcher from "./tokens/iusd";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -117,4 +120,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snekFetcher,
   "64c3ebd40ed377989aa3069a2936e07c6ce82df46688c473d921520664676166":
     dgafFetcher,
+  f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069425443: ibtcFetcher,
+  f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069455448: iethFetcher,
+  f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069555344: iusdFetcher,
 };
