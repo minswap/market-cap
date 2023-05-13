@@ -10,9 +10,13 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u9k7mcf6zvun9wlfrkwsg2w8sy95302gpnj73ly0l6tqhks997y0t", // dgaf treasury + vault allocation
   ]);
   const treasury = Number(treasuryRaw);
+  const burnedRaw = await getAmountInAddresses(blockFrost, DGAF, [
+    "addr1w88w37rdprvqrjn77vuj3mzral6dh6cex0m7smc9p2uqvlct6vp8a", // dgaf unredeemable addr
+  ]);
+  const burned = Number(burnedRaw)
   return {
     circulating: (total - treasury).toString(),
-    total: total.toString(),
+    total: (total - burned).toString(),
   };
 };
 
