@@ -13,7 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const burnedRaw = await getAmountInAddresses(blockFrost, DGAF, [
     "addr1w88w37rdprvqrjn77vuj3mzral6dh6cex0m7smc9p2uqvlct6vp8a", // dgaf unredeemable addr
   ]);
-  const burned = Number(burnedRaw)
+  const burned = Number(burnedRaw);
   return {
     circulating: (total - treasury).toString(),
     total: (total - burned).toString(),
