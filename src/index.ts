@@ -38,6 +38,7 @@ import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
+import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -120,6 +121,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snekFetcher,
   "64c3ebd40ed377989aa3069a2936e07c6ce82df46688c473d921520664676166":
     dgafFetcher,
+    "2adf188218a66847024664f4f63939577627a56c090f679fe366c5ee535441424c45": stableFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069425443: ibtcFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069455448: iethFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069555344: iusdFetcher,
