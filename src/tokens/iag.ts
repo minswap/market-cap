@@ -9,7 +9,7 @@ const TREASURY_ADDRESSES = [
   "stake1uy8a6tmpcy9mh57m8puka0ra0zq2zt4pjcuphyh770u3spg8cn9zk", // Liquidity
   "stake1u9gc67yuparwf2qjvvsv5c652yf8zfcn7wwtmruap0fte6qyz6h9g", // Development
   "stake1ux0x89ur69hu2gqvsaw8fpt45zj4kt50h8lq4ycd68ycsmc9m4y99", // Advisors / Marketing
-  "stake1uywysqcqqys7qewrcl0uhda8g25ecr5k2klsr2d45jmdpnsqmc5hh"  // Team
+  "stake1uywysqcqqys7qewrcl0uhda8g25ecr5k2klsr2d45jmdpnsqmc5hh", // Team
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
