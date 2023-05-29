@@ -1,6 +1,7 @@
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
+import bankFetcher from "./tokens/bank";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
 import clapFetcher from "./tokens/clap";
@@ -123,4 +124,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069425443: ibtcFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069455448: iethFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069555344: iusdFetcher,
+  "2b28c81dbba6d67e4b5a997c6be1212cba9d60d33f82444ab8b1f21842414e4b":
+    bankFetcher,
 };
