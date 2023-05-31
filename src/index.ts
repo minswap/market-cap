@@ -13,6 +13,7 @@ import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
 import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
+import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
@@ -123,4 +124,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069425443: ibtcFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069455448: iethFetcher,
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069555344: iusdFetcher,
+  "8daefa391220bd0d8d007f3748d870f7f3c106040314c8515ccc35a5464c4143":
+    flacFetcher,
 };
