@@ -1,6 +1,7 @@
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
+import bankFetcher from "./tokens/bank";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
 import chryFetcher from "./tokens/chry";
@@ -40,6 +41,7 @@ import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
+import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -129,4 +131,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069555344: iusdFetcher,
   "8daefa391220bd0d8d007f3748d870f7f3c106040314c8515ccc35a5464c4143":
     flacFetcher,
+  "2b28c81dbba6d67e4b5a997c6be1212cba9d60d33f82444ab8b1f21842414e4b":
+    bankFetcher,
+  "2adf188218a66847024664f4f63939577627a56c090f679fe366c5ee535441424c45":
+    stableFetcher,
 };
