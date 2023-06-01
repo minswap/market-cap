@@ -11,7 +11,7 @@
   "scripts": {
     "build": "rimraf build && rollup -c rollup.config.js",
     "test": "jest",
-    "format": "prettier --write **/*.{ts,tsx} && eslint --fix --ext .ts,.tsx .",
+    "format": "prettier --write '**/*.{ts,tsx}' && eslint --fix --ext .ts,.tsx .",
     "check-format": "prettier --check **/*.{ts,tsx} && eslint --ext .ts,.tsx ."
   },
   "keywords": [
