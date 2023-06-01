@@ -46,6 +46,7 @@ import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
+import wrtFetcher from "./tokens/wrt";
 import yummiFetcher from "./tokens/yummi";
 import { SupplyFetcher } from "./types";
 
@@ -135,4 +136,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     bankFetcher,
   "2adf188218a66847024664f4f63939577627a56c090f679fe366c5ee535441424c45":
     stableFetcher,
+  c0ee29a85b13209423b10447d3c2e6a50641a15c57770e27cb9d507357696e67526964657273:
+    wrtFetcher,
 };
