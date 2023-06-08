@@ -2,8 +2,10 @@ import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import ashibFetcher from "./tokens/ashib";
+import bankFetcher from "./tokens/bank";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
+import chryFetcher from "./tokens/chry";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
 import cnetaFetcher from "./tokens/cneta";
@@ -14,12 +16,16 @@ import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
 import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
+import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import iagFetcher from "./tokens/iag";
+import ibtcFetcher from "./tokens/ibtc";
+import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
+import iusdFetcher from "./tokens/iusd";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -36,10 +42,12 @@ import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
+import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
+import wrtFetcher from "./tokens/wrt";
 import yummiFetcher from "./tokens/yummi";
 import { SupplyFetcher } from "./types";
 
@@ -58,6 +66,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     sundaeFetcher,
   "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441":
     aadaFetcher,
+  "75fcc276057db5fc48eae0e11453c773c8a54604c3086bf9d95ac1b743485259":
+    chryFetcher,
   db30c7905f598ed0154de14f970de0f61f0cb3943ed82c891968480a434c4150: clapFetcher,
   "5612bee388219c1b76fd527ed0fa5aa1d28652838bcab4ee4ee63197446973636f696e":
     discoFetcher,
@@ -120,4 +130,15 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     dgafFetcher,
   afc910d7a306d20c12903979d4935ae4307241d03245743548e767834153484942:
     ashibFetcher,
+  f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069425443: ibtcFetcher,
+  f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069455448: iethFetcher,
+  f66d78b4a3cb3d37afa0ec36461e51ecbde00f26c8f0a68f94b6988069555344: iusdFetcher,
+  "8daefa391220bd0d8d007f3748d870f7f3c106040314c8515ccc35a5464c4143":
+    flacFetcher,
+  "2b28c81dbba6d67e4b5a997c6be1212cba9d60d33f82444ab8b1f21842414e4b":
+    bankFetcher,
+  "2adf188218a66847024664f4f63939577627a56c090f679fe366c5ee535441424c45":
+    stableFetcher,
+  c0ee29a85b13209423b10447d3c2e6a50641a15c57770e27cb9d507357696e67526964657273:
+    wrtFetcher,
 };
