@@ -3,7 +3,7 @@ import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const CHRY = "75fcc276057db5fc48eae0e11453c773c8a54604c3086bf9d95ac1b743485259";
 const TREASURY_ADDRESSES = [
-  "addr1qy00gp8ldzs3hh0tkqd0ummmxlt4fed49fh25hjh2mhcy6alec8dm697qgqjpx54m3l47z8nmg46e85m67qwwfdt5yjqlqncpn",
+  "stake1uxluurkaazlqyqfqn22acl6lprea52avn6da0q88yk46zfqrc93qj",
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
