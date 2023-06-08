@@ -118,5 +118,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snekFetcher,
   "64c3ebd40ed377989aa3069a2936e07c6ce82df46688c473d921520664676166":
     dgafFetcher,
-  afc910d7a306d20c12903979d4935ae4307241d03245743548e767834153484942: ashibFectcher,
+  afc910d7a306d20c12903979d4935ae4307241d03245743548e767834153484942:
+    ashibFetcher,
 };
