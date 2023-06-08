@@ -1,6 +1,6 @@
 {
   "name": "@minswap/market-cap",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Transparent and accurate market cap for Cardano native tokens",
   "main": "./build/index.js",
   "module": "./build/index.es.js",
