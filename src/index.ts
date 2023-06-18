@@ -142,6 +142,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     stableFetcher,
   c0ee29a85b13209423b10447d3c2e6a50641a15c57770e27cb9d507357696e67526964657273:
     wrtFetcher,
-  4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65:
+  "4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65":
    bubbleFetcher,
 };
