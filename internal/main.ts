@@ -1,3 +1,5 @@
+import fs from "fs";
+
 import { SupplyFetcherResponse, supplyFetchers } from "../src";
 
 async function main(): Promise<void> {
@@ -10,7 +12,7 @@ async function main(): Promise<void> {
       /* empty */
     }
   }
-  console.info(JSON.stringify(marketCapData));
+  fs.writeFileSync("/tmp/market-cap.json", JSON.stringify(marketCapData));
 }
 
 void main();
