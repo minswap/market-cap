@@ -14,17 +14,18 @@ async function main(): Promise<void> {
         },
         {
           retry(err, attempt): boolean {
+            // eslint-disable-next-line no-console
             console.error(
               `fail to run fetcher for ${key}, retry ${attempt}...`,
               err
             );
             return true;
           },
-          startingDelay: 500,
           numOfAttempts: 3,
         }
       );
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error(`fail to run fetcher for ${key}`, err);
     }
   }
