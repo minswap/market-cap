@@ -49,6 +49,7 @@ import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import yummiFetcher from "./tokens/yummi";
+import lobsterFetcher from "./tokens/lobster";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -141,4 +142,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     stableFetcher,
   c0ee29a85b13209423b10447d3c2e6a50641a15c57770e27cb9d507357696e67526964657273:
     wrtFetcher,
+  "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552":
+    lobsterFetcher,
 };
