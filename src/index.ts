@@ -18,6 +18,7 @@ import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
+import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
