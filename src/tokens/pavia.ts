@@ -8,7 +8,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 2e9;
   const blockFrost = getBlockFrostInstance(options);
   const treasury = await getAmountInAddresses(blockFrost, PAVIA, [
-    "addr1qx49wuqaa0j83z4y04nyltpcmf602f0afn5s84l7a9wnjryg090a5a6en7e483rh98d67efcenetg9xpr6fvv2llmhts837axc",
+    "stake1uxy8jh76wavelv6nc3mjnka0v5uveu45znq3aykx90lam4cdxdumd",
   ]);
   return {
     circulating: (total - Number(treasury)).toString(),
