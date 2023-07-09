@@ -18,6 +18,7 @@ import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
+import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
@@ -88,6 +89,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     hoskyFetcher,
   dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53:
     gensFetcher,
+  fbae99b8679369079a7f6f0da14a2cf1c2d6bfd3afdf3a96a64ab67a0014df1047454e5358:
+    gensxFetcher,
   "10a49b996e2402269af553a8a96fb8eb90d79e9eca79e2b4223057b64745524f":
     geroFetcher,
   "8e51398904a5d3fc129fbf4f1589701de23c7824d5c90fdb9490e15a434841524c4933":
