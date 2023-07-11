@@ -3,7 +3,7 @@ import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import ashibFetcher from "./tokens/ashib";
 import bankFetcher from "./tokens/bank";
-import bankFetcher from "./tokens/bubble";
+import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
 import chryFetcher from "./tokens/chry";
