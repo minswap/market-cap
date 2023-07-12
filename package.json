@@ -1,6 +1,6 @@
 {
   "name": "@minswap/market-cap",
-  "version": "0.1.7",
+  "version": "0.1.12",
   "description": "Transparent and accurate market cap for Cardano native tokens",
   "main": "./build/index.js",
   "module": "./build/index.es.js",
@@ -12,7 +12,8 @@
     "build": "rimraf build && rollup -c rollup.config.js",
     "test": "jest",
     "format": "prettier --write **/*.{ts,tsx} && eslint --fix --ext .ts,.tsx .",
-    "check-format": "prettier --check **/*.{ts,tsx} && eslint --ext .ts,.tsx ."
+    "check-format": "prettier --check **/*.{ts,tsx} && eslint --ext .ts,.tsx .",
+    "run-market-cap": "ts-node internal/main.ts"
   },
   "keywords": [
     "minswap",
@@ -46,6 +47,7 @@
     "eslint": "^8.34.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "exponential-backoff": "^3.1.1",
     "jest": "^29.4.2",
     "prettier": "^2.8.4",
     "rollup": "^2.70.2",

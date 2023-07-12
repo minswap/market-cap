@@ -7,7 +7,10 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 21_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, LQ, [
-    "stake1uxqky4shfezhz9e6mjucmyxhd8sh9557afqg0lhep6yfrfsmvq4zd",
+    "stake17yl23x3q5v4hpjyywjal326ku2953kn4dhkrq5edmqcyj4cz0h7v5", // user dist
+    "stake17x5s640797a4wlu0x3wtxrytrq8hx67smk238vpvjgjkjgqhmc4sl", // team
+    "stake17yr6hxevthv7fr6la584r3sy4jlgf7uwtc2udkwzj8zt3vg2mzq4x", // treasury
+    "stake17xljj9au6hels8vtn5rf3ctgux9azsfnnwqgx4y7x0y5ytsu0nj2z", // staking
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {

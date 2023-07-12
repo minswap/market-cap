@@ -1,13 +1,14 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const VYFI = "804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f56594649";
+const HERB = "bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a48455242";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 450_000_000;
-  const treasuryRaw = await getAmountInAddresses(blockFrost, VYFI, [
-    "stake1ux3rhes4an7469fqfw794cg8qaxltj3srhlprhast5v6wsqkm26ks",
+  const total = 420_000_000;
+  const treasuryRaw = await getAmountInAddresses(blockFrost, HERB, [
+    "stake1uyq4g3vqed986la2h7ywavup76xjr0kpfew30u99quw6w4qjxjucm", // rewards
+    "stake1uxmx9lcvc7305u8npfcc570s5n9rwleyql37wqa7pr4t8vcwehs7p", // treasury
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
