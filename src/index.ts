@@ -2,6 +2,7 @@ import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import ashibFetcher from "./tokens/ashib";
+import awooFetcher from "./tokens/awoo";
 import bankFetcher from "./tokens/bank";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
@@ -152,4 +153,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     wrtFetcher,
   "4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65":
     bubbleFetcher,
+  "09f5f55fcad17503e6b7acc81de7c80f84b76e76d17085f0e32f1ce241574f4f":
+    awooFetcher,
 };
