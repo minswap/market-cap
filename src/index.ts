@@ -30,6 +30,7 @@ import ibtcFetcher from "./tokens/ibtc";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
+import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -151,6 +152,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     stableFetcher,
   c0ee29a85b13209423b10447d3c2e6a50641a15c57770e27cb9d507357696e67526964657273:
     wrtFetcher,
+  "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552":
+    lobsterFetcher,
   "4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65":
     bubbleFetcher,
   "09f5f55fcad17503e6b7acc81de7c80f84b76e76d17085f0e32f1ce241574f4f":
