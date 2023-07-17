@@ -8,6 +8,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 69_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, AWOO, [
     "stake1uy2s0etue4vgt6gz66t84zzgf8r6fgggc0prf4hsay3rvfcam00kg", // $unbothered
+    "stake1uxh23dnmd2lzvxqr06vvuxtsgh4l4dxnrrcvj2fx6f53rkc70lmqh", // $uwstaking
   ]);
 
   const burnRaw = await getAmountInAddresses(blockFrost, AWOO, [
