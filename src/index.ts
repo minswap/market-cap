@@ -26,6 +26,7 @@ import ibtcFetcher from "./tokens/ibtc";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
+import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
@@ -49,7 +50,6 @@ import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import yummiFetcher from "./tokens/yummi";
-import lobsterFetcher from "./tokens/lobster";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
