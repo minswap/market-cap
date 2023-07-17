@@ -2,7 +2,9 @@ import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import ashibFetcher from "./tokens/ashib";
+import awooFetcher from "./tokens/awoo";
 import bankFetcher from "./tokens/bank";
+import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
 import chryFetcher from "./tokens/chry";
@@ -16,8 +18,10 @@ import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
 import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
+import encsFetcher from "./tokens/encs";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
+import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
@@ -39,6 +43,7 @@ import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import paviaFetcher from "./tokens/pavia";
 import prsprFetcher from "./tokens/prspr";
+import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
@@ -89,6 +94,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     hoskyFetcher,
   dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53:
     gensFetcher,
+  fbae99b8679369079a7f6f0da14a2cf1c2d6bfd3afdf3a96a64ab67a0014df1047454e5358:
+    gensxFetcher,
   "10a49b996e2402269af553a8a96fb8eb90d79e9eca79e2b4223057b64745524f":
     geroFetcher,
   "8e51398904a5d3fc129fbf4f1589701de23c7824d5c90fdb9490e15a434841524c4933":
@@ -102,6 +109,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     indyFetcher,
   "6c8642400e8437f737eb86df0fc8a8437c760f48592b1ba8f5767e81456d706f7761":
     empFetcher,
+  "9abf0afd2f236a19f2842d502d0450cbcd9c79f123a9708f96fd9b96454e4353":
+    encsFetcher,
   "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52":
     nmkrFetcher,
   "52489ea87bbceaf6375cc22f74c19382a3d5da3f8b9b15d2537044b95052535052":
@@ -117,6 +126,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     ninjazFetcher,
   "38ad9dc3aec6a2f38e220142b9aa6ade63ebe71f65e7cc2b7d8a8535434c4159":
     clayFetcher,
+  "8cfd6893f5f6c1cc954cec1a0a1460841b74da6e7803820dde62bb78524a56": rjvFetcher,
   "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd61446a65644d6963726f555344":
     djedFetcher,
   "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd615368656e4d6963726f555344":
@@ -144,4 +154,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     wrtFetcher,
   "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552":
     lobsterFetcher,
+  "4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65":
+    bubbleFetcher,
+  "09f5f55fcad17503e6b7acc81de7c80f84b76e76d17085f0e32f1ce241574f4f":
+    awooFetcher,
 };

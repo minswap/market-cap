@@ -1,17 +1,17 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const PAVIA =
-  "884892bcdc360bcef87d6b3f806e7f9cd5ac30d999d49970e7a903ae5041564941";
+const ENCS = "9abf0afd2f236a19f2842d502d0450cbcd9c79f123a9708f96fd9b96454e4353";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const total = 2e9;
   const blockFrost = getBlockFrostInstance(options);
-  const treasury = await getAmountInAddresses(blockFrost, PAVIA, [
-    "stake1uxy8jh76wavelv6nc3mjnka0v5uveu45znq3aykx90lam4cdxdumd",
+  const total = 15_000_000;
+  const treasuryRaw = await getAmountInAddresses(blockFrost, ENCS, [
+    "stake17ynh8uegtjar9rgdrjfccrer6x674nf58lulned7z5vs6zcrt298r",
   ]);
+  const treasury = Number(treasuryRaw) / 1e6;
   return {
-    circulating: (total - Number(treasury)).toString(),
+    circulating: (total - treasury).toString(),
     total: total.toString(),
   };
 };
