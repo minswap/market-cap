@@ -11,7 +11,7 @@ const MNT_SUPPLY_ADDRESS = "https://www.mynth.ai/api/token-supply";
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const axios = getAxiosInstance(options);
   const response = await axios.get(MNT_SUPPLY_ADDRESS);
-  const treasury = Number(response.data.current_supply) / 1e6;
+  const treasury = response.data.current_supply;
 
   return {
     circulating: treasury.toString(),
