@@ -41,6 +41,7 @@ import newmFetcher from "./tokens/newm";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
+import optFetcher from "./tokens/opt";
 import paviaFetcher from "./tokens/pavia";
 import prsprFetcher from "./tokens/prspr";
 import rjvFetcher from "./tokens/rjv";
@@ -158,4 +159,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     bubbleFetcher,
   "09f5f55fcad17503e6b7acc81de7c80f84b76e76d17085f0e32f1ce241574f4f":
     awooFetcher,
+  "1ddcb9c9de95361565392c5bdff64767492d61a96166cb16094e54be4f5054": optFetcher,
 };
