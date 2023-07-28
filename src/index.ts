@@ -160,6 +160,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     bubbleFetcher,
   "09f5f55fcad17503e6b7acc81de7c80f84b76e76d17085f0e32f1ce241574f4f":
     awooFetcher,
-  "43b07d4037f0d75ee10f9863097463fc02ff3c0b8b705ae61d9c75bf": mntFetcher,
+  "43b07d4037f0d75ee10f9863097463fc02ff3c0b8b705ae61d9c75bf4d796e746820546f6b656e": mntFetcher,
   "1ddcb9c9de95361565392c5bdff64767492d61a96166cb16094e54be4f5054": optFetcher,
 };
