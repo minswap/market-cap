@@ -32,6 +32,7 @@ import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
+import lifiFetcher from "./tokens/lifi";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
@@ -163,4 +164,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "43b07d4037f0d75ee10f9863097463fc02ff3c0b8b705ae61d9c75bf4d796e746820546f6b656e":
     mntFetcher,
   "1ddcb9c9de95361565392c5bdff64767492d61a96166cb16094e54be4f5054": optFetcher,
+  "7914fae20eb2903ed6fd5021a415c1bd2626b64a2d86a304cb40ff5e4c494649": lifiFetcher,
 };
