@@ -9,6 +9,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 1_000_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, FACT, [
     "stake1uy4kjauul2gt5qqlqnn0dmtzj28hxyfzyxjfdz86r0cr87s0ukjhn", // Orcfax Validators
+    "stake1uxgrkg2rts6mq5h49y87mfldpt8tec0dj5lwgqg3twsslgse2ce4t", // Orcfax Launchpad
     "stake1u8423m8m6fr5zmyrkf3h88cm8p95v4uu0w644ls777r0sash9a2hn", // Orcfax Team
     "stake1uxuw8rufp4004efjhy9jx7l5q0sc9l6m5ynre0awpme3keqpgae4v", // Orcfax ISPO Rewards
     "stake1u87ln5j5dmmhmaqytvwvwfpe7cfjmhfqd492xrlqhqtawwsfg2vjj", // Orcfax Foundation
