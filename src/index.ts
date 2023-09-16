@@ -56,6 +56,7 @@ import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
+import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
 import { SupplyFetcher } from "./types";
 
@@ -163,4 +164,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "43b07d4037f0d75ee10f9863097463fc02ff3c0b8b705ae61d9c75bf4d796e746820546f6b656e":
     mntFetcher,
   "1ddcb9c9de95361565392c5bdff64767492d61a96166cb16094e54be4f5054": optFetcher,
+  b316f8f668aca7359ecc6073475c0c8106239bf87e05a3a1bd5697647856594649:
+    xvyfiFetcher,
 };
