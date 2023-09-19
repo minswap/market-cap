@@ -15,7 +15,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u8qzt94vyvfvvs4qan02axtfwj2hz4dcqefpehara5rdh4q6h9xka",
     "stake1uy74mhj5x3jdf8d9446xcwrw723pvqelksxwwxu5c6t799qcnww0q",
   ]);
-  const treasury = Number(treasuryRaw) / 1;
+  const treasury = Number(treasuryRaw) / 1e4;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),
