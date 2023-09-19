@@ -13,7 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1uxerycuwj09h2n6wydjp4vk936la23p9dvn37ezlkmdl5ycq38hr4", // Development funds
     "stake1uypwcfxvg7uyzkyeue8fglq6fx7uxmampr2ahylyy4rg38cvky2pr", // Fraction Estate funds
     "stake1ux7pa94sgkzd0yawsu9e9ddj0vr07psyezksfek24m9wn2qtjf62u", // Marketing funds
-    "stake1u8qzt94vyvfvvs4qan02axtfwj2hz4dcqefpehara5rdh4q6h9xka", // Founder - Daniel Johnsen
+    "stake1u8qzt94vyvfvvs4qan02axtfwj2hz4dcqefpehara5rdh4q6h9xka", // Founder Daniel Johnsen
     "stake1uy74mhj5x3jdf8d9446xcwrw723pvqelksxwwxu5c6t799qcnww0q", // Charity funds
   ]);
   const treasury = Number(treasuryRaw);
