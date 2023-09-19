@@ -4,7 +4,7 @@ import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 const FET = "815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25a";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-	const blockFrost = getBlockFrostInstance(options);
+  const blockFrost = getBlockFrostInstance(options);
 	const total = 2e8;
 	const treasuryRaw = await getAmountInAddresses(blockFrost, FET, [
 		"stake1uyyxjvthz4udwdrzr9pkkudpylasg99ufdzu7gpdfckxf2s5peell", // DEX funds
