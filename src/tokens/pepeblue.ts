@@ -10,22 +10,15 @@ const TREASURY_VAULT = [
   "addr1qyxlw0wx4w7cdlwy4dtdygremqpfz7skyn60af8wl32a0jvq3mcxelvy8un2qlasklx5c326eqlzrwh25aaw2gumzw9qm5qc3q", // Ant Workers Vault
 ];
 
-const FUTURE_BURN_ADDRESSES = [
-  "addr1qyr6saywfckufwpcetj6060cnhxz4cxqd0fvtc98hgs3hcwesku8k0wmk4vssj4j9c9cm5f0aclkqr5647aps4xftn5srwyxdk", //To be burnt
-];
-
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 39e13; // 420T -> 390T
   const treasury = Number(
     await getAmountInAddresses(blockFrost, PEPEBLUE, TREASURY_VAULT)
   );
-  const burnt = Number(
-    await getAmountInAddresses(blockFrost, PEPEBLUE, FUTURE_BURN_ADDRESSES)
-  );
   return {
     circulating: (total - treasury).toString(),
-    total: (total).toString(),
+    total: total.toString(),
   };
 };
 
