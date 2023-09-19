@@ -6,7 +6,7 @@ const FET =
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 2e8;
+  const total = 200000000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, FET, [
     "stake1uyyxjvthz4udwdrzr9pkkudpylasg99ufdzu7gpdfckxf2s5peell", // DEX funds
     "stake1ux94pdq42nwx0g24ea3myjcnd8tvl354ku4ygedtgm7sfgc2hugz9", // Reserve funds
