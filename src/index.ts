@@ -44,6 +44,7 @@ import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import optFetcher from "./tokens/opt";
 import paviaFetcher from "./tokens/pavia";
+import pepeblueFetcher from "./tokens/pepeblue";
 import prsprFetcher from "./tokens/prspr";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
@@ -168,4 +169,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   b316f8f668aca7359ecc6073475c0c8106239bf87e05a3a1bd5697647856594649:
     xvyfiFetcher,
   "2d92af60ee429bce238d3fd9f2531b45457301d74dad1bcf3f9d1dca564e4d": vnmFetcher,
+  "21abdf54f427b378fe9ba07419eff6e8e8fe0c5932e1fee2d3853b9350455045424c5545":
+    pepeblueFetcher,
 };
