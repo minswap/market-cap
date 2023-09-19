@@ -54,6 +54,7 @@ import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
+import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -174,4 +175,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pepeblueFetcher,
   "7914fae20eb2903ed6fd5021a415c1bd2626b64a2d86a304cb40ff5e4c494649":
     lifiFetcher,
+  "0d90046ad35546156aaf790525133f7fc713ca2790e397784b85f5c85554494c":
+    utilFetcher,
 };
