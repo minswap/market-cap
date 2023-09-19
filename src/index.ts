@@ -101,7 +101,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     vyfiFetcher,
   a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235484f534b59:
     hoskyFetcher,
-  "815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25aa":
+  815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25aa:
     fetFetcher,
   dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53:
     gensFetcher,
