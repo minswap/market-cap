@@ -19,6 +19,7 @@ import discoFetcher from "./tokens/disco";
 import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
+import factFetcher from "./tokens/fact";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
@@ -30,6 +31,7 @@ import ibtcFetcher from "./tokens/ibtc";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
+import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
 import meldFetcher from "./tokens/meld";
@@ -44,6 +46,7 @@ import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import optFetcher from "./tokens/opt";
 import paviaFetcher from "./tokens/pavia";
+import pepeblueFetcher from "./tokens/pepeblue";
 import prsprFetcher from "./tokens/prspr";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
@@ -52,6 +55,7 @@ import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
+import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -168,4 +172,12 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   b316f8f668aca7359ecc6073475c0c8106239bf87e05a3a1bd5697647856594649:
     xvyfiFetcher,
   "2d92af60ee429bce238d3fd9f2531b45457301d74dad1bcf3f9d1dca564e4d": vnmFetcher,
+  "21abdf54f427b378fe9ba07419eff6e8e8fe0c5932e1fee2d3853b9350455045424c5545":
+    pepeblueFetcher,
+  "7914fae20eb2903ed6fd5021a415c1bd2626b64a2d86a304cb40ff5e4c494649":
+    lifiFetcher,
+  "0d90046ad35546156aaf790525133f7fc713ca2790e397784b85f5c85554494c":
+    utilFetcher,
+  a3931691f5c4e65d01c429e473d0dd24c51afdb6daf88e632a6c1e516f7263666178746f6b656e:
+    factFetcher,
 };
