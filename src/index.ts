@@ -19,6 +19,7 @@ import discoFetcher from "./tokens/disco";
 import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
+import factFetcher from "./tokens/fact";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
@@ -177,4 +178,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     lifiFetcher,
   "0d90046ad35546156aaf790525133f7fc713ca2790e397784b85f5c85554494c":
     utilFetcher,
+  a3931691f5c4e65d01c429e473d0dd24c51afdb6daf88e632a6c1e516f7263666178746f6b656e:
+    factFetcher,
 };
