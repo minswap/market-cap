@@ -22,4 +22,4 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
 	};
 };
 
-export default fetcher;
+export default fetcher; 
