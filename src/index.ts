@@ -1,4 +1,3 @@
-import fetFetcher from "./tokens/fet";
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
@@ -21,6 +20,7 @@ import djedFetcher from "./tokens/djed";
 import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
+import fetFetcher from "./tokens/fet";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
