@@ -5,7 +5,7 @@ const FET =
   "815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25a4672616374696f6e2045737461746520546f6b656e";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const total = 200e16;
+  const total = 200e6;
   const blockFrost = getBlockFrostInstance(options);
   const treasuryRaw = await getAmountInAddresses(blockFrost, FET, [
     "stake1uyyxjvthz4udwdrzr9pkkudpylasg99ufdzu7gpdfckxf2s5peell",
@@ -19,7 +19,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const treasury = Number(treasuryRaw);
   return {
     circulating: (total - treasury).toString() / 1e10,
-    total: total.toString() / 1e10,
+    total: total.toString(),
   };
 };
 
