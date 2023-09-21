@@ -1,4 +1,3 @@
-```
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
@@ -27,4 +26,3 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
 };
 
 export default fetcher;
-```
