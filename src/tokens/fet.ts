@@ -18,7 +18,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u8qzt94vyvfvvs4qan02axtfwj2hz4dcqefpehara5rdh4q6h9xka", // founder - daniel johnsen
     "addr1wy08wwdmpp6wtkzzjnghpxn0wtm9zyp69s4fxe675yv06cs70pjxk", // Staking Rewards Vyfi
     "stake1uxmyhzdqv6e57xwkz3z93v996v3ktdctlda44jv76ese5pqwwg7ue", // Farming Rewards Vyfi
-    "stake1uyuxqkvqwngv86g9m804kjnhmvunc52kk4kl8cm8fck5kwcjmx8sg", // Rewards Tressury Vyfi
+    "stake1uyuxqkvqwngv86g9m804kjnhmvunc52kk4kl8cm8fck5kwcjmx8sg", // Rewards Treasury Vyfi
   ]);
   const treasury = Number(treasuryRaw) / 1e10;
   return {
