@@ -1,3 +1,4 @@
+```
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
@@ -7,6 +8,8 @@ const FET =
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 200e6;
   const blockFrost = getBlockFrostInstance(options);
+  const assetInfo = await blockFrost.assetsById(FET);
+  const onchainSupply = Number(assetInfo?.quantity) / 1e10;
   const treasuryRaw = await getAmountInAddresses(blockFrost, FET, [
     "stake1uyyxjvthz4udwdrzr9pkkudpylasg99ufdzu7gpdfckxf2s5peell",
     "stake1ux94pdq42nwx0g24ea3myjcnd8tvl354ku4ygedtgm7sfgc2hugz9",
@@ -18,9 +21,10 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   ]);
   const treasury = Number(treasuryRaw) / 1e10;
   return {
-    circulating: (total - treasury).toString(),
+    circulating: (onchainSupply - treasury).toString(),
     total: total.toString(),
   };
 };
 
 export default fetcher;
+```
