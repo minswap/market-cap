@@ -6,9 +6,8 @@ const MAYZ =
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  // source: https://docs.google.com/spreadsheets/d/1zSm8Bs6okXwDfaphgcGHuBmIEqP8m3GxALw9YiMBy4Q/edit#gid=1565520879
-  const total = 1_000_000_000n;
-  const totalOnCardano = 1_000_000_000n;
+
+  const totalOnCardano = 1e9;
   const treasury = await getAmountInAddresses(blockFrost, MAYZ, [
     "stake1u8yrsk8fn672hr0xhtzslppvnl5jfdgpggn0862yq903u0c7w7e06",
     "stake1u9pj8cpxn8xpxk9qlpwsuv08w3mr8pky4r6e7xkwfh20zcqx8dahf",
