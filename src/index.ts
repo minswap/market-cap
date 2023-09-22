@@ -70,6 +70,7 @@ import { SupplyFetcher } from "./types";
 export * from "./types";
 
 export const supplyFetchers: Record<string, SupplyFetcher> = {
+  "9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a": mayzFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
   f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc53541474958: agixFetcher,
   edfd7a1d77bcb8b884c474bdc92a16002d1fb720e454fa6e993444794e5458: ntxFetcher,
@@ -183,6 +184,4 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     utilFetcher,
   a3931691f5c4e65d01c429e473d0dd24c51afdb6daf88e632a6c1e516f7263666178746f6b656e:
     factFetcher,
-  9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a:
-    mayzFetcher,
 };
