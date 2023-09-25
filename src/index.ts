@@ -32,6 +32,7 @@ import ibtcFetcher from "./tokens/ibtc";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
+import jpgFetcher from "./tokens/jpg";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
@@ -185,4 +186,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     factFetcher,
   "9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a":
     mayzFetcher,
+  "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047": jpgFetcher,
 };
