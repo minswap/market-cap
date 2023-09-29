@@ -13,10 +13,11 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1uyqtfsvt7ky3zhullz2rqewu3pz8ksga5g3nd3vj293hpgcvuezsq", // $dexhunter.mrkt
   ]);
 
-  const treasury = Number(treasuryRaw);
+  const treasury = Number(treasuryRaw) / 1e6;
+
   return {
     circulating: (total - treasury).toString(),
-    total: (total).toString(),
+    total: total.toString(),
   };
 };
 
