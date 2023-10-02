@@ -63,6 +63,7 @@ import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
+import wolfFetcher from "./tokens/wolf";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
@@ -190,4 +191,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a":
     mayzFetcher,
   "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047": jpgFetcher,
+  "1a71dc14baa0b4fcfb34464adc6656d0e562571e2ac1bc990c9ce5f6574f4c46":
+    wolfFetcher,
 };
