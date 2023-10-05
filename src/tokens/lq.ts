@@ -11,6 +11,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake17x5s640797a4wlu0x3wtxrytrq8hx67smk238vpvjgjkjgqhmc4sl", // team
     "stake17yr6hxevthv7fr6la584r3sy4jlgf7uwtc2udkwzj8zt3vg2mzq4x", // treasury
     "stake17xljj9au6hels8vtn5rf3ctgux9azsfnnwqgx4y7x0y5ytsu0nj2z", // staking
+    "stake17y46nf93jdpcjdjxr22re49ymxk0gp8tgnpeucuxhk4gnyc6ptg0f", // investors
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
