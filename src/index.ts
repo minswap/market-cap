@@ -7,6 +7,7 @@ import bankFetcher from "./tokens/bank";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
+import cbtcFetcher from "./tokens/cbtc";
 import chryFetcher from "./tokens/chry";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
@@ -91,6 +92,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     discoFetcher,
   b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441:
     cnetaFetcher,
+  "4190b2941d9be04acc69c39739bd5acc66d60ccab480d8e20bc87e3763425443":
+    cbtcFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74":
     mintFetcher,
   "95a427e384527065f2f8946f5e86320d0117839a5e98ea2c0b55fb0048554e54":
