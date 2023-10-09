@@ -1,3 +1,4 @@
+import fetcher
 import { defaultFetcherOptions, SupplyFetcher } from '../types'
 import { getAmountInAddresses, getBlockFrostInstance } from '../utils'
 
