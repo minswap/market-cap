@@ -69,6 +69,7 @@ import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
+import trtlFetcher from "./tokens/trtl";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -196,4 +197,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047": jpgFetcher,
   "1a71dc14baa0b4fcfb34464adc6656d0e562571e2ac1bc990c9ce5f6574f4c46":
     wolfFetcher,
+
+"52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e6": trtlFetcher,
 };
