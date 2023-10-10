@@ -8,7 +8,6 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 2_500_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, CSWAP, [
-    "addr1w8wsq3v4hgmkf3l6aaagcn43lslezd6zhh7af0g23clxkyqtenend",
     "addr1xxdulr2pxqx07pwjasfw2y6dl20wmyq4yhfggdf99x4jvnnk6wr84sntzxn3s943vlnqqrey6cmuzrz2m3tz3yj3n4vssyvg45",
     "addr1x8283erf082rna7etqkjfeelsm6vpu928y0kqklemu5ntvqtqyzh4ykrev5jvj5l33pw852v3jk6khm9a54sdzjkavqsmc6ntp",
     "addr1v93mxm3f82l5fle2r94lnwnaqm47macfvf6y4707yyl7l0c9c62ny",
