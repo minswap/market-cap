@@ -1,6 +1,7 @@
 import { SupplyFetcher, supplyFetchers } from "../src";
 
-const delay = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms));
+const delay = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 describe("supply fetchers", () => {
   const fetchers: [string, SupplyFetcher][] = [];
