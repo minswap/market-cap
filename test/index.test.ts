@@ -13,8 +13,8 @@ describe("supply fetchers", () => {
   }
 
   // test fetchers in batch to avoid rate-limiting
-  for (let i = 0; i < fetchers.length; i += 30) {
-    const fetchersBatch = fetchers.slice(i, i + 30);
+  for (let i = 0; i < fetchers.length; i += 10) {
+    const fetchersBatch = fetchers.slice(i, i + 10);
 
     test.concurrent.each(fetchersBatch)(
       `test fetcher for token %s`,
