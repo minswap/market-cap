@@ -22,6 +22,30 @@ jobs:
         run: npm run check-format
       - name: Run build
         run: npm run build
+      - name: Setup WireGuard
+        run: |
+          set -o errexit -o pipefail -o nounset
+          sudo apt-get update
+          sudo apt-get install -y wireguard-tools
+
+          sudo cat << EOL > wg0-client.conf
+          [Interface]
+          PrivateKey = ${{ secrets.WG_CLIENT_PRIVATE_KEY }}
+          Address = 10.0.0.2/32
+          [Peer]
+          PublicKey = ${{ secrets.WG_SERVER_PUBLIC_KEY }}
+          Endpoint = ${{ secrets.WG_SERVER_IP }}:${{ secrets.WG_SERVER_PORT }}
+          AllowedIPs = 0.0.0.0/0
+          EOL
+
+          sudo wg-quick up ./wg0-client.conf
+          # Check if the tunnel is up
+          if sudo wg show wg0-client | grep -q "peer: ${{ secrets.WG_SERVER_PUBLIC_KEY }}"; then
+            echo "Connected!"
+          else
+            echo "Connection failed!"
+            exit 1
+          fi
       - name: Run test
         run: npm test
         env:
