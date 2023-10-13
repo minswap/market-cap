@@ -46,7 +46,6 @@ jobs:
             echo "Connection failed!"
             exit 1
           fi
-          curl https://api.ipify.org
       - name: Run test
         run: npm test
         env:
