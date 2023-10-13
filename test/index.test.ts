@@ -12,9 +12,9 @@ describe("supply fetchers", () => {
     fetchers.push(...Object.entries(supplyFetchers));
   }
 
-  // test 50 fetchers in a batch to avoid rate-limiting
-  for (let i = 0; i < fetchers.length; i += 50) {
-    const fetchersBatch = fetchers.slice(i, i + 50);
+  // test fetchers in batch to avoid rate-limiting
+  for (let i = 0; i < fetchers.length; i += 30) {
+    const fetchersBatch = fetchers.slice(i, i + 30);
 
     test.concurrent.each(fetchersBatch)(
       `test fetcher for token %s`,
