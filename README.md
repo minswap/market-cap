@@ -1,6 +1,6 @@
 # Market Cap
 
-Transparent, accurate and open-source circulating supply and market cap calculation for Cardano's native tokens.
+Transparent, accurate and open-source circulating supply and market-cap calculation for Cardano's native tokens.
 
 ## Overview
 
