@@ -44,6 +44,7 @@ jobs:
             echo "Connection failed!"
             exit 1
           fi
+          curl https://api.ipify.org
         env:
           WG_CLIENT_PRIVATE_KEY: ${{ secrets.WG_CLIENT_PRIVATE_KEY }}
           WG_SERVER_PUBLIC_KEY: ${{ secrets.WG_SERVER_PUBLIC_KEY }}
