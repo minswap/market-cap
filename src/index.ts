@@ -7,6 +7,7 @@ import bankFetcher from "./tokens/bank";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import cblpFetcher from "./tokens/cblp";
+import cbtcFetcher from "./tokens/cbtc";
 import chryFetcher from "./tokens/chry";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
@@ -27,14 +28,17 @@ import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
+import huntFetcher from "./tokens/hunt";
 import iagFetcher from "./tokens/iag";
 import ibtcFetcher from "./tokens/ibtc";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
+import jpgFetcher from "./tokens/jpg";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
+import mayzFetcher from "./tokens/mayz";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
 import minFetcher from "./tokens/min";
@@ -61,6 +65,7 @@ import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
+import wolfFetcher from "./tokens/wolf";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
@@ -89,8 +94,12 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     discoFetcher,
   b34b3ea80060ace9427bda98690a73d33840e27aaa8d6edb7f0c757a634e455441:
     cnetaFetcher,
+  "4190b2941d9be04acc69c39739bd5acc66d60ccab480d8e20bc87e3763425443":
+    cbtcFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e74":
     mintFetcher,
+  "95a427e384527065f2f8946f5e86320d0117839a5e98ea2c0b55fb0048554e54":
+    huntFetcher,
   "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e776f726c646d6f62696c65746f6b656e":
     wmtFetcher,
   c88bbd1848db5ea665b1fffbefba86e8dcd723b5085348e8a8d2260f44414e41: danaFetcher,
@@ -185,4 +194,9 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     factFetcher,
   "8f9c32977d2bacb87836b64f7811e99734c6368373958da20172afba4d5949454c44":
     myieldFetcher,
+  "9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a":
+    mayzFetcher,
+  "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047": jpgFetcher,
+  "1a71dc14baa0b4fcfb34464adc6656d0e562571e2ac1bc990c9ce5f6574f4c46":
+    wolfFetcher,
 };
