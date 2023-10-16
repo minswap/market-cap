@@ -13,6 +13,7 @@ import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
+import cswapFetcher from "./tokens/cswap";
 import danaFetcher from "./tokens/dana";
 import dgafFetcher from "./tokens/dgaf";
 import dingFetcher from "./tokens/ding";
@@ -31,6 +32,7 @@ import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
 import iagFetcher from "./tokens/iag";
 import ibtcFetcher from "./tokens/ibtc";
+import idpFetcher from "./tokens/idp";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
@@ -45,6 +47,7 @@ import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
+import myieldFetcher from "./tokens/myield";
 import newmFetcher from "./tokens/newm";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
@@ -60,6 +63,7 @@ import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
+import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
@@ -110,7 +114,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     vyfiFetcher,
   a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235484f534b59:
     hoskyFetcher,
-  "815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25aa": fetFetcher,
+  "815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25a4672616374696f6e2045737461746520546f6b656e":
+    fetFetcher,
   dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53:
     gensFetcher,
   fbae99b8679369079a7f6f0da14a2cf1c2d6bfd3afdf3a96a64ab67a0014df1047454e5358:
@@ -191,9 +196,16 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     utilFetcher,
   a3931691f5c4e65d01c429e473d0dd24c51afdb6daf88e632a6c1e516f7263666178746f6b656e:
     factFetcher,
+  "8f9c32977d2bacb87836b64f7811e99734c6368373958da20172afba4d5949454c44":
+    myieldFetcher,
   "9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a":
     mayzFetcher,
   "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047": jpgFetcher,
+  b9168f05e657b6946fede254e383586cf7e7a2573d5a0fa12b3ef6ac494450: idpFetcher,
   "1a71dc14baa0b4fcfb34464adc6656d0e562571e2ac1bc990c9ce5f6574f4c46":
     wolfFetcher,
+  bf524874448cbf52be3a26133b0a0edf5eb65c09ffed383b881ad3274353574150:
+    cswapFetcher,
+  "52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e65452544c":
+    trtlFetcher,
 };
