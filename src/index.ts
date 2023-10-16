@@ -13,6 +13,7 @@ import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
+import cswapFetcher from "./tokens/cswap";
 import danaFetcher from "./tokens/dana";
 import dgafFetcher from "./tokens/dgaf";
 import dingFetcher from "./tokens/ding";
@@ -202,4 +203,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "b9168f05e657b6946fede254e383586cf7e7a2573d5a0fa12b3ef6ac494450": idpFetcher,
   "1a71dc14baa0b4fcfb34464adc6656d0e562571e2ac1bc990c9ce5f6574f4c46":
     wolfFetcher,
+  bf524874448cbf52be3a26133b0a0edf5eb65c09ffed383b881ad3274353574150:
+    cswapFetcher,
 };
