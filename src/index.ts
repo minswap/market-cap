@@ -201,7 +201,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "9e975c76508686eb2d57985dbaea7e3843767a31b4dcf4e99e5646834d41595a":
     mayzFetcher,
   "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047": jpgFetcher,
-  "b9168f05e657b6946fede254e383586cf7e7a2573d5a0fa12b3ef6ac494450": idpFetcher,
+  b9168f05e657b6946fede254e383586cf7e7a2573d5a0fa12b3ef6ac494450: idpFetcher,
   "1a71dc14baa0b4fcfb34464adc6656d0e562571e2ac1bc990c9ce5f6574f4c46":
     wolfFetcher,
   bf524874448cbf52be3a26133b0a0edf5eb65c09ffed383b881ad3274353574150:

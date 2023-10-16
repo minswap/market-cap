@@ -9,7 +9,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const treasuryRaw = await getAmountInAddresses(blockFrost, IDP, [
     "stake1u9rdfy4p3tvje0tjvxyvhs9jdg3t7l094agmjs8ksewrtps38ylvv", // (490k) IDP Rewards Faucet
     "stake1uxjg2ux55k9nygt8s50q2wgu7vz95v4k9f3rfu8prmxkcsql3qetk", // (130m) 24-monthvesting
-    "stake1u8s4y6zgraj5gf4uzww2pqydv8r5tkfmel3kux6trn46hsqxtfkvf", // (116.22m) development 
+    "stake1u8s4y6zgraj5gf4uzww2pqydv8r5tkfmel3kux6trn46hsqxtfkvf", // (116.22m) development
     "stake1uxq6fyqc6psy6dnhdaj8dc996afkajv4qrhzewxrrahfstgzuafg8", // (90m) private investor
     "stake1uy7j4tusvnx9cns66p3te2hm0awqgux8y9hst3hvdauhfzgqnt4u9", // (90m) private investor
     "stake1uydmwjfe7a06s9wwsfuqe7zzczty73gen7zgtwq4ush7hvqaspq5v", // (86.95m) anvil platform
@@ -24,7 +24,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u8j4m0vkqkyda3k05mftd2l7tkk2qlptkw4ap2ydqc62kdspmfd8s", // (10m) reserve funds
     "stake1u8v5u3n3487cdvjucra8d8mt82ecgpyn0zguffez0dq5kactxymgc", // (10m) reserve funds
     "stake1uxat59wnsq6zrygtkvuj0c8m58ywj3a78uq5gxn5t9yuhegsp0z7t", // (5.5m) treasury
-    "stake1u9vvl59ghgte7mvg3u3e84rwxaymtj0qyv89wl3upepsnjqqtjx9w", // (5.5m) 
+    "stake1u9vvl59ghgte7mvg3u3e84rwxaymtj0qyv89wl3upepsnjqqtjx9w", // (5.5m)
     "stake1u9f9v0z5zzlldgx58n8tklphu8mf7h4jvp2j2gddluemnssjfnkzz", // (2.3m) minswap
   ]);
   const treasury = Number(treasuryRaw);
