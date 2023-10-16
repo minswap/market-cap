@@ -63,6 +63,7 @@ import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
+import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
@@ -205,4 +206,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     wolfFetcher,
   bf524874448cbf52be3a26133b0a0edf5eb65c09ffed383b881ad3274353574150:
     cswapFetcher,
+  "52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e65452544c":
+    trtlFetcher,
 };
