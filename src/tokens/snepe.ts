@@ -4,7 +4,7 @@ import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 const SNEPE =
   "b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const snepeFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 420_000_000_069n;
   const treasury = await getAmountInAddresses(blockFrost, SNEPE, [
@@ -16,4 +16,4 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   };
 };
 
-export default fetcher;
+export default snepeFetcher;

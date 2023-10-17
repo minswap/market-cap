@@ -59,6 +59,7 @@ import prsprFetcher from "./tokens/prspr";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
+import snepeFetcher from "./tokens/snepe";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
@@ -210,4 +211,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e65452544c":
     trtlFetcher,
   "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75": spfFetcher,
+  b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045:
+    snepeFetcher,
 };
