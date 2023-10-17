@@ -61,6 +61,7 @@ import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
+import spfFetcher from "./tokens/spf";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import trtlFetcher from "./tokens/trtl";
@@ -208,4 +209,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     cswapFetcher,
   "52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e65452544c":
     trtlFetcher,
+  "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75": spfFetcher,
 };
