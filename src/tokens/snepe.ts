@@ -12,7 +12,7 @@ const snepeFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   ]);
   return {
     circulating: (total - treasury).toString(),
-    total: (total - treasury).toString(),
+    total: total.toString(),
   };
 };
 
