@@ -43,9 +43,8 @@ export async function getAmountInAddresses(
     const batchTotal = amounts.reduce((sum, x) => sum + x, 0n);
     totalAmount += batchTotal;
 
-    await new Promise(resolve => setTimeout(resolve, 1100));
+    await new Promise((resolve) => setTimeout(resolve, 1100));
   }
 
   return totalAmount;
 }
-
