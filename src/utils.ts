@@ -21,7 +21,7 @@ export async function getAmountInAddresses(
   token: string,
   addresses: string[]
 ): Promise<bigint> {
-  let totalAmount: bigint = 0n;
+  let totalAmount = 0n;
 
   for (let i = 0; i < addresses.length; i += 10) {
     const batch = addresses.slice(i, i + 10);
