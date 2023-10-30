@@ -23,6 +23,6 @@ jobs:
       - name: Run build
         run: npm run build
       - name: Run test
-        run: npm test -- --onlyChanged
+        run: npm test
         env:
           BLOCKFROST_PROJECT_ID: mainnetTV9qV3mfZXbE6e44TVGMe1UoRlLrpSQt
