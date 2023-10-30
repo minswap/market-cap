@@ -21,16 +21,31 @@ export async function getAmountInAddresses(
   token: string,
   addresses: string[]
 ): Promise<bigint> {
-  const amounts = await Promise.all(
-    addresses.map(async (addr): Promise<bigint> => {
-      const value = addr.startsWith("stake")
-        ? await blockFrost.accountsAddressesAssetsAll(addr)
-        : await blockFrost.addresses(addr).then((resp) => resp.amount);
-      const amount = value
-        .filter(({ unit }) => unit === token)
-        .reduce((sum, x) => sum + BigInt(x.quantity), 0n);
-      return amount;
-    })
-  );
-  return amounts.reduce((sum, x) => sum + x, 0n);
+  let totalAmount: bigint = 0n;
+
+  for (let i = 0; i < addresses.length; i += 10) {
+    const batch = addresses.slice(i, i + 10);
+
+    const amounts = await Promise.all(
+      batch.map(async (addr): Promise<bigint> => {
+        const value = addr.startsWith("stake")
+          ? await blockFrost.accountsAddressesAssetsAll(addr)
+          : await blockFrost.addresses(addr).then((resp) => resp.amount);
+
+        const amount = value
+          .filter(({ unit }) => unit === token)
+          .reduce((sum, x) => sum + BigInt(x.quantity), 0n);
+
+        return amount;
+      })
+    );
+
+    const batchTotal = amounts.reduce((sum, x) => sum + x, 0n);
+    totalAmount += batchTotal;
+
+    await new Promise(resolve => setTimeout(resolve, 1100));
+  }
+
+  return totalAmount;
 }
+
