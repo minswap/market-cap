@@ -3,6 +3,10 @@ import axios, { AxiosInstance } from "axios";
 
 import { FetcherOptions } from "./types";
 
+export function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export function getBlockFrostInstance(options: FetcherOptions): BlockFrostAPI {
   return new BlockFrostAPI({
     projectId: process.env["BLOCKFROST_PROJECT_ID"] ?? "",
@@ -43,7 +47,7 @@ export async function getAmountInAddresses(
     const batchTotal = amounts.reduce((sum, x) => sum + x, 0n);
     totalAmount += batchTotal;
 
-    await new Promise((resolve) => setTimeout(resolve, 1010));
+    await sleep(1010);
   }
 
   return totalAmount;
