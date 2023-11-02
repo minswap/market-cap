@@ -54,6 +54,7 @@ import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
 import optFetcher from "./tokens/opt";
+import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
 import prsprFetcher from "./tokens/prspr";
@@ -188,6 +189,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "43b07d4037f0d75ee10f9863097463fc02ff3c0b8b705ae61d9c75bf4d796e746820546f6b656e":
     mntFetcher,
   "1ddcb9c9de95361565392c5bdff64767492d61a96166cb16094e54be4f5054": optFetcher,
+  e52964af4fffdb54504859875b1827b60ba679074996156461143dc14f5054494d:
+    optimFetcher,
   b316f8f668aca7359ecc6073475c0c8106239bf87e05a3a1bd5697647856594649:
     xvyfiFetcher,
   "2d92af60ee429bce238d3fd9f2531b45457301d74dad1bcf3f9d1dca564e4d": vnmFetcher,
