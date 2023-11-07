@@ -16,6 +16,7 @@ import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
 import danaFetcher from "./tokens/dana";
+import derpFetcher from "./tokens/derp";
 import dgafFetcher from "./tokens/dgaf";
 import dingFetcher from "./tokens/ding";
 import discoFetcher from "./tokens/disco";
@@ -221,4 +222,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snepeFetcher,
   "51a5e236c4de3af2b8020442e2a26f454fda3b04cb621c1294a0ef34424f4f4b":
     bookFetcher,
+  "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e31": derpFetcher,
 };
