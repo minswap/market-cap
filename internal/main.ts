@@ -1,5 +1,7 @@
+/* eslint-disable no-console */
 import { backOff } from "exponential-backoff";
 import fs from "fs";
+import logfmt from "logfmt";
 
 import { SupplyFetcherResponse, supplyFetchers } from "../src";
 
@@ -9,12 +11,24 @@ async function main(): Promise<void> {
     try {
       await backOff(
         async () => {
+          const startTime = new Date();
           const data = await supplyFetcher();
           marketCapData[key] = data;
+          const endTime = new Date();
+          console.info(
+            logfmt.stringify({
+              time: endTime.toISOString(),
+              level: "INFO",
+              message: "done fetch market cap for asset",
+              duration: `${(endTime.getTime() - startTime.getTime()) / 1000}s`,
+              asset: key,
+              total_supply: data.total,
+              circulating_supply: data.circulating,
+            })
+          );
         },
         {
           retry(err, attempt): boolean {
-            // eslint-disable-next-line no-console
             console.error(
               `fail to run fetcher for ${key}, retry ${attempt}...`,
               err
@@ -25,7 +39,6 @@ async function main(): Promise<void> {
         }
       );
     } catch (err) {
-      // eslint-disable-next-line no-console
       console.error(`fail to run fetcher for ${key}`, err);
     }
   }
