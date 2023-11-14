@@ -60,7 +60,7 @@ import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
-import proxiesFetcher from "./tokens/proxies"
+import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
@@ -226,5 +226,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     bookFetcher,
   "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e31": derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
-  "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945": proxiesFetcher,
+  "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945":
+    proxiesFetcher,
 };
