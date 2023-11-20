@@ -40,6 +40,7 @@ import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import jpgFetcher from "./tokens/jpg";
+import lccFetcher from ""./tokens/lcc;
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
