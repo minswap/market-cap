@@ -228,7 +228,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     bookFetcher,
   "5c1c91a65bedac56f245b8184b5820ced3d2f1540e521dc1060fa6834a454c4c59":
     jellyFetcher,
-  "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e31": derpFetcher,
+  "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250":
+    derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
   "03c2eb4f942703fa965df42ba8ac57e27c5e86802d058da63f4d888b4c4343": lccFetcher,
   f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f: tedyFetcher,
