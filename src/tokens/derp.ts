@@ -8,7 +8,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 100_000_000n;
 
-  let treasury = await getAmountInAddresses(blockFrost, DERP, [
+  const treasury = await getAmountInAddresses(blockFrost, DERP, [
     "stake1uy6r37f83ahqq47rx4wxgl28anmekvz9wqqgr2u09pw48egyaeqhv",
     "stake1u894gzwp4kg0uwmtz8k23g8cpkkc54gs6kd2ts4sedxanmcas4kh8",
     "stake1u8fhqlvckhllm0l0pkjl3a2zhvgpn966ljgu3was9s80s7suf7rzg",
