@@ -8,7 +8,7 @@ const TREASURY_ADDRESSES = [
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 8e6; // 88 million
+  const total = 8e6;
   const treasury = Number(
     await getAmountInAddresses(blockFrost, TEDY, TREASURY_ADDRESSES)
   );
