@@ -7,8 +7,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 1_000_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, NEBULA, [
-    "stake1uy9zagwzs8hu9zur7xn6aftjwjpvs3cw65jywdh8jvpa5ggvvlr08 ", //Put the NEBULA treasury addresses here
-    "stake1uy9zagwzs8hu9zur7xn6aftjwjpvs3cw65jywdh8jvpa5ggvvlr08",
+    "stake1uy9zagwzs8hu9zur7xn6aftjwjpvs3cw65jywdh8jvpa5ggvvlr08 ", 
     "stake1uxdzjx0temfw7qgfgcmm93azywa46ralpcfd6ulsal7jvggjrk6ew",
   ]);
 
