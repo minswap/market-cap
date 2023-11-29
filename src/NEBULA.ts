@@ -11,7 +11,7 @@ const TEAM_ADDRESSES = [
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 1e6; // 1 billion
+  const total = 1e9; // 1 billion
   const treasury = Number(
     await getAmountInAddresses(blockFrost, NEBULA, TEAM_ADDRESSES),
   );
