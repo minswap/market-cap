@@ -80,10 +80,10 @@ import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wolfFetcher from "./tokens/wolf";
 import wozFetcher from "./tokens/woz";
+import workFetcher from "./tokens/work";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
-import yummiFetcher from "./tokens/yummi";
-import workFetcher from "./tokens/work"
+import yummiFetcher from "./tokens/yummi";;
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
