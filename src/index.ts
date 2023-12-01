@@ -79,11 +79,11 @@ import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wolfFetcher from "./tokens/wolf";
-import wozFetcher from "./tokens/woz";
 import workFetcher from "./tokens/work";
+import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
-import yummiFetcher from "./tokens/yummi";;
+import yummiFetcher from "./tokens/yummi";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -234,6 +234,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
   "03c2eb4f942703fa965df42ba8ac57e27c5e86802d058da63f4d888b4c4343": lccFetcher,
   f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f54454459: tedyFetcher,
-  "bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b": workFetcher
-  
+  bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
+    workFetcher,
 };
