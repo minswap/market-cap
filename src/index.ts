@@ -239,5 +239,4 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     workFetcher,
   "94cbb4fcbcaa2975779f273b263eb3b5f24a9951e446d6dc4c13586452455655":
     revuFetcher,
-
 };
