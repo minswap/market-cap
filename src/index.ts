@@ -63,6 +63,7 @@ import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
 import prsprFetcher from "./tokens/prspr";
+import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
@@ -236,4 +237,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f54454459: tedyFetcher,
   bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
     workFetcher,
+  "94cbb4fcbcaa2975779f273b263eb3b5f24a9951e446d6dc4c13586452455655":
+    revuFetcher,
+
 };
