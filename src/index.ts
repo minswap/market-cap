@@ -39,7 +39,9 @@ import idpFetcher from "./tokens/idp";
 import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
+import jellyFetcher from "./tokens/jelly";
 import jpgFetcher from "./tokens/jpg";
+import lccFetcher from "./tokens/lcc";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
 import liqwidFetcher from "./tokens/lq";
@@ -62,6 +64,7 @@ import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
 import prsprFetcher from "./tokens/prspr";
+import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
@@ -71,6 +74,7 @@ import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
+import tedyFetcher from "./tokens/tedy";
 import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
@@ -224,7 +228,14 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snepeFetcher,
   "51a5e236c4de3af2b8020442e2a26f454fda3b04cb621c1294a0ef34424f4f4b":
     bookFetcher,
-  "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e31": derpFetcher,
+  "5c1c91a65bedac56f245b8184b5820ced3d2f1540e521dc1060fa6834a454c4c59":
+    jellyFetcher,
+  "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250":
+    derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
   f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
+  "03c2eb4f942703fa965df42ba8ac57e27c5e86802d058da63f4d888b4c4343": lccFetcher,
+  f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f54454459: tedyFetcher,
+  "94cbb4fcbcaa2975779f273b263eb3b5f24a9951e446d6dc4c13586452455655":
+    revuFetcher,
 };
