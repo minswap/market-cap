@@ -13,7 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 109e9; // 109 billion
   const treasury =
     Number(await getAmountInAddresses(blockFrost, ASHIB, TREASURY_ADDRESSES)) /
-    1e9;
+    1e6;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),
