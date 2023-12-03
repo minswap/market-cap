@@ -54,6 +54,7 @@ import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
 import mtcFetcher from "./tokens/mtc";
 import myieldFetcher from "./tokens/myield";
+import nebulaFetcher from "./tokens/nebula";
 import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
 import ninjazFetcher from "./tokens/ninjaz";
@@ -241,4 +242,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f54454459: tedyFetcher,
   "94cbb4fcbcaa2975779f273b263eb3b5f24a9951e446d6dc4c13586452455655":
     revuFetcher,
+  "3744d5e39333c384505214958c4ed66591a052778512e56caf420f624e4542554c41":
+    nebulaFetcher,
 };
