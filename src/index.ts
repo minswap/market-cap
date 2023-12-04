@@ -7,6 +7,7 @@ import bankFetcher from "./tokens/bank";
 import bookFetcher from "./tokens/book";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
+import c4Fetcher from "./tokens/c4";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
 import cgiFetcher from "./tokens/cgi";
@@ -247,4 +248,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     nebulaFetcher,
   bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
     workFetcher,
+  a00fdf4fb9ab6c8c2bd1533a2f14855edf12aed5ecbf96d4b5f5b9394334: c4Fetcher,
 };
