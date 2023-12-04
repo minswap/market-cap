@@ -83,6 +83,7 @@ import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wolfFetcher from "./tokens/wolf";
+import workFetcher from "./tokens/work";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
@@ -244,4 +245,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     revuFetcher,
   "3744d5e39333c384505214958c4ed66591a052778512e56caf420f624e4542554c41":
     nebulaFetcher,
+  bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
+    workFetcher,
 };
