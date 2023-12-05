@@ -1,7 +1,7 @@
 import { SupplyFetcher } from "../types";
 
 const fetcher: SupplyFetcher = async () => {
-  const total = 1600000000;
+  const total = 1670000000;
 
   return {
     circulating: total.toString(),
