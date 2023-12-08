@@ -52,7 +52,9 @@ import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
+import mtcFetcher from "./tokens/mtc";
 import myieldFetcher from "./tokens/myield";
+import nebulaFetcher from "./tokens/nebula";
 import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
 import ninjazFetcher from "./tokens/ninjaz";
@@ -62,6 +64,7 @@ import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
+import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
@@ -80,6 +83,7 @@ import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
 import wolfFetcher from "./tokens/wolf";
+import workFetcher from "./tokens/work";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
@@ -232,8 +236,15 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250":
     derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
+  "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945":
+    proxiesFetcher,
+  f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
   "03c2eb4f942703fa965df42ba8ac57e27c5e86802d058da63f4d888b4c4343": lccFetcher,
   f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f54454459: tedyFetcher,
   "94cbb4fcbcaa2975779f273b263eb3b5f24a9951e446d6dc4c13586452455655":
     revuFetcher,
+  "3744d5e39333c384505214958c4ed66591a052778512e56caf420f624e4542554c41":
+    nebulaFetcher,
+  bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
+    workFetcher,
 };
