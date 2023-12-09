@@ -66,6 +66,7 @@ import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
 import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
+import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
@@ -88,8 +89,6 @@ import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
-import rakerFetcher from "./tokens/raker";
-
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -249,5 +248,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     nebulaFetcher,
   bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
     workFetcher,
-    "ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b60252414b4552": rakerFetcher,
+  ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b60252414b4552:
+    rakerFetcher,
 };
