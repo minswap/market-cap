@@ -7,6 +7,7 @@ import bankFetcher from "./tokens/bank";
 import bookFetcher from "./tokens/book";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
+import c4Fetcher from "./tokens/c4";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
 import cgiFetcher from "./tokens/cgi";
@@ -30,7 +31,6 @@ import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
-import gokeyFetcher from "./tokens/gokey";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
@@ -210,8 +210,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pepeblueFetcher,
   "7914fae20eb2903ed6fd5021a415c1bd2626b64a2d86a304cb40ff5e4c494649":
     lifiFetcher,
-  "c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559":
-    gokeyFetcher,
   "0d90046ad35546156aaf790525133f7fc713ca2790e397784b85f5c85554494c":
     utilFetcher,
   a3931691f5c4e65d01c429e473d0dd24c51afdb6daf88e632a6c1e516f7263666178746f6b656e:
@@ -250,4 +248,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     nebulaFetcher,
   bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
     workFetcher,
+  a00fdf4fb9ab6c8c2bd1533a2f14855edf12aed5ecbf96d4b5f5b9394334: c4Fetcher,
 };
