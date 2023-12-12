@@ -67,6 +67,7 @@ import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
 import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
+import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
 import shenFetcher from "./tokens/shen";
@@ -248,5 +249,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     nebulaFetcher,
   bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b:
     workFetcher,
+  ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b60252414b4552:
+    rakerFetcher,
   a00fdf4fb9ab6c8c2bd1533a2f14855edf12aed5ecbf96d4b5f5b9394334: c4Fetcher,
 };
