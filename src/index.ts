@@ -14,6 +14,7 @@ import cgiFetcher from "./tokens/cgi";
 import chryFetcher from "./tokens/chry";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
+import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
@@ -252,4 +253,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b60252414b4552:
     rakerFetcher,
   a00fdf4fb9ab6c8c2bd1533a2f14855edf12aed5ecbf96d4b5f5b9394334: c4Fetcher,
+  c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354: cnctFetcher,
 };
