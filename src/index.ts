@@ -68,6 +68,7 @@ import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
 import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
+import pugchipFetcher from "./tokens/pugchip";
 import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
@@ -254,4 +255,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rakerFetcher,
   a00fdf4fb9ab6c8c2bd1533a2f14855edf12aed5ecbf96d4b5f5b9394334: c4Fetcher,
   c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354: cnctFetcher,
+  "5ec2e9813fa385d9333d18186d8257d1b3ebea97bdec2dad74026d8d50554743484950":
+    pugchipFetcher,
 };
