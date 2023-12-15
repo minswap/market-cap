@@ -1,17 +1,16 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const CHRY = "75fcc276057db5fc48eae0e11453c773c8a54604c3086bf9d95ac1b743485259";
+const TEDY = "f6696363e9196289ef4f2b4bf34bc8acca5352cdc7509647afe6888f54454459";
 const TREASURY_ADDRESSES = [
-  "stake1uxluurkaazlqyqfqn22acl6lprea52avn6da0q88yk46zfqrc93qj",
-  "stake1u8ffzkegp8h48mare3g3ntf3xmjce3jqptsdtj38ee3yh3c9t4uum", // team tokens held at SEALS' Vending Machine
+  "stake1uyjkz4wjew4vd358z4hc20fylty6uzt3vf6h4kxtgpc9naq0ndy2a",
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 88e6; // 88 million
+  const total = 8e6;
   const treasury = Number(
-    await getAmountInAddresses(blockFrost, CHRY, TREASURY_ADDRESSES)
+    await getAmountInAddresses(blockFrost, TEDY, TREASURY_ADDRESSES)
   );
 
   return {
