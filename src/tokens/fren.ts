@@ -7,13 +7,19 @@ const fren =
 const frenFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 420_069_000_000n;
-  const treasury = await getAmountInAddresses(blockFrost, fren, [
-    "", // FREN treasury
-    "", //Burn
+  const treasuryRaw = await getAmountInAddresses(blockFrost, fren, [
+    "addr1qxphpfyj20ktpnjlsq09kgwzgkxkuy34njxxkdsq73cjagg40rlcjxutu5pq06qu2nq03gz4lyswfyd9f65qc6fqgqcqmvr092",
   ]);
+
+  const burnRaw = await getAmountInAddresses(blockFrost, fren, [
+    "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4",
+  ]);
+
+  const treasury = Number(treasuryRaw);
+  const burn = Number(burnRaw);
   return {
-    circulating: (total - treasury).toString(),
-    total: total.toString(),
+    circulating: (total - treasury - burn).toString(),
+    total: (total - burn).toString(),
   };
 };
 
