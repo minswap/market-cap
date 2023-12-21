@@ -12,6 +12,7 @@ import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
 import cgiFetcher from "./tokens/cgi";
 import chryFetcher from "./tokens/chry";
+import frenFetcher from "./tokens/fren";
 import clapFetcher from "./tokens/clap";
 import clayFetcher from "./tokens/clay";
 import cnctFetcher from "./tokens/cnct";
