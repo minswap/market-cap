@@ -6,7 +6,7 @@ const fren =
 
 const frenFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 420_069_000_000n;
+  const total = 420_069_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, fren, [
     "addr1qxphpfyj20ktpnjlsq09kgwzgkxkuy34njxxkdsq73cjagg40rlcjxutu5pq06qu2nq03gz4lyswfyd9f65qc6fqgqcqmvr092",
   ]);
