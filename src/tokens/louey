@@ -1,0 +1,6 @@
+import minFetcher from "./tokens/louey";
+
+export const supplyFetchers: Record<string, SupplyFetcher> = {
+  "ac11a1a07f04ec9efee4c46c359725922377ec5a4596bbed670cc920": loueyFetcher,
+  ...
+};
