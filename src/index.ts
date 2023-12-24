@@ -28,6 +28,7 @@ import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
 import fetFetcher from "./tokens/fet";
+import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
@@ -122,6 +123,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     mintFetcher,
   "95a427e384527065f2f8946f5e86320d0117839a5e98ea2c0b55fb0048554e54":
     huntFetcher,
+  "a4da8764a57e66a0085b5bfcde96c89b798d92ee83a75f59237e375b46495245":
+    fireFetcher,
   "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e776f726c646d6f62696c65746f6b656e":
     wmtFetcher,
   c88bbd1848db5ea665b1fffbefba86e8dcd723b5085348e8a8d2260f44414e41: danaFetcher,
