@@ -258,5 +258,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354: cnctFetcher,
   "5ec2e9813fa385d9333d18186d8257d1b3ebea97bdec2dad74026d8d50554743484950":
     pugchipFetcher,
-  "1e2ab14b6921c545b836525477921fe000e14a3502fa729f60e8de85": slapFetcher,
+  "1e2ab14b6921c545b836525477921fe000e14a3502fa729f60e8de85534c4150": slapFetcher,
 };
