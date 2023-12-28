@@ -32,6 +32,7 @@ import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
+import gokeyFetcher from "./tokens/gokey";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
@@ -257,4 +258,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354: cnctFetcher,
   "5ec2e9813fa385d9333d18186d8257d1b3ebea97bdec2dad74026d8d50554743484950":
     pugchipFetcher,
+  c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
+    gokeyFetcher,
 };
