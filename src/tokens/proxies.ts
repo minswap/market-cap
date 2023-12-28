@@ -6,11 +6,11 @@ const PROXIES =
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = Number(21000000000000);
+  const total = Number(21000000);
   const treasuryRaw = await getAmountInAddresses(blockFrost, PROXIES, [
     "stake1uxrtzq4epgjxz7xulm97ups30rml843trc5x8zulxxzf2rq7effsj", // Treasury
   ]);
-  const treasury = Number(treasuryRaw);
+  const treasury = Number(treasuryRaw) / 1e6;
 
   return {
     circulating: (total - treasury).toString(),
