@@ -28,6 +28,7 @@ import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
 import fetFetcher from "./tokens/fet";
+import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
@@ -260,4 +261,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
     gokeyFetcher,
+  a4da8764a57e66a0085b5bfcde96c89b798d92ee83a75f59237e375b46495245: fireFetcher,
 };
