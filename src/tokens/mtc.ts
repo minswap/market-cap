@@ -14,7 +14,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 1e6; // 1 million
   const treasury = Number(
-    await getAmountInAddresses(blockFrost, MTC, TEAM_ADDRESSES),
+    await getAmountInAddresses(blockFrost, MTC, TEAM_ADDRESSES)
   );
   return {
     circulating: (total - treasury).toString(),
