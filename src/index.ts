@@ -66,6 +66,7 @@ import ntxFetcher from "./tokens/ntx";
 import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
+import peepeeFetcher from "./tokens/peepee";
 import pepeblueFetcher from "./tokens/pepeblue";
 import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
@@ -260,4 +261,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
     gokeyFetcher,
+  "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
 };
