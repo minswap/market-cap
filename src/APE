@@ -1,0 +1,29 @@
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
+import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+
+const APE = "5b57b2fe721fc1f50be7053d3c888eb56cf4a15d483906a336894222";
+
+const TREASURY_ADDRESSES = [
+  "addr1q8h9h4ydhm2zldu0st4vjc20l5arlaqahdu0wvuxnzpmlkkwutygekd8sz7arlzyujzt2vu6u2kczcyvq6shguxq5ctqnw8djq", // Treasury vault
+];
+
+const BURN_ADDRESSES = [
+  "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // $snekburnwallet
+];
+
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+  const total = 1e8; // 100 million
+  const blockFrost = getBlockFrostInstance(options);
+  const treasury = Number(
+    await getAmountInAddresses(blockFrost, APE, TREASURY_ADDRESSES)
+  );
+  const burnt = Number(
+    await getAmountInAddresses(blockFrost, PEEPEE, BURN_ADDRESSES)
+  );
+  return {
+    circulating: (total - treasury - burnt).toString(),
+    total: total.toString(),
+  };
+};
+
+export default fetcher;
