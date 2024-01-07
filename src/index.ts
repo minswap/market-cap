@@ -264,5 +264,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
     gokeyFetcher,
-  ac015c38917f306a84748c2d646bed90bdd64421c592163e60702d735453555255: toolFetcher,
+  ac015c38917f306a84748c2d646bed90bdd64421c592163e60702d735453555255:
+    toolFetcher,
 };
