@@ -83,6 +83,7 @@ import spfFetcher from "./tokens/spf";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
+import toolFetcher from "./tokens/tool";
 import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
 import vnmFetcher from "./tokens/vnm";
@@ -263,4 +264,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
     gokeyFetcher,
+  ac015c38917f306a84748c2d646bed90bdd64421c592163e60702d73: toolFetcher,
 };
