@@ -8,6 +8,7 @@ import bookFetcher from "./tokens/book";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import c4Fetcher from "./tokens/c4";
+import catskyFetcher from "./tokens/catsky";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
 import cgiFetcher from "./tokens/cgi";
@@ -266,4 +267,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     gokeyFetcher,
   b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550:
     kitupFetcher,
+  "9b426921a21f54600711da0be1a12b026703a9bd8eb9848d08c9d921434154534b59":
+    catskyFetcher,
 };
