@@ -29,6 +29,7 @@ import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
 import fetFetcher from "./tokens/fet";
 import flacFetcher from "./tokens/flac";
+import fldtFetcher from "./tokens/fldt";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
@@ -44,6 +45,7 @@ import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import jellyFetcher from "./tokens/jelly";
 import jpgFetcher from "./tokens/jpg";
+import kitupFetcher from "./tokens/kitup";
 import lccFetcher from "./tokens/lcc";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
@@ -100,6 +102,8 @@ export * from "./types";
 
 export const supplyFetchers: Record<string, SupplyFetcher> = {
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
+  "577f0b1342f8f8f4aed3388b80a8535812950c7a892495c0ecdf0f1e0014df10464c4454":
+    fldtFetcher,
   f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc53541474958: agixFetcher,
   edfd7a1d77bcb8b884c474bdc92a16002d1fb720e454fa6e993444794e5458: ntxFetcher,
   "8a1cfae21368b8bebbbed9800fec304e95cce39a2a57dc35e2e3ebaa4d494c4b":
@@ -261,5 +265,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
     gokeyFetcher,
+
   "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
+
 };
