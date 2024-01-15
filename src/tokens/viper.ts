@@ -13,10 +13,15 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1q9knde3r2wvhk8fjajchlfuh52k2jc2df65m9ymnxv4v85fkymz384ls0rwxwzx74xh4xc5adfrmhp9lr5m7p8gzmljq0s30ne", // devwallet
   ]);
 
+  const burnRaw = await getAmountInAddresses(blockFrost, VIPER, [
+    "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4",
+  ]);
+
   const treasury = Number(treasuryRaw);
+  const burn = Number(burnRaw);
   return {
-    circulating: (total - treasury).toString(),
-    total: total.toString(),
+    circulating: (total - treasury - burn).toString(),
+    total: (total - burn).toString(),
   };
 };
 
