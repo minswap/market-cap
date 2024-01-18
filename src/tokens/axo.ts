@@ -5,7 +5,7 @@ const AXO = "420000029ad9527271b1b1e3c27ee065c18df70a4a4cfc3093a41a4441584f";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 42_000_000e9; // 42 million
+  const total = 42_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, AXO, [
     "addr1qxxgertdvw306w8sqmr4qu3nkz3p96enr3wfwu84v0yg7mkzk33etrwedujlkplzn8dnvedkh8xehpy3xhpfcqglvg5qsq4w73",
   ]);
@@ -115,8 +115,8 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1w8pj5nlnk3v89udlcph27jel2xxh049hswfcehq4vgjynkgvlvzzg",
     "addr1wy0usqqcsdcwlayjz4aehvjny38cemnufspwyph9q54l7vg3972mx"
   ]);
-  const locked = Number(lockedRaw) / 1e9;
-  const treasury = Number(treasuryRaw) / 1e9;
+  const locked = Number(lockedRaw) / 1_000_000_000;
+  const treasury = Number(treasuryRaw) / 1_000_000_000;
   return {
     circulating: (total - treasury - locked).toString(),
     total: total.toString(),
