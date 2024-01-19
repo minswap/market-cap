@@ -1,6 +1,7 @@
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
+import angelsFetcher from "./tokens/angels";
 import ashibFetcher from "./tokens/ashib";
 import awooFetcher from "./tokens/awoo";
 import bankFetcher from "./tokens/bank";
@@ -269,4 +270,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     kitupFetcher,
   caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552:
     viperFetcher,
+  "285b65ae63d4fad36321384ec61edfd5187b8194fff89b5abe9876da414e47454c53":
+    angelsFetcher,
 };
