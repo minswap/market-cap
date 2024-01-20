@@ -1,6 +1,7 @@
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
+import angelsFetcher from "./tokens/angels";
 import ashibFetcher from "./tokens/ashib";
 import awooFetcher from "./tokens/awoo";
 import bankFetcher from "./tokens/bank";
@@ -45,6 +46,7 @@ import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import jellyFetcher from "./tokens/jelly";
 import jpgFetcher from "./tokens/jpg";
+import kitupFetcher from "./tokens/kitup";
 import lccFetcher from "./tokens/lcc";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
@@ -85,6 +87,7 @@ import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
 import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
+import viperFetcher from "./tokens/viper";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -263,4 +266,10 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
     gokeyFetcher,
+  b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550:
+    kitupFetcher,
+  caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552:
+    viperFetcher,
+  "285b65ae63d4fad36321384ec61edfd5187b8194fff89b5abe9876da414e47454c53":
+    angelsFetcher,
 };
