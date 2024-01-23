@@ -11,7 +11,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   ]);
 
   const burnRaw = await getAmountInAddresses(blockFrost, punks, [
-    "addr1q8c46k4u7skj0dapqygegt6xtxk7ev7j8jzs3hl4ur7tcg5psx06uc95gzzh78t8w8gajaqn6kddgyqcz32h3n2x2u8sn3jtkr", // $punksburn
+    "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // $snekburnwallet
   ]);
 
   const treasury = Number(treasuryRaw);
