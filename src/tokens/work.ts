@@ -9,7 +9,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 300_000_000n;
 
   const treasury = await getAmountInAddresses(blockFrost, WORK, [
-    "stake1u943hr3hqpmk6yc4a2vyk5vkjrngj8kdfaz28r52flmn5hgcaczcj", // $work.courses
+    "stake1u943hr3hqpmk6yc4a2vyk5vkjrngj8kdfaz28r52flmn5hgcaczcj", // $work.platform
     "stake1u872kmf52n3jdf76rcklllpp6l5w5nmjtzeclvhzysq583qurlgzl", // $work.liquidity
     "stake1uxrwm3hzkjhulhv6nhgvmhw4lq6ckq9z5xdd8prt27dyg4cx3p6w7", // $work.team
     "stake1uyt07yq2fdkvmpvgvt24ge4r5luv0h76akmmx7prrs5k94q09rpc7", // $work.treasury
