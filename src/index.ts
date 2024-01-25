@@ -54,6 +54,7 @@ import liqwidFetcher from "./tokens/lq";
 import mayzFetcher from "./tokens/mayz";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
+import milkv2Fetcher from "./tokens/milkv2";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import mntFetcher from "./tokens/mnt";
@@ -272,4 +273,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     viperFetcher,
   "285b65ae63d4fad36321384ec61edfd5187b8194fff89b5abe9876da414e47454c53":
     angelsFetcher,
+  afbe91c0b44b3040e360057bf8354ead8c49c4979ae6ab7c4fbdc9eb4d494c4b7632:
+    milkv2Fetcher,
 };
