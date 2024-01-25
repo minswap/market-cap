@@ -13,6 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u872kmf52n3jdf76rcklllpp6l5w5nmjtzeclvhzysq583qurlgzl", // $work.liquidity
     "stake1uxrwm3hzkjhulhv6nhgvmhw4lq6ckq9z5xdd8prt27dyg4cx3p6w7", // $work.team
     "stake1uyt07yq2fdkvmpvgvt24ge4r5luv0h76akmmx7prrs5k94q09rpc7", // $work.treasury
+    "addr1v8d9p0fqrwxkp63nspcv47esgrmjhv9hjfv8z6ptyludlnqhwdlhh", // $work.staking
   ]);
 
   return {
