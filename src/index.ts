@@ -98,6 +98,7 @@ import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
+import betFetcher from "./tokens/bet";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -275,4 +276,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     angelsFetcher,
   afbe91c0b44b3040e360057bf8354ead8c49c4979ae6ab7c4fbdc9eb4d494c4b7632:
     milkv2Fetcher,
+  d542ad1dc269ae601125e8259cb8427c6b37c1d3569d10441df0291f4149:
+    betFetcher,
 };
