@@ -78,6 +78,7 @@ import pugchipFetcher from "./tokens/pugchip";
 import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
+import rsergFetcher from "./tokens/rserg";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
@@ -277,4 +278,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     angelsFetcher,
   afbe91c0b44b3040e360057bf8354ead8c49c4979ae6ab7c4fbdc9eb4d494c4b7632:
     milkv2Fetcher,
+  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
+    rsergFetcher,
 };
