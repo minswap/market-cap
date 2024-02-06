@@ -79,6 +79,7 @@ import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
 import rsergFetcher from "./tokens/rserg";
+import shardsFetcher from "./tokens/shards";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
@@ -280,4 +281,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     milkv2Fetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
+  ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473:
+    shardsFetcher,
 };
