@@ -1,6 +1,7 @@
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
+import angelsFetcher from "./tokens/angels";
 import ashibFetcher from "./tokens/ashib";
 import awooFetcher from "./tokens/awoo";
 import bankFetcher from "./tokens/bank";
@@ -28,11 +29,14 @@ import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
 import fetFetcher from "./tokens/fet";
+import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import frenFetcher from "./tokens/fren";
+import fldtFetcher from "./tokens/fldt";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
+import gokeyFetcher from "./tokens/gokey";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
@@ -44,6 +48,7 @@ import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import jellyFetcher from "./tokens/jelly";
 import jpgFetcher from "./tokens/jpg";
+import kitupFetcher from "./tokens/kitup";
 import lccFetcher from "./tokens/lcc";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
@@ -51,6 +56,7 @@ import liqwidFetcher from "./tokens/lq";
 import mayzFetcher from "./tokens/mayz";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
+import milkv2Fetcher from "./tokens/milkv2";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import mntFetcher from "./tokens/mnt";
@@ -73,6 +79,7 @@ import pugchipFetcher from "./tokens/pugchip";
 import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
+import rsergFetcher from "./tokens/rserg";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
@@ -84,6 +91,7 @@ import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
 import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
+import viperFetcher from "./tokens/viper";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wmtFetcher from "./tokens/wmt";
@@ -99,6 +107,8 @@ export * from "./types";
 
 export const supplyFetchers: Record<string, SupplyFetcher> = {
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
+  "577f0b1342f8f8f4aed3388b80a8535812950c7a892495c0ecdf0f1e0014df10464c4454":
+    fldtFetcher,
   f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc53541474958: agixFetcher,
   edfd7a1d77bcb8b884c474bdc92a16002d1fb720e454fa6e993444794e5458: ntxFetcher,
   "8a1cfae21368b8bebbbed9800fec304e95cce39a2a57dc35e2e3ebaa4d494c4b":
@@ -260,4 +270,17 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354: cnctFetcher,
   "5ec2e9813fa385d9333d18186d8257d1b3ebea97bdec2dad74026d8d50554743484950":
     pugchipFetcher,
+  c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559:
+    gokeyFetcher,
+  a4da8764a57e66a0085b5bfcde96c89b798d92ee83a75f59237e375b46495245: fireFetcher,
+  b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550:
+    kitupFetcher,
+  caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552:
+    viperFetcher,
+  "285b65ae63d4fad36321384ec61edfd5187b8194fff89b5abe9876da414e47454c53":
+    angelsFetcher,
+  afbe91c0b44b3040e360057bf8354ead8c49c4979ae6ab7c4fbdc9eb4d494c4b7632:
+    milkv2Fetcher,
+  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
+    rsergFetcher,
 };
