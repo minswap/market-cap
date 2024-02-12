@@ -1,5 +1,5 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { getAmountInAddresses, getMaestroClient } from "../utils";
 
 const SPF = "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75535046";
 
@@ -14,25 +14,20 @@ const SPF_REWARDS_ADDRESSES = [
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+  const maestro = getMaestroClient(options);
   const total = 1e9; // 1 billion
 
   const treasury =
-    Number(
-      await getAmountInAddresses(blockFrost, SPF, SPF_TREASURY_ADDRESSES)
-    ) / 1e6;
+    Number(await getAmountInAddresses(maestro, SPF, SPF_TREASURY_ADDRESSES)) /
+    1e6;
 
   const spnVault =
     Number(
-      await getAmountInAddresses(
-        blockFrost,
-        SPF,
-        SPECTRUM_NETWORK_VAULT_ADDRESSES
-      )
+      await getAmountInAddresses(maestro, SPF, SPECTRUM_NETWORK_VAULT_ADDRESSES)
     ) / 1e6;
 
   const unclaimed =
-    Number(await getAmountInAddresses(blockFrost, SPF, SPF_REWARDS_ADDRESSES)) /
+    Number(await getAmountInAddresses(maestro, SPF, SPF_REWARDS_ADDRESSES)) /
     1e6;
 
   return {

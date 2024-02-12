@@ -1,5 +1,5 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { getAmountInAddresses, getMaestroClient } from "../utils";
 
 const LOBSTER =
   "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552";
@@ -16,13 +16,13 @@ const BURN_ADDRESSES = [
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+  const maestro = getMaestroClient(options);
   const total = 1e15; // 1T
   const treasury = Number(
-    await getAmountInAddresses(blockFrost, LOBSTER, TREASURY_ADDRESSES)
+    await getAmountInAddresses(maestro, LOBSTER, TREASURY_ADDRESSES)
   );
   const burnt = Number(
-    await getAmountInAddresses(blockFrost, LOBSTER, BURN_ADDRESSES)
+    await getAmountInAddresses(maestro, LOBSTER, BURN_ADDRESSES)
   );
   return {
     circulating: (total - burnt - treasury).toString(),

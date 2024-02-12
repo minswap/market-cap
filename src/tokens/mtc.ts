@@ -1,5 +1,5 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { getAmountInAddresses, getMaestroClient } from "../utils";
 
 const MTC = "f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463";
 const TEAM_ADDRESSES = [
@@ -11,10 +11,10 @@ const TEAM_ADDRESSES = [
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+  const maestro = getMaestroClient(options);
   const total = 1e6; // 1 million
   const treasury = Number(
-    await getAmountInAddresses(blockFrost, MTC, TEAM_ADDRESSES)
+    await getAmountInAddresses(maestro, MTC, TEAM_ADDRESSES)
   );
   return {
     circulating: (total - treasury).toString(),
