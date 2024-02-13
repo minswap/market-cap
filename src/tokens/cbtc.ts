@@ -7,7 +7,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const maestro = getMaestroClient(options);
   const total = await maestro.assets
     .assetInfo(CBTC)
-    .then((res) => res.data.data.total_supply);
+    .then((res) => res.data.total_supply);
   const totalWithDecimals = Number(total) / 1e8;
   return {
     circulating: totalWithDecimals.toString(),

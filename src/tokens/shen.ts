@@ -10,7 +10,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const maestro = getMaestroClient(options);
   const total = 1e12;
   const res = await maestro.assets.assetAddresses(DJEDNFT);
-  const addresses = res.data.data;
+  const addresses = res.data;
   const treasuryRaw = await getAmountInAddresses(maestro, SHEN, [
     addresses[0]["address"],
   ]);

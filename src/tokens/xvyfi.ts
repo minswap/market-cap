@@ -8,7 +8,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const maestro = getMaestroClient(options);
   const assetInfo = await maestro.assets
     .assetInfo(xVYFI)
-    .then((res) => res.data.data);
+    .then((res) => res.data);
   const circulating = Number(assetInfo?.total_supply) / 1e6;
   return {
     circulating: circulating.toString(),

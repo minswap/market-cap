@@ -7,9 +7,7 @@ const FET =
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 200e6;
   const maestro = getMaestroClient(options);
-  const assetInfo = await maestro.assets
-    .assetInfo(FET)
-    .then((res) => res.data.data);
+  const assetInfo = await maestro.assets.assetInfo(FET).then((res) => res.data);
   const onchainSupply = Number(assetInfo?.total_supply) / 1e10;
   const treasuryRaw = await getAmountInAddresses(maestro, FET, [
     "stake1uyyxjvthz4udwdrzr9pkkudpylasg99ufdzu7gpdfckxf2s5peell", // fe.dex.funds

@@ -12,7 +12,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const circulating = Number(
     await maestro.assets
       .policyInfo(PRSPR_POLICY_ID)
-      .then((res) => res.data.data[0].total_supply)
+      .then((res) => res.data[0].total_supply)
   );
   const total = 375000000;
   const treasury = Number(
