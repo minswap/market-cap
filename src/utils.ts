@@ -37,16 +37,7 @@ export async function getAmountInAddresses(
   const getAssetsByAccount = async (
     account: string
   ): Promise<{ unit: string; quantity: string }[]> => {
-    console.log("getting account assets", account);
-
     const res = await maestro.accounts.accountAssets(account);
-    console.log("completed", account, res.data);
-
-    // if (!res.data) {
-    //   console.log("what's happening?", res);
-    //   return [];
-    // }
-
     return res.data.map((asset: Asset) => ({
       unit: asset.unit,
       quantity: asset.amount,
@@ -75,12 +66,7 @@ export async function getAmountInAddresses(
       }
       return assets;
     };
-
-    console.log("addr", addr);
-
     const res = await maestro.addresses.utxosByAddress(addr);
-    console.log("comleted addr", addr, res.data);
-
     const assets = mergeAssets(res.data.map((utxo) => utxo.assets));
     return assets;
   };
