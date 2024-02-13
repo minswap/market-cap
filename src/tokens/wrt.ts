@@ -17,7 +17,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
       },
       { headers }
     )
-    .then((res) => res.data.wrtDistribution.total.releasedWrt);
+    .then((res) => res.data.data.wrtDistribution.total.releasedWrt);
 
   return {
     circulating: (circulating / 1e6).toString(),
