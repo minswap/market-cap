@@ -1,13 +1,12 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const GENS =
   "dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb0014df1047454e53";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 100_000_000;
-  const treasuryRaw = await getAmountInAddresses(maestro, GENS, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(GENS, [
     "addr1xyjan66zyj6tef93u795axqcqwg353fnx63tzaayursj9ke9m845yf95hjjtreutf6vpsqu3rfznxd4zk9m6fc8pytdsmahfkf",
     "addr1xyr8h2yyn8lgz9epvu8f40e44vtxy7r0nahpj3u75vhe7fqx0w5gfx07sytjzecwn2lnt2ckvfuxl8mwr9reage0nujqyzdx0y",
     "addr1xxwu7tkfvsvmjpecy5s87a9jgpeptrmgq0dkccq4l5zhvm5aeuhvjeqehyrnsffq0a6tysrjzk8ksq7md3sptlg9wehq74j6vl",

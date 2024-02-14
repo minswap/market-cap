@@ -1,15 +1,15 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const FET =
   "815418a1b078a259e678ecccc9d7eac7648d10b88f6f75ce2db8a25a4672616374696f6e2045737461746520546f6b656e";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 200e6;
-  const maestro = getMaestroClient(options);
-  const assetInfo = await maestro.assets.assetInfo(FET).then((res) => res.data);
-  const onchainSupply = Number(assetInfo?.total_supply) / 1e10;
-  const treasuryRaw = await getAmountInAddresses(maestro, FET, [
+
+  const assetTotalSupply = await fetcher.getSupplyFromAssetMetadata(FET);
+  const onchainSupply = Number(assetTotalSupply) / 1e10;
+  const treasuryRaw = await fetcher.getAmountInAddresses(FET, [
     "stake1uyyxjvthz4udwdrzr9pkkudpylasg99ufdzu7gpdfckxf2s5peell", // fe.dex.funds
     "stake1ux94pdq42nwx0g24ea3myjcnd8tvl354ku4ygedtgm7sfgc2hugz9", // fe.reserve.fund
     "stake1uxerycuwj09h2n6wydjp4vk936la23p9dvn37ezlkmdl5ycq38hr4", // fe.dev.funds

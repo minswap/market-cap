@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const YUMMI =
   "078eafce5cd7edafdf63900edef2c1ea759e77f30ca81d6bbdeec92479756d6d69";
@@ -16,16 +16,13 @@ const SUNDAE_ADDRESS =
 const DRIPDROP_ADDRESS =
   "addr1w9zsdakg8mwjeclyzlycn62t4nuvwx6a5ggytcghdn7cvugz5kz5u";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
-  const circulating = Number(
-    await maestro.assets
-      .policyInfo(YUMMI_POLICY_ID)
-      .then((res) => res.data[0].total_supply)
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
+  const circulating = await fetcher.getSupplyFromPolicyMetadata(
+    YUMMI_POLICY_ID
   );
   const total = 1e10;
   const staking = Number(
-    await getAmountInAddresses(maestro, YUMMI, [
+    await fetcher.getAmountInAddresses(YUMMI, [
       STAKING_ADDRESS,
       MIN_ADDRESS,
       MIN_MASTERCHEF_ADDRESS,

@@ -1,14 +1,13 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const WORK =
   "bbd0ec94cf9ccc1407b3dbc66bfbbff82ea49718ae4e3dceb817125f24574f524b";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 300_000_000n;
 
-  const treasury = await getAmountInAddresses(maestro, WORK, [
+  const treasury = await fetcher.getAmountInAddresses(WORK, [
     "stake1u943hr3hqpmk6yc4a2vyk5vkjrngj8kdfaz28r52flmn5hgcaczcj", // $work.platform
     "stake1u872kmf52n3jdf76rcklllpp6l5w5nmjtzeclvhzysq583qurlgzl", // $work.liquidity
     "stake1uxrwm3hzkjhulhv6nhgvmhw4lq6ckq9z5xdd8prt27dyg4cx3p6w7", // $work.team

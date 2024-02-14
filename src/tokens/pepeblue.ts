@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const PEPEBLUE =
   "21abdf54f427b378fe9ba07419eff6e8e8fe0c5932e1fee2d3853b9350455045424c5545";
@@ -10,11 +10,10 @@ const TREASURY_VAULT = [
   "addr1qyxlw0wx4w7cdlwy4dtdygremqpfz7skyn60af8wl32a0jvq3mcxelvy8un2qlasklx5c326eqlzrwh25aaw2gumzw9qm5qc3q", // Ant Workers Vault
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 39e13; // 420T -> 390T
   const treasury = Number(
-    await getAmountInAddresses(maestro, PEPEBLUE, TREASURY_VAULT)
+    await fetcher.getAmountInAddresses(PEPEBLUE, TREASURY_VAULT)
   );
   return {
     circulating: (total - treasury).toString(),

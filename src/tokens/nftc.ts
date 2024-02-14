@@ -1,12 +1,11 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const NFTC = "b0af30edf2c7f11465853821137e0a6ebc395cab71ee39c24127ffb44e465443";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 10_000_000_000;
-  const treasuryRaw = await getAmountInAddresses(maestro, NFTC, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(NFTC, [
     "stake1uxvujg8rmtyr94wt6u0mn2yzvqwd5m0vg3t6rfe9zacp5lsurk408", // 12.4M   NFTC Drip
     "stake1uykz753y0jx3fjhcnplltwncw07h5repj2lhw8wzq6ctelglhevnc", // 11M     Faucet
     "stake1u83wpvg0gq76qsww7v0ct7qvu09yf9w8pkht9fwvlna6qjgm32732", // 2.69 B  Reserve

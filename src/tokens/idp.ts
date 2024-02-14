@@ -1,12 +1,11 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const IDP = "b9168f05e657b6946fede254e383586cf7e7a2573d5a0fa12b3ef6ac494450";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1_000_000_000;
-  const treasuryRaw = await getAmountInAddresses(maestro, IDP, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(IDP, [
     "stake1u9rdfy4p3tvje0tjvxyvhs9jdg3t7l094agmjs8ksewrtps38ylvv", // (490k) IDP Rewards Faucet
     "stake1uxjg2ux55k9nygt8s50q2wgu7vz95v4k9f3rfu8prmxkcsql3qetk", // (130m) 24-monthvesting
     "stake1u8s4y6zgraj5gf4uzww2pqydv8r5tkfmel3kux6trn46hsqxtfkvf", // (116.22m) development

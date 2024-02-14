@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const UTIL = "0d90046ad35546156aaf790525133f7fc713ca2790e397784b85f5c85554494c";
 const TREASURY_ADDRESSES = [
@@ -9,11 +9,10 @@ const TREASURY_ADDRESSES = [
   "addr1q9g327d6c54tx6eek8xtclzavuneasslaq7pl9h7yu0nyshv7gwx2r64hkeyhtkdp9yky7feddfduq02ssgukxh5d6zsd0jf9a", // DAO
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 100e9; // 100 billion
   const treasury = Number(
-    await getAmountInAddresses(maestro, UTIL, TREASURY_ADDRESSES)
+    await fetcher.getAmountInAddresses(UTIL, TREASURY_ADDRESSES)
   );
   return {
     circulating: (total - treasury).toString(),

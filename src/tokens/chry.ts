@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const CHRY = "75fcc276057db5fc48eae0e11453c773c8a54604c3086bf9d95ac1b743485259";
 const TREASURY_ADDRESSES = [
@@ -7,11 +7,10 @@ const TREASURY_ADDRESSES = [
   "stake1u8ffzkegp8h48mare3g3ntf3xmjce3jqptsdtj38ee3yh3c9t4uum", // team tokens held at SEALS' Vending Machine
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 88e6; // 88 million
   const treasury = Number(
-    await getAmountInAddresses(maestro, CHRY, TREASURY_ADDRESSES)
+    await fetcher.getAmountInAddresses(CHRY, TREASURY_ADDRESSES)
   );
 
   return {

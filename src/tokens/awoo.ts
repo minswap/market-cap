@@ -1,17 +1,16 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const AWOO = "09f5f55fcad17503e6b7acc81de7c80f84b76e76d17085f0e32f1ce241574f4f";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 69_000_000;
-  const treasuryRaw = await getAmountInAddresses(maestro, AWOO, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(AWOO, [
     "stake1uy2s0etue4vgt6gz66t84zzgf8r6fgggc0prf4hsay3rvfcam00kg", // $unbothered
     "stake1uxh23dnmd2lzvxqr06vvuxtsgh4l4dxnrrcvj2fx6f53rkc70lmqh", // $uwstaking
   ]);
 
-  const burnRaw = await getAmountInAddresses(maestro, AWOO, [
+  const burnRaw = await fetcher.getAmountInAddresses(AWOO, [
     "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", //$burnawoo
   ]);
 

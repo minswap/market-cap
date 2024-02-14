@@ -1,13 +1,12 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const NINJAZ =
   "df1d850c46d6c9d12cbf6181c35db9225a91b77c8a646b7f636f8ae40014df104e494e4a415a";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 5_000_000_000;
-  const treasury = await getAmountInAddresses(maestro, NINJAZ, [
+  const treasury = await fetcher.getAmountInAddresses(NINJAZ, [
     "addr1x83nemulpeta9sdvmys3stka3qr3vdgt2cea9nd7k43pknwyzjxyjwc0htews4pm02nnyaa0sep8lmc9lsz8e4dfleeqe4r25a",
     "addr1x8cesdmszn65gp0wulhle6fvtkgcumu7kuyjwgd3unvcm5hljfu8vk7x6lh6vd8wjf2wymdq339fq8h85ujgky928jxs0g2eq4",
     "addr1x8qxwpaamqac5pjvrqsesm6s0kgvh4fjg2gxqgfgm3z0482690h9e0eu6px7y70f4en0mlveshvzwuvmxjpl8v7knklqtz5eda",

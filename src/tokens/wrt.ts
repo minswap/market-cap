@@ -1,14 +1,13 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAxiosInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const headers = {
   "Accept-Encoding": "gzip, deflate, br",
 };
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const axios = getAxiosInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1e8;
-  const circulating = await axios
+  const circulating = await fetcher.axios
     .post(
       "https://api.mainnet.wingriders.com/graphql",
       {

@@ -1,14 +1,13 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const GOKEY =
   "c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 4_500_000_000n;
 
-  const treasury = await getAmountInAddresses(maestro, GOKEY, [
+  const treasury = await fetcher.getAmountInAddresses(GOKEY, [
     "addr1wyehg40jpn90q6dsy9njxk8aek4xzqhg2shjyagnu6jzmsgvh30fu", // DripDropz
     "stake1u8ffzkegp8h48mare3g3ntf3xmjce3jqptsdtj38ee3yh3c9t4uum", // TosiDrop
     "addr1w8yk5vaq6rq3jgn84xurqjgy030j937dfpuu6m5tmkmpukst7amql", // Vyfi Farm

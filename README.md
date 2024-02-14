@@ -35,11 +35,11 @@ console.log(minInfo);
 2. Import the function into `src/index.ts` and add the corresponding entry in `supplyFetchers` map with the key being the concatenation of your token's policyID and assetName
 3. Test your function:
 
-```bash
-# only if you use Blockfrost
-export BLOCKFROST_PROJECT_ID=<your_blockfrost_key>
-ONLY_TEST=<your_policy_id_concat_with_asset_name> npm test
-```
+   ```bash
+   # only if you use Blockfrost
+   export MAESTRO_API_KEY=<your_maestro_key>
+   ONLY_TEST=<your_policy_id_concat_with_asset_name> npm test
+   ```
 
 4. Run format: `npm run format`
 
@@ -48,18 +48,18 @@ ONLY_TEST=<your_policy_id_concat_with_asset_name> npm test
 1. MIN token fetcher: [src/tokens/min.ts](src/tokens/min.ts)
 2. Add entry to `index.ts`:
 
-```ts
-import minFetcher from "./tokens/min";
+   ```ts
+   import minFetcher from "./tokens/min";
 
-export const supplyFetchers: Record<string, SupplyFetcher> = {
-  "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
-  ...
-};
-```
+   export const supplyFetchers: Record<string, SupplyFetcher> = {
+     "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
+     ...
+   };
+   ```
 
 3. Run test:
 
 ```bash
-export BLOCKFROST_PROJECT_ID=<your_blockfrost_key>
+export MAESTRO_API_KEY=<your_maestro_key>
 ONLY_TEST=29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e npm test
 ```

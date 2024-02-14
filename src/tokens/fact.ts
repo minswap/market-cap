@@ -1,13 +1,12 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const FACT =
   "a3931691f5c4e65d01c429e473d0dd24c51afdb6daf88e632a6c1e516f7263666178746f6b656e";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1_000_000_000;
-  const treasuryRaw = await getAmountInAddresses(maestro, FACT, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(FACT, [
     "stake1uy4kjauul2gt5qqlqnn0dmtzj28hxyfzyxjfdz86r0cr87s0ukjhn", // Orcfax Validators
     "stake1uxgrkg2rts6mq5h49y87mfldpt8tec0dj5lwgqg3twsslgse2ce4t", // Orcfax Launchpad
     "stake1u8423m8m6fr5zmyrkf3h88cm8p95v4uu0w644ls777r0sash9a2hn", // Orcfax Team

@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const SPF = "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75535046";
 
@@ -13,21 +13,20 @@ const SPF_REWARDS_ADDRESSES = [
   "addr1vx3vcluw7qtulynhzsy4prfdmnjth8w52ejg2qeclsz7argu26gcf",
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1e9; // 1 billion
 
   const treasury =
-    Number(await getAmountInAddresses(maestro, SPF, SPF_TREASURY_ADDRESSES)) /
+    Number(await fetcher.getAmountInAddresses(SPF, SPF_TREASURY_ADDRESSES)) /
     1e6;
 
   const spnVault =
     Number(
-      await getAmountInAddresses(maestro, SPF, SPECTRUM_NETWORK_VAULT_ADDRESSES)
+      await fetcher.getAmountInAddresses(SPF, SPECTRUM_NETWORK_VAULT_ADDRESSES)
     ) / 1e6;
 
   const unclaimed =
-    Number(await getAmountInAddresses(maestro, SPF, SPF_REWARDS_ADDRESSES)) /
+    Number(await fetcher.getAmountInAddresses(SPF, SPF_REWARDS_ADDRESSES)) /
     1e6;
 
   return {

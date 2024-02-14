@@ -1,11 +1,10 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const KITUP =
   "b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1e9;
   const treasuryRaw = [
     "addr1q9dt2a9jjxexqtha6p06wyl4muu5fzesd6538skwuelfk93hmqmrvuf2n6rkfmfzjlfwh3ht0tjz0wnat2qxdnnd9s6qu94lzl",
@@ -19,9 +18,9 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   ];
 
   const treasury = Number(
-    await getAmountInAddresses(maestro, KITUP, treasuryRaw)
+    await fetcher.getAmountInAddresses(KITUP, treasuryRaw)
   );
-  const burn = Number(await getAmountInAddresses(maestro, KITUP, burnRaw));
+  const burn = Number(await fetcher.getAmountInAddresses(KITUP, burnRaw));
 
   return {
     circulating: (total - treasury - burn).toString(),

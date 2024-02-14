@@ -1,12 +1,11 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const NEWM = "682fe60c9918842b3323c43b5144bc3d52a23bd2fb81345560d73f634e45574d";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 9_735_033_900;
-  const treasuryRaw = await getAmountInAddresses(maestro, NEWM, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(NEWM, [
     "stake1u8kt3m25a5nycushdc7rl7jm8wmll23nadxc8rpzwx7vq8s3j8jf8", // NEWM foundation
     "stake1ux0vqjvjccqvk8a43jwa5nd2aqzt4ekdjarvnqmt9629pzcty2qcs", // BeatHaven
     "stake1u8n0tlf4f2kktz7k3kr0g7sdn98stmsmm42kw7xcue2smycv766hh", // NEWM LLC

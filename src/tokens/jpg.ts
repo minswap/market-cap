@@ -1,12 +1,11 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getMaestroClient } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const JPG = "681b5d0383ac3b457e1bcc453223c90ccef26b234328f45fa10fd2764a5047";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const maestro = getMaestroClient(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1_000_000_000;
-  const vestingRaw = await getAmountInAddresses(maestro, JPG, [
+  const vestingRaw = await fetcher.getAmountInAddresses(JPG, [
     "addr1wxhrjawva72parlra9zn8gmv5aeceh3yz666ck7yclfl3ls3vxuqw", // vesting contract
     "addr1x8lqad4wvcwcjx3zz9quy2267w6dpz62lfhqy3thv7h8ddqwhmfu73wqwa9s4rpsn89kec0afee7qz7zng4xnn4a33pqg0aejs", // vested annual rewards multisig
   ]);

@@ -1,12 +1,13 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAxiosInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 700_000_000;
   const projector_rewards = 56_000_000;
 
-  const axios = getAxiosInstance(options);
-  const info = await axios("https://city.theapesociety.io/api/getsocietyinfo");
+  const info = await fetcher.axios(
+    "https://city.theapesociety.io/api/getsocietyinfo"
+  );
 
   const emissions = info.data.emissions;
   const burned = info.data.burned / 1e6;
