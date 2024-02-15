@@ -1,11 +1,10 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const NEBULA =
   "3744d5e39333c384505214958c4ed66591a052778512e56caf420f624e4542554c41";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1e9;
   const treasuryRaw = [
     "addr1qyruqqptlds9ruwxq45y28669y7q4qu233hmzt2ck260f2s296su9q00c29c8ud846jhyayzeprsa4fygumw0ycrmgssxu8q3z",
@@ -17,9 +16,9 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   ];
 
   const treasury =
-    Number(await getAmountInAddresses(blockFrost, NEBULA, treasuryRaw)) / 1e8;
+    Number(await fetcher.getAmountInAddresses(NEBULA, treasuryRaw)) / 1e8;
   const burn =
-    Number(await getAmountInAddresses(blockFrost, NEBULA, burnRaw)) / 1e8;
+    Number(await fetcher.getAmountInAddresses(NEBULA, burnRaw)) / 1e8;
 
   return {
     circulating: (total - treasury - burn).toString(),

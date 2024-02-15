@@ -17,7 +17,7 @@ describe("supply fetchers", () => {
 
   for (const [token, fetcher] of fetchers) {
     test(`test fetcher for token ${token}`, async () => {
-      const resp = await fetcher({ timeout: 20_000 });
+      const resp = await fetcher();
       if (resp.circulating !== undefined) {
         expect(typeof resp.circulating).toBe("string");
       }

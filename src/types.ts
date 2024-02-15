@@ -1,3 +1,5 @@
+import { BlockchainIndexer } from "./utils";
+
 export type FetcherOptions = {
   /**
    * Fetch timeout in milliseconds. Default to 20s
@@ -15,5 +17,5 @@ export type SupplyFetcherResponse = {
 };
 
 export type SupplyFetcher = (
-  options?: FetcherOptions
+  fetcher?: BlockchainIndexer
 ) => Promise<SupplyFetcherResponse>;

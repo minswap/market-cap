@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const RAKER =
   "ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b60252414b4552";
@@ -10,11 +10,10 @@ const TREASURY_ADDRESSES = [
   "addr1z8snz7c4974vzdpxu65ruphl3zjdvtxw8strf2c2tmqnxz2j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq0xmsha", // liquidity wallet
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 10_614_254; // 10,614,254 million
   const treasury = Number(
-    await getAmountInAddresses(blockFrost, RAKER, TREASURY_ADDRESSES)
+    await fetcher.getAmountInAddresses(RAKER, TREASURY_ADDRESSES)
   );
   return {
     circulating: (total - treasury).toString(),

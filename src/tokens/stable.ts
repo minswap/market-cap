@@ -1,13 +1,12 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const STABLE =
   "2adf188218a66847024664f4f63939577627a56c090f679fe366c5ee535441424c45";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 206_420_691_337n;
-  const treasury = await getAmountInAddresses(blockFrost, STABLE, [
+  const treasury = await fetcher.getAmountInAddresses(STABLE, [
     "stake1uyjlfag0xqnmyk6tfa5a0weanrl4yzxxf0kjhk4k0e2s4ygczhp79", // $stablepayments
     "stake1uxufvv9llknwmracxxsnxqe8dnc5ut0z2jgparqz5rh9y5cda5g3k", // $stablelistings
     "stake1uyuxkjldqjztcfuj8h288rc9ryfxzek7375vwplhzrns7zqwy9emg", // $stablerewards

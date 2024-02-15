@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const CGI = "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749";
 const TREASURY_ADDRESSES = [
@@ -11,12 +11,10 @@ const TREASURY_ADDRESSES = [
   "addr1qxfrkchfzp49gurm2wgkww4jfm83u5jwk9uc2hs5lpx7y4t89dn2kukqy676lyr87myqllk7vm9s6e37ggwns420fmzqfzmt3m", // farming
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 5e6; // 5 million
   const treasury =
-    Number(await getAmountInAddresses(blockFrost, CGI, TREASURY_ADDRESSES)) /
-    1e6;
+    Number(await fetcher.getAmountInAddresses(CGI, TREASURY_ADDRESSES)) / 1e6;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),

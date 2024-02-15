@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const MIN = "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e";
 const TREASURY_ADDRESSES = [
@@ -12,12 +12,10 @@ const TREASURY_ADDRESSES = [
   "addr1zx0wxal6dz7rjzxk2mwfvj9564rp9uajqrscftx44tp6ha6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq83j9cv", // yield farming treasury
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 3e9; // 3 billion
   const treasury =
-    Number(await getAmountInAddresses(blockFrost, MIN, TREASURY_ADDRESSES)) /
-    1e6;
+    Number(await fetcher.getAmountInAddresses(MIN, TREASURY_ADDRESSES)) / 1e6;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),

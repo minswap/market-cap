@@ -1,10 +1,10 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAxiosInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 35_000_000;
-  const axios = getAxiosInstance(options);
-  const response = await axios.get(
+
+  const response = await fetcher.axios.get(
     "https://analytics.indigoprotocol.io/api/stats/indy-circulating-supply"
   );
   const treasury = Number(response.data.circulatingSupply) / 1e6;

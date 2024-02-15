@@ -1,5 +1,5 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const LOBSTER =
   "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552";
@@ -15,14 +15,13 @@ const BURN_ADDRESSES = [
   "addr1qx5lyl2rww7h84xhup9ge22h42vnwurcfucrk3w3x7nyh9lfaquqs0f48akca9kvukqsp3cax4whwmj792dlelq7lymsk2mn3f", // $lobster.burn
 ];
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 1e15; // 1T
   const treasury = Number(
-    await getAmountInAddresses(blockFrost, LOBSTER, TREASURY_ADDRESSES)
+    await fetcher.getAmountInAddresses(LOBSTER, TREASURY_ADDRESSES)
   );
   const burnt = Number(
-    await getAmountInAddresses(blockFrost, LOBSTER, BURN_ADDRESSES)
+    await fetcher.getAmountInAddresses(LOBSTER, BURN_ADDRESSES)
   );
   return {
     circulating: (total - burnt - treasury).toString(),

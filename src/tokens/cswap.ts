@@ -1,13 +1,12 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const CSWAP =
   "bf524874448cbf52be3a26133b0a0edf5eb65c09ffed383b881ad3274353574150";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 2_500_000_000;
-  const treasuryRaw = await getAmountInAddresses(blockFrost, CSWAP, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(CSWAP, [
     "addr1xxdulr2pxqx07pwjasfw2y6dl20wmyq4yhfggdf99x4jvnnk6wr84sntzxn3s943vlnqqrey6cmuzrz2m3tz3yj3n4vssyvg45",
     "addr1x8283erf082rna7etqkjfeelsm6vpu928y0kqklemu5ntvqtqyzh4ykrev5jvj5l33pw852v3jk6khm9a54sdzjkavqsmc6ntp",
     "addr1v93mxm3f82l5fle2r94lnwnaqm47macfvf6y4707yyl7l0c9c62ny",
@@ -26,7 +25,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1xy4slu8t7aqe6jkcl9vs8nhanwcupd6c6txkt4gupyps2rfjjna9mvvl26ka09s5yt30nkzvvgkad22vastvw9hpd9wsx5dvw9",
     "addr1xx62pdtpmkmyd0n63v9vvn8y7r2vnw36gxj2cjhccgr75anqefhd3zhkxv0c9jdwsd7vahl5eep53xgn9up4yafm8f8qw8yku8",
   ]);
-  const lockedRaw = await getAmountInAddresses(blockFrost, CSWAP, [
+  const lockedRaw = await fetcher.getAmountInAddresses(CSWAP, [
     "addr1z9k092kv0jga3tmell0l47kp3endnlt8x048tr25n0t3qn9f0924s2rfv0k2zvncgs7nxyd6ym55ar9x0hplm98arw6qt9q42l",
   ]);
   const treasury = Number(treasuryRaw) / 1_000_000;

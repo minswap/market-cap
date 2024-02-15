@@ -1,12 +1,11 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const FLAC = "8daefa391220bd0d8d007f3748d870f7f3c106040314c8515ccc35a5464c4143";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 2_000_000_000;
-  const treasuryRaw = await getAmountInAddresses(blockFrost, FLAC, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(FLAC, [
     "stake1u9ll9vjjqkgyau7nteehe4aufxfx4qq0wr4vzs36gc8vl9sghkjg4", // treasury
     "stake1u9sedsmwcmt6za0rhqywryyydl3f7s74ntfk5dhzaev2fkcgp7p36", // team
     "stake1uygtdaws5xvjksv8ccqza8sqfv93jdmeuq8jw3xe48l4p8s9r550q", // marketing

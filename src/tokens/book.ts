@@ -1,12 +1,11 @@
-import { defaultFetcherOptions, SupplyFetcher } from "../types";
-import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
+import { SupplyFetcher } from "../types";
+import { defaultFetcher } from "../utils";
 
 const BOOK = "51a5e236c4de3af2b8020442e2a26f454fda3b04cb621c1294a0ef34424f4f4b";
 
-const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const blockFrost = getBlockFrostInstance(options);
+const fetcher: SupplyFetcher = async (fetcher = defaultFetcher) => {
   const total = 10_000_000_000;
-  const treasuryRaw = await getAmountInAddresses(blockFrost, BOOK, [
+  const treasuryRaw = await fetcher.getAmountInAddresses(BOOK, [
     "addr1v8dyqna76l9uh3sg93hvp8h40c8h0ecsw0yfa5dtq5hgvzc5572e2", // swap send in
     "addr1w99gfdcmxwe2ahe9ncjekntn2fhcpusj55874g4m7f4c7kqy3rq23", // swap contract
     "addr1w9223trzcvg75wwlaeprls9zwcf8nu8l5y92t9kk2all2jqk6sg93", // lock contract
