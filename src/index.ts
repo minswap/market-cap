@@ -18,6 +18,7 @@ import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
+import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
 import derpFetcher from "./tokens/derp";
 import dgafFetcher from "./tokens/dgaf";
@@ -234,6 +235,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     cswapFetcher,
   "52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e65452544c":
     trtlFetcher,
+  "6e6098846537ca48ff18eac70b7f5040c69ba2c5570521b6eb00fdf56461646479":
+    daddyFetcher,
   "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75535046": spfFetcher,
   b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045:
     snepeFetcher,
