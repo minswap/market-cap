@@ -17,7 +17,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
 
   return {
     circulating: (total - burn).toString(),
-    total: (total - burn).toString(),
+    total: total.toString(),
   };
 };
 
