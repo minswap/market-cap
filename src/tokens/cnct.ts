@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const CNCT =
-  "c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354";
+const CNCT = "c27600f3aff3d94043464a33786429b78e6ab9df5e1d23b774acb34c434e4354";
 
 const cnctFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
