@@ -19,6 +19,7 @@ import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
+import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
 import derpFetcher from "./tokens/derp";
 import dgafFetcher from "./tokens/dgaf";
@@ -280,4 +281,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     milkv2Fetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
+  "6e6098846537ca48ff18eac70b7f5040c69ba2c5570521b6eb00fdf56461646479":
+    daddyFetcher,
 };
