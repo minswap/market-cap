@@ -21,7 +21,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   }
 
   return {
-    circulating: (TOTAL_SUPPLY - treasury).toString(),
+    circulating: (treasury || TOTAL_SUPPLY).toString(),
     total: TOTAL_SUPPLY.toString(),
   };
 };
