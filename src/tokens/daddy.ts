@@ -7,12 +7,14 @@ const DADDY =
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
 
-  const total = 100000000000;
-  const burn = Number(
-    await getAmountInAddresses(blockFrost, DADDY, [
-      "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // SNEK burn address
-    ])
-  );
+  const total = 100_000_000_000;
+
+  const burnRaw = await getAmountInAddresses(blockFrost, DADDY, [
+    "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // SNEK burn address
+  ]);
+
+  let burn = Number(burnRaw);
+  if (Number.isNaN(burn)) burn = 0;
 
   return {
     circulating: (total - burn).toString(),
