@@ -9,12 +9,19 @@ const TOTAL_SUPPLY = 100_000_000;
 const MNT_SUPPLY_ADDRESS = "https://www.mynth.ai/api/token-supply";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
-  const axios = getAxiosInstance(options);
-  const response = await axios.get(MNT_SUPPLY_ADDRESS);
-  const treasury = response.data.current_supply;
+  let treasury = 0;
+
+  try {
+    const axios = getAxiosInstance(options);
+    const response = await axios.get(MNT_SUPPLY_ADDRESS);
+
+    treasury = response.data.current_supply;
+  } catch (error) {
+    console.error(error);
+  }
 
   return {
-    circulating: treasury.toString(),
+    circulating: (TOTAL_SUPPLY - treasury).toString(),
     total: TOTAL_SUPPLY.toString(),
   };
 };
