@@ -73,6 +73,7 @@ import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
+import pirateFetcher from "./tokens/pirate";
 import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
 import pugchipFetcher from "./tokens/pugchip";
@@ -283,4 +284,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     milkv2Fetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
+  "bdf6ea73a43efded4503bd78e60f0bbce9111f29d235f4b890096f87":
+    pirateFetcher
 };
