@@ -13,7 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u8ffzkegp8h48mare3g3ntf3xmjce3jqptsdtj38ee3yh3c9t4uum", // TosiDrop
     "addr1w8yk5vaq6rq3jgn84xurqjgy030j937dfpuu6m5tmkmpukst7amql", // Vyfi Farm
     "addr1w8t7zc55cjc83lf7rhxam205vmf2arqttj37jpynuamjnxsk60vzs", // Vyfi Vault
-    "stake1u9f9v0z5zzlldgx58n8tklphu8mf7h4jvp2j2gddluemnssjfnkzz", // Minswap Farm
+    "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // Minswap Farm
     "addr1qyfpy8cqj4w9a7d44kg6hstqp5434f8m00hn4ymkgxgy2u4nskrrn9f56q03kvyt40u3r5vafmtjlh7zgvtlhgxzqjssq5hya9", // GoKey Community
     "addr1qxsg35syleg2ysd7evgfjr8n753q7a49mu3nufgvgek07cpj5mu7h7n5ev343wprlueglj4fsuwat0nr23j5yfk3xhxqncy8hg", // GoKey DAO Treasury
     "addr1qxmmh0g9cahu43zxdz27nav2e09y0mzfkevmxd9gv528lvhnclsdfjp3wdaw82zgly788jzdu54d7suqzan6x6spkdaste4q5t", // GoKey DEX Liquidity
