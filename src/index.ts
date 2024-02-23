@@ -94,6 +94,7 @@ import utilFetcher from "./tokens/util";
 import viperFetcher from "./tokens/viper";
 import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
+import wlkFetcher from "./tokens/wlk";
 import wmtFetcher from "./tokens/wmt";
 import wolfFetcher from "./tokens/wolf";
 import workFetcher from "./tokens/work";
@@ -283,4 +284,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     milkv2Fetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
+  "017af5d958fffdf65f3e5b8b3ff5abefd210a03464a9fc48ea0f4a390014df10574c4b":
+    wlkFetcher,
 };
