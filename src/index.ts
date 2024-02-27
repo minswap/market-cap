@@ -1,3 +1,4 @@
+import haterFetcher from "./tokens/hater";
 import aadaFetcher from "./tokens/aada";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
