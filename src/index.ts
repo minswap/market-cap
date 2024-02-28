@@ -298,7 +298,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     milkv2Fetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
-  "20fda53c96fc6ac5622ca94fd27a473c42c7ec56d0e96bceef926c91536861726b79": sharkyFetcher
+  "20fda53c96fc6ac5622ca94fd27a473c42c7ec56d0e96bceef926c91536861726b79": sharkyFetcher,
   ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473:
     shardsFetcher,
   "017af5d958fffdf65f3e5b8b3ff5abefd210a03464a9fc48ea0f4a390014df10574c4b":
