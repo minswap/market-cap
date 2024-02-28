@@ -99,6 +99,7 @@ import vnmFetcher from "./tokens/vnm";
 import vyfiFetcher from "./tokens/vyfi";
 import wlkFetcher from "./tokens/wlk";
 import wmtFetcher from "./tokens/wmt";
+import wojakblueFetcher from "./tokens/wojakblue";
 import wolfFetcher from "./tokens/wolf";
 import workFetcher from "./tokens/work";
 import wozFetcher from "./tokens/woz";
@@ -281,6 +282,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   a4da8764a57e66a0085b5bfcde96c89b798d92ee83a75f59237e375b46495245: fireFetcher,
   b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550:
     kitupFetcher,
+  a1b284d7218dd63772c67ca26ab73721a196b404929cddef595f9967574f4a414b424c5545:
+    wojakblueFetcher,
   "9b426921a21f54600711da0be1a12b026703a9bd8eb9848d08c9d921434154534b59":
     catskyFetcher,
   caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552:
