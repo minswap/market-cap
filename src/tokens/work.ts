@@ -23,3 +23,4 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
 };
 
 export default fetcher;
+
