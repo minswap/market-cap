@@ -4,6 +4,7 @@ import agixFetcher from "./tokens/agix";
 import angelsFetcher from "./tokens/angels";
 import ashibFetcher from "./tokens/ashib";
 import awooFetcher from "./tokens/awoo";
+import babysnekFetcher from "./tokens/babysnek";
 import axoFetcher from "./tokens/axo";
 import bankFetcher from "./tokens/bank";
 import bookFetcher from "./tokens/book";
@@ -296,6 +297,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     milkv2Fetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
+  "7507734918533b3b896241b4704f3d4ce805256b01da6fcede43043642616279534e454b":
+    babysnekFetcher,
   "017af5d958fffdf65f3e5b8b3ff5abefd210a03464a9fc48ea0f4a390014df10574c4b":
     wlkFetcher,
   "016be5325fd988fea98ad422fcfd53e5352cacfced5c106a932a35a442544e": btnFetcher,
