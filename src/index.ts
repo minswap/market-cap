@@ -10,6 +10,7 @@ import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import c4Fetcher from "./tokens/c4";
+import catskyFetcher from "./tokens/catsky";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
 import cgiFetcher from "./tokens/cgi";
@@ -280,6 +281,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   a4da8764a57e66a0085b5bfcde96c89b798d92ee83a75f59237e375b46495245: fireFetcher,
   b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550:
     kitupFetcher,
+  "9b426921a21f54600711da0be1a12b026703a9bd8eb9848d08c9d921434154534b59":
+    catskyFetcher,
   caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552:
     viperFetcher,
   "285b65ae63d4fad36321384ec61edfd5187b8194fff89b5abe9876da414e47454c53":
