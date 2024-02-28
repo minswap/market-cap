@@ -300,7 +300,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsergFetcher,
   "6e6098846537ca48ff18eac70b7f5040c69ba2c5570521b6eb00fdf56461646479":
     daddyFetcher,
-  "ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473":
+  ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473:
     shardsFetcher,
   "017af5d958fffdf65f3e5b8b3ff5abefd210a03464a9fc48ea0f4a390014df10574c4b":
     wlkFetcher,
