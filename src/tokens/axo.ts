@@ -13,6 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   //ISPO, presale, dev vesting scripts > 2000 AXO
   const lockedRawAddresses = [
     "addr1q825pv0wp4uqcjuv0puuwsrjwncmmmh9wdnqwakeg8gyvq24ma4a4vxazadkxwmt5l4j8am9jrf6r8udw69ppacf52pq2jnq2e",
+    "addr1qyffzz4s0hzumlh2pjy7mv0tdv0eqs5xm8jggel3kh04c7c22gfz9v4d79dkx7wxw7qtgt3ft779y0vngk79pfl8l3aq3rcv6z",
     "addr1w8mw7eec62zxt08vs8cjhaeasven302gefslymk8hzcavmgnuud4p",
     "addr1w9sztrrqc5pg7d0jw7ltjg78m6sqfuuwqqvm4ytfuedh93cmw7v4q",
     "addr1wxh85yeg0ctgtk44thsedn0c8x56zw70atfxfrfsn3m4p3cxm3237",
