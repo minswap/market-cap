@@ -16,11 +16,10 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u94vpc75fv6mq4vcupew454mf97wygg54shprlnwy8f5r5spul7ju", // $charlytoken
   ]);
 
-
   const treasury = Number(treasuryRaw);
   return {
     circulating: (total - treasury).toString(),
-    total: (total).toString(),
+    total: total.toString(),
   };
 };
 
