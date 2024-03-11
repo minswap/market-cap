@@ -11,7 +11,7 @@ const treasury = await getAmountInAddresses(blockFrost, NMKR, [
   "addr1q9j2atke2qg7ljjm795u2mf4wf4f2uk35f5t7984t62kqtxh7t5nw0qtt7g322gtayqrr7zmpvdrf24kc284uwmhqgas34y7tg",
 ]);
 return {
-  circulating: (BigInt(total) - BigInt(treasury)).toString(),
+  circulating: (total - treasury).toString(),
   total: total.toString(),
 };
 };
