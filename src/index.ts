@@ -7,6 +7,7 @@ import awooFetcher from "./tokens/awoo";
 import axoFetcher from "./tokens/axo";
 import bankFetcher from "./tokens/bank";
 import bookFetcher from "./tokens/book";
+import boonFetcher from "./tokens/boon";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
@@ -305,4 +306,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "017af5d958fffdf65f3e5b8b3ff5abefd210a03464a9fc48ea0f4a390014df10574c4b":
     wlkFetcher,
   "016be5325fd988fea98ad422fcfd53e5352cacfced5c106a932a35a442544e": btnFetcher,
+  "1cd92100fc05fce7416b3857a079780164eeaf8f5613f4b814f24e09426f6f6e436f696e":
+    boonFetcher,
 };
