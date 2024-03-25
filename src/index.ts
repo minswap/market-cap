@@ -108,6 +108,7 @@ import wolfFetcher from "./tokens/wolf";
 import workFetcher from "./tokens/work";
 import wozFetcher from "./tokens/woz";
 import wrtFetcher from "./tokens/wrt";
+import xrayFetcher from "./tokens/xray";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
 import { SupplyFetcher } from "./types";
@@ -308,4 +309,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "016be5325fd988fea98ad422fcfd53e5352cacfced5c106a932a35a442544e": btnFetcher,
   "1cd92100fc05fce7416b3857a079780164eeaf8f5613f4b814f24e09426f6f6e436f696e":
     boonFetcher,
+  "86abe45be4d8fb2e8f28e8047d17d0ba5592f2a6c8c452fc88c2c14358524159":
+    xrayFetcher,
 };
