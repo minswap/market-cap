@@ -1,4 +1,5 @@
 import aadaFetcher from "./tokens/aada";
+import adyFetcher from "./tokens/ady";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
 import angelsFetcher from "./tokens/angels";
@@ -308,4 +309,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "016be5325fd988fea98ad422fcfd53e5352cacfced5c106a932a35a442544e": btnFetcher,
   "1cd92100fc05fce7416b3857a079780164eeaf8f5613f4b814f24e09426f6f6e436f696e":
     boonFetcher,
+  "438514ae1beb020d35e5389993447cea29637d6272c918017988ef364164615969656c64":
+    adyFetcher,
 };
