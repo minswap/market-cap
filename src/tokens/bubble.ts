@@ -11,6 +11,8 @@ const TEAM_AND_DISTRIBUTORS = [
   "addr1qxpeczj2lluh88sa2g3tm0e3fj39c34rlctmvcszjs67g6wjj9djsz0020h68nz3rxknzdh93nryqzhq6h9z0nnzf0rshrectt", // tosidrop distribution
   "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // minswap farm distribution
   "addr1qx3wvec7uhweerzqaeezzepmrwft8sfpucgk50tsuluz8f8cfhlykwhxy66aazkjmfp4euf0yhpeezx3exncm7e69pvs7jetw6", // starcada distribution
+  "addr1qxt9njtjx52l37rrx8ceugaxedwer2737wnldyrk32y4wqkj3as3w0lcznwjlhzrqrvg720mzq8yz5x8va3gdyc0uxwslyyxf9", // adalot exchange vending
+  "addr1q8ctlczt8fqjntg3g2g3cpf697g72l2dl4m5ta978gtddp2gjv5xxe2nftrkfd0d3q3dwfc34j2fmrxlm5jw5ge3e6yq56j4ga", // adalot jackpot vending
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
