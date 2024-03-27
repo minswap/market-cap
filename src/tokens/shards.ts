@@ -6,7 +6,7 @@ const TOKEN =
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 5_000_000;
+  const total = 4_998_034; //https://cardanoscan.io/token/ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473
   const treasuryRaw = await getAmountInAddresses(blockFrost, TOKEN, [
     "addr1w95dsllnucgg53lj8qhdcgjnw40hlsctkeh8udt7uhud2tgjfyagq", // DripDropz Instant Rewards
     "stake17yavsn3jqqxm29tcgrjpj8e960tf00hkkvzaqxv6tt8ud7s4kw5vn", // GameFi Incentives Reserves
