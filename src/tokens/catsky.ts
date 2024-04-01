@@ -1,15 +1,16 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const NMKR = "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52";
+const CATSKY =
+  "9b426921a21f54600711da0be1a12b026703a9bd8eb9848d08c9d921434154534b59";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = Number(10_000_000_000);
-  const treasuryRaw = await getAmountInAddresses(blockFrost, NMKR, [
-    "addr1q9j2atke2qg7ljjm795u2mf4wf4f2uk35f5t7984t62kqtxh7t5nw0qtt7g322gtayqrr7zmpvdrf24kc284uwmhqgas34y7tg",
+  const total = 999_999_999_997;
+  const treasuryRaw = await getAmountInAddresses(blockFrost, CATSKY, [
+    "stake1uxln0cv8ne7zskyhsmuna5rx5xw9undrvx4nqxvrmcvuweskz2mje", // treasury $catbank.catsky
   ]);
-  const treasury = Number(treasuryRaw) / 1e6;
+  const treasury = Number(treasuryRaw);
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),

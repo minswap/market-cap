@@ -1,13 +1,15 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const NMKR = "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52";
+const ANGELS =
+  "285b65ae63d4fad36321384ec61edfd5187b8194fff89b5abe9876da414e47454c53";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = Number(10_000_000_000);
-  const treasuryRaw = await getAmountInAddresses(blockFrost, NMKR, [
-    "addr1q9j2atke2qg7ljjm795u2mf4wf4f2uk35f5t7984t62kqtxh7t5nw0qtt7g322gtayqrr7zmpvdrf24kc284uwmhqgas34y7tg",
+  const total = 496_000;
+  const treasuryRaw = await getAmountInAddresses(blockFrost, ANGELS, [
+    "stake1uykqzz8gny3g5ar9upqhuvgjy7uw0fcxyp66cj8sgm9uyjq7h2xtc",
+    "addr1qxpfunlur9rcr7zzvzqeha5mahfjc09zwc03u9uj6z6qdkeef44f0ar7f54mp0dkw0erpjddyq3ar4vhx6ye8acjg4eqr7jmz9",
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
