@@ -315,5 +315,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     boonFetcher,
   "86abe45be4d8fb2e8f28e8047d17d0ba5592f2a6c8c452fc88c2c14358524159":
     xrayFetcher,
-	"8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45": porkeFetcher,
+  "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
+    porkeFetcher,
 };
