@@ -3,7 +3,7 @@ import { SupplyFetcher } from "../types";
 const fetcher: SupplyFetcher = async () => {
   const total = 1_000_000_001; // 1B
   return {
-    circulating: (total - treasury).toString(),
+    circulating: total.toString(),
     total: total.toString(),
   };
 };
