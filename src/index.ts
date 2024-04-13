@@ -97,6 +97,7 @@ import spfFetcher from "./tokens/spf";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
+import tetFetcher from "./tokens/tet";
 import toolFetcher from "./tokens/tool";
 import trtlFetcher from "./tokens/trtl";
 import utilFetcher from "./tokens/util";
@@ -317,4 +318,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     xrayFetcher,
   "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
     porkeFetcher,
+  "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
 };
