@@ -19,6 +19,7 @@ import cgiFetcher from "./tokens/cgi";
 import charlyFetcher from "./tokens/charly";
 import chryFetcher from "./tokens/chry";
 import clapFetcher from "./tokens/clap";
+import clarityFetcher from "./tokens/clarity";
 import clayFetcher from "./tokens/clay";
 import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
@@ -317,4 +318,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     xrayFetcher,
   "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
     porkeFetcher,
+  "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
+    clarityFetcher,
 };
