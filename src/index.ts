@@ -94,6 +94,7 @@ import snepeFetcher from "./tokens/snepe";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
+import spxFetcher from "./tokens/spx";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
@@ -317,4 +318,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     xrayFetcher,
   "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
     porkeFetcher,
+  f7516c9f7b347eb412a777f3c711099b199ccd2be23b568a4a3abf6d535058: spxFetcher,
 };
