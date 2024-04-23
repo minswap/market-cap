@@ -11,7 +11,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1w9pgj46r4wh80ujlrdf5h6sxuuvfac2wurfnsn4xgqw584sfa966l",
     "addr1w9742z4fewans7ry6cjp95pc4ecv7y54cx298lp5qfw7s9gv8ukrj",
     "addr1wyv9f6gz32y5jm5hw2j53qnjn5t92nuwmxhj0mrqgmy6slqstuvzw",
-    "addr1wy67s0c6edxc2djms0le256cn48edc8gdfcgxkjjztyw0psad4yet"
+    "addr1wy67s0c6edxc2djms0le256cn48edc8gdfcgxkjjztyw0psad4yet",
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
   return {
