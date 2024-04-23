@@ -6,7 +6,9 @@ import angelsFetcher from "./tokens/angels";
 import ashibFetcher from "./tokens/ashib";
 import awooFetcher from "./tokens/awoo";
 import axoFetcher from "./tokens/axo";
+import babysnekFetcher from "./tokens/babysnek";
 import bankFetcher from "./tokens/bank";
+import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
 import btnFetcher from "./tokens/btn";
@@ -39,6 +41,7 @@ import fetFetcher from "./tokens/fet";
 import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import fldtFetcher from "./tokens/fldt";
+import frenFetcher from "./tokens/fren";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
@@ -80,14 +83,18 @@ import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
+import pirateFetcher from "./tokens/pirate";
+import porkeFetcher from "./tokens/porke";
 import proxiesFetcher from "./tokens/proxies";
 import prsprFetcher from "./tokens/prspr";
 import pugchipFetcher from "./tokens/pugchip";
+import punksFetcher from "./tokens/punks";
 import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rjvFetcher from "./tokens/rjv";
 import rsergFetcher from "./tokens/rserg";
 import shardsFetcher from "./tokens/shards";
+import sharkyFetcher from "./tokens/sharky";
 import shenFetcher from "./tokens/shen";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
@@ -151,6 +158,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e776f726c646d6f62696c65746f6b656e":
     wmtFetcher,
   c88bbd1848db5ea665b1fffbefba86e8dcd723b5085348e8a8d2260f44414e41: danaFetcher,
+  e633efbf19a37500c6f22965af3130baa34c3a644a146662dd2d74a250554e4b53:
+    punksFetcher,
   "884892bcdc360bcef87d6b3f806e7f9cd5ac30d999d49970e7a903ae5041564941":
     paviaFetcher,
   b6a7467ea1deb012808ef4e87b5ff371e85f7142d7b356a40d9b42a0436f726e75636f70696173205b76696120436861696e506f72742e696f5d:
@@ -266,6 +275,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250":
     derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
+  fc11a9ef431f81b837736be5f53e4da29b9469c983d07f321262ce614652454e: frenFetcher,
   "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945":
     proxiesFetcher,
   f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
@@ -300,8 +310,13 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     angelsFetcher,
   afbe91c0b44b3040e360057bf8354ead8c49c4979ae6ab7c4fbdc9eb4d494c4b7632:
     milkv2Fetcher,
+  d542ad1dc269ae601125e8259cb8427c6b37c1d3569d10441df0291f4149: betFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb147273455247":
     rsergFetcher,
+  "20fda53c96fc6ac5622ca94fd27a473c42c7ec56d0e96bceef926c91536861726b79":
+    sharkyFetcher,
+  "7507734918533b3b896241b4704f3d4ce805256b01da6fcede43043642616279534e454b":
+    babysnekFetcher,
   "6e6098846537ca48ff18eac70b7f5040c69ba2c5570521b6eb00fdf56461646479":
     daddyFetcher,
   ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473:
@@ -309,6 +324,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "017af5d958fffdf65f3e5b8b3ff5abefd210a03464a9fc48ea0f4a390014df10574c4b":
     wlkFetcher,
   "016be5325fd988fea98ad422fcfd53e5352cacfced5c106a932a35a442544e": btnFetcher,
+  bdf6ea73a43efded4503bd78e60f0bbce9111f29d235f4b890096f87: pirateFetcher,
   defe216460d594211631fcfbd354f361c04645d6a0cfeead3d6f62836c65767679776966686174:
     lwhFetcher,
   "1cd92100fc05fce7416b3857a079780164eeaf8f5613f4b814f24e09426f6f6e436f696e":
@@ -317,4 +333,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     xrayFetcher,
   "438514ae1beb020d35e5389993447cea29637d6272c918017988ef364164615969656c64":
     adyFetcher,
+  "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
+    porkeFetcher,
 };
