@@ -16,7 +16,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const burnRaw = await getAmountInAddresses(blockFrost, BANK, [
     "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // $bankercoinburn
   ]);
-  
+
   const treasury = Number(treasuryRaw);
   const burn = Number(burnRaw);
   return {
