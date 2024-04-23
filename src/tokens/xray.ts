@@ -1,15 +1,17 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const NMKR = "5dac8536653edc12f6f5e1045d8164b9f59998d3bdc300fc928434894e4d4b52";
+const XRAY = "86abe45be4d8fb2e8f28e8047d17d0ba5592f2a6c8c452fc88c2c14358524159";
+const TREASURY_ADDRESSES = [
+  "addr1qyc98ysmvxunqslu3y5t9gpt2mm8dp3puylpq7n5n908jldw8w6w5nmvw86ullauxldxdjsfauyrattxw6yevxp72nnsq3lt0u", // stage2 fund
+];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = Number(10_000_000_000);
-  const treasuryRaw = await getAmountInAddresses(blockFrost, NMKR, [
-    "addr1q9j2atke2qg7ljjm795u2mf4wf4f2uk35f5t7984t62kqtxh7t5nw0qtt7g322gtayqrr7zmpvdrf24kc284uwmhqgas34y7tg",
-  ]);
-  const treasury = Number(treasuryRaw) / 1e6;
+  const total = 324_922_240;
+  const treasury =
+    Number(await getAmountInAddresses(blockFrost, XRAY, TREASURY_ADDRESSES)) /
+    1e6;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),
