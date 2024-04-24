@@ -80,6 +80,7 @@ import nftcFetcher from "./tokens/nftc";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import ntxFetcher from "./tokens/ntx";
+import nvlFetcher from "./tokens/nvl";
 import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
@@ -337,6 +338,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     adyFetcher,
   "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
     porkeFetcher,
+  "5b26e685cc5c9ad630bde3e3cd48c694436671f3d25df53777ca60ef4e564c": nvlFetcher,
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
