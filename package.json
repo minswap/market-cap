@@ -34,7 +34,6 @@
   "homepage": "https://github.com/minswap/market-cap#readme",
   "dependencies": {
     "@blockfrost/blockfrost-js": "^5.2.0",
-    "@minswap/market-cap": "^0.1.12",
     "axios": "^1.3.3"
   },
   "lint-staged": {
