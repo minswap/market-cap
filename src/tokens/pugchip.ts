@@ -8,7 +8,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 50_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, PUGCHIP, [
-    "stake1ux9pxk2vq624c5fvssym04pz7c9gt8wxr09kpm52w9zsycg840u8j", // $01011981
+    "stake1u9jnhcgmj3x0mw36eyyfdudk5cstupmyh60hmzmw942ml5qqflvwt", // $01011981
   ]);
 
   const burnRaw = await getAmountInAddresses(blockFrost, PUGCHIP, [

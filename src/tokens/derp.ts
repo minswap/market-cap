@@ -1,11 +1,13 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const DERP = "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e3144455250";
+const DERP =
+  "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 100_000_000n;
+
   const treasury = await getAmountInAddresses(blockFrost, DERP, [
     "stake1uy6r37f83ahqq47rx4wxgl28anmekvz9wqqgr2u09pw48egyaeqhv",
     "stake1u894gzwp4kg0uwmtz8k23g8cpkkc54gs6kd2ts4sedxanmcas4kh8",
