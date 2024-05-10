@@ -10,10 +10,12 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1v8dyqna76l9uh3sg93hvp8h40c8h0ecsw0yfa5dtq5hgvzc5572e2", // swap send in
     "addr1w99gfdcmxwe2ahe9ncjekntn2fhcpusj55874g4m7f4c7kqy3rq23", // swap contract
     "addr1w9223trzcvg75wwlaeprls9zwcf8nu8l5y92t9kk2all2jqk6sg93", // lock contract
+    "addr1w9fyvw2lq6hahnsedxvur32cs3at2ytqsxsu697h9ytg0xghu565k", // lock contract
 
     "addr1v85pply2a5dgxg220ymw3qsg6h478vjeymppexpsvdpzqtcfarzsy", // read to earn
     "addr1vyed0f2pcau4ww4yjqx4r53jqf3fy9sfahc57g7ucqxrcecrp4tg0", // dex liquidity and yield farming rewards
     "addr1v8gnwyfxh2w7lmn6vau92gura99cs9rhxhvr4l8nprz8s5qhlk9ed", // stake pool
+    "addr1qxeuqscp0l85sd54nlfrcjdg752xs0vwn5f3vllvn3eexgwhy3954pmhklwxjz05vsx0qt4yw4a9275eldyrkp0c0hlqskr4re", // sundae rewards holding
     "addr1v89mtmf0gfqde8lfuzrssmucupkx7zj2uy9kht3eaa3cp7s773n2z", // gutenberg holders
     "addr1v8glyfdnwewtt586yvmpg27zjm6v7ld3yxau5jtugtzzhkq2n9pgc", // golden bookmark
     "addr1vx558m3dchudjts98lhw7sxpx996f535gkwexvn5tp0t3js38kk50", // development
