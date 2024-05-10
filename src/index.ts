@@ -72,6 +72,7 @@ import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
+import mrHankeyFetcher from "./tokens/mrhankey";
 import mtcFetcher from "./tokens/mtc";
 import myieldFetcher from "./tokens/myield";
 import nebulaFetcher from "./tokens/nebula";
@@ -269,6 +270,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     cswapFetcher,
   "52162581184a457fad70470161179c5766f00237d4b67e0f1df1b4e65452544c":
     trtlFetcher,
+  "7c4389a89ae25d18c77c2347ee8df20b4a6278d34e6c550296eb710e4d7248616e6b6579":
+    mrHankeyFetcher,
   "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75535046": spfFetcher,
   b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045:
     snepeFetcher,
