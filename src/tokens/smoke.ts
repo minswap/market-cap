@@ -16,9 +16,8 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const burnRaw = await getAmountInAddresses(blockFrost, SMOKE, [
     "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", //$burnsnek
   ]);
-
-  const treasury = Number(treasuryRaw);
   const burn = Number(burnRaw);
+
   return {
     circulating: (total - treasury - burn).toString(),
     total: (total - burn).toString(),
