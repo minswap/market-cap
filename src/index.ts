@@ -71,6 +71,7 @@ import milkFetcher from "./tokens/milk";
 import milkv2Fetcher from "./tokens/milkv2";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
+import miraFetcher from "./tokens/mira";
 import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
 import mrHankeyFetcher from "./tokens/mrhankey";
@@ -356,4 +357,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
+  "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
+    miraFetcher,
 };
