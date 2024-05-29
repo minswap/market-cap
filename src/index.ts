@@ -358,5 +358,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
   ececc92aeaaac1f5b665f567b01baec8bc2771804b4c21716a87a4e353504c415348:
-    splashFetcher,
+    splashFetcher, // rerun
 };
