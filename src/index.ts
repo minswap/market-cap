@@ -128,6 +128,7 @@ import wrtFetcher from "./tokens/wrt";
 import xrayFetcher from "./tokens/xray";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
+import gldsnekFetcher from "./tokens/gldsnek";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -351,6 +352,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     adyFetcher,
   "8c904e09d2ba206d78e6904133659dadf827e478a8f71beb8e4a823a504f524b45":
     porkeFetcher,
+  "cdbbe391853676285131fe2de250e274dbeb5f9d98344e86c7b383d9474c44534e454b":
+    gldsnekFetcher,
   f7516c9f7b347eb412a777f3c711099b199ccd2be23b568a4a3abf6d535058: spxFetcher,
   "5b26e685cc5c9ad630bde3e3cd48c694436671f3d25df53777ca60ef4e564c": nvlFetcher,
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
