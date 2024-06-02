@@ -358,5 +358,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
-  "cdbbe391853676285131fe2de250e274dbeb5f9d98344e86c7b383d9474c44534e454b": gldsnekFetcher,
+  "cdbbe391853676285131fe2de250e274dbeb5f9d98344e86c7b383d9474c44534e454b": 
+    gldsnekFetcher,
 };
