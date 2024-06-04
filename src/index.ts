@@ -6,6 +6,7 @@ import angelsFetcher from "./tokens/angels";
 import ashibFetcher from "./tokens/ashib";
 import awooFetcher from "./tokens/awoo";
 import axoFetcher from "./tokens/axo";
+import babyshitzuFetcher from "./tokens/babyshitzu";
 import babysnekFetcher from "./tokens/babysnek";
 import bankFetcher from "./tokens/bank";
 import betFetcher from "./tokens/bet";
@@ -363,6 +364,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
+  "83099a945e95a38d3dc3ab562af81671ed094becf493074251d3f45062616279536869747a75":
+    babyshitzuFetcher,
   b17b04ec0b8fa48613d7c80bc09a810e8bc8297cbbb6e9f4949fd8424e4f454c: noelFetcher,
   f9a491442678bb2f90a3be676d1f888ce87330003ab7151f9efb3b68424f58: boxFetcher,
   ececc92aeaaac1f5b665f567b01baec8bc2771804b4c21716a87a4e353504c415348:
