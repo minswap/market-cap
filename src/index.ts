@@ -12,6 +12,7 @@ import bankFetcher from "./tokens/bank";
 import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
+import boxFetcher from "./tokens/box";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
@@ -73,6 +74,7 @@ import milkFetcher from "./tokens/milk";
 import milkv2Fetcher from "./tokens/milkv2";
 import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
+import miraFetcher from "./tokens/mira";
 import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
 import mrHankeyFetcher from "./tokens/mrhankey";
@@ -84,6 +86,7 @@ import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
+import noelFetcher from "./tokens/noel";
 import ntxFetcher from "./tokens/ntx";
 import nvlFetcher from "./tokens/nvl";
 import optFetcher from "./tokens/opt";
@@ -109,6 +112,7 @@ import snepeFetcher from "./tokens/snepe";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
+import splashFetcher from "./tokens/splash";
 import spxFetcher from "./tokens/spx";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
@@ -362,4 +366,10 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
   "83099a945e95a38d3dc3ab562af81671ed094becf493074251d3f45062616279536869747a75":
     babyshitzuFetcher,
+  b17b04ec0b8fa48613d7c80bc09a810e8bc8297cbbb6e9f4949fd8424e4f454c: noelFetcher,
+  f9a491442678bb2f90a3be676d1f888ce87330003ab7151f9efb3b68424f58: boxFetcher,
+  ececc92aeaaac1f5b665f567b01baec8bc2771804b4c21716a87a4e353504c415348:
+    splashFetcher,
+  "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
+    miraFetcher,
 };
