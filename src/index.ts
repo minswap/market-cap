@@ -11,6 +11,7 @@ import bankFetcher from "./tokens/bank";
 import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
+import boxFetcher from "./tokens/box";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
@@ -361,6 +362,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
+  f9a491442678bb2f90a3be676d1f888ce87330003ab7151f9efb3b68424f58: boxFetcher,
   ececc92aeaaac1f5b665f567b01baec8bc2771804b4c21716a87a4e353504c415348:
     splashFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
