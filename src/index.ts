@@ -85,6 +85,7 @@ import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
+import noelFetcher from "./tokens/noel";
 import ntxFetcher from "./tokens/ntx";
 import nvlFetcher from "./tokens/nvl";
 import optFetcher from "./tokens/opt";
@@ -362,6 +363,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
+  b17b04ec0b8fa48613d7c80bc09a810e8bc8297cbbb6e9f4949fd8424e4f454c: noelFetcher,
   f9a491442678bb2f90a3be676d1f888ce87330003ab7151f9efb3b68424f58: boxFetcher,
   ececc92aeaaac1f5b665f567b01baec8bc2771804b4c21716a87a4e353504c415348:
     splashFetcher,
