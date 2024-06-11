@@ -299,7 +299,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
   fc11a9ef431f81b837736be5f53e4da29b9469c983d07f321262ce614652454e: frenFetcher,
-  61fe4feee9d051c75b20d11701c3154ae95d9857bd429ffb85087eae526578: rexFetcher,
+  "61fe4feee9d051c75b20d11701c3154ae95d9857bd429ffb85087eae526578": rexFetcher,
   "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945":
     proxiesFetcher,
   f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
