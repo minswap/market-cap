@@ -50,7 +50,9 @@ import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import gldsnekFetcher from "./tokens/gldsnek";
+import gmeFetcher from "./tokens/gme";
 import gokeyFetcher from "./tokens/gokey";
+import gokeyv2Fetcher from "./tokens/gokeyv2";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
@@ -102,6 +104,7 @@ import pugchipFetcher from "./tokens/pugchip";
 import punksFetcher from "./tokens/punks";
 import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
+import rexFetcher from "./tokens/rex";
 import rjvFetcher from "./tokens/rjv";
 import rsergFetcher from "./tokens/rserg";
 import shardsFetcher from "./tokens/shards";
@@ -299,6 +302,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     derpFetcher,
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
   fc11a9ef431f81b837736be5f53e4da29b9469c983d07f321262ce614652454e: frenFetcher,
+  "61fe4feee9d051c75b20d11701c3154ae95d9857bd429ffb85087eae526578": rexFetcher,
   "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945":
     proxiesFetcher,
   f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
@@ -365,6 +369,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
+  ab0dec21aa7d939ad124ffaf95faf8ed72b1018ff72fffd8f9974907474f4b4559:
+    gokeyv2Fetcher,
   "83099a945e95a38d3dc3ab562af81671ed094becf493074251d3f45062616279536869747a75":
     babyshitzuFetcher,
   b17b04ec0b8fa48613d7c80bc09a810e8bc8297cbbb6e9f4949fd8424e4f454c: noelFetcher,
@@ -374,4 +380,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
   "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
+  e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
+    gmeFetcher,
 };
