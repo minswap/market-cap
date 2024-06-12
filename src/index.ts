@@ -8,6 +8,7 @@ import awooFetcher from "./tokens/awoo";
 import axoFetcher from "./tokens/axo";
 import babyshitzuFetcher from "./tokens/babyshitzu";
 import babysnekFetcher from "./tokens/babysnek";
+import bagFetcher from "./tokens/bag";
 import bankFetcher from "./tokens/bank";
 import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
@@ -372,4 +373,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     splashFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
+  "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
 };
