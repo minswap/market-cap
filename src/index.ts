@@ -49,6 +49,7 @@ import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import gldsnekFetcher from "./tokens/gldsnek";
+import gmeFetcher from "./tokens/gme";
 import gokeyFetcher from "./tokens/gokey";
 import gokeyv2Fetcher from "./tokens/gokeyv2";
 import herbFetcher from "./tokens/herb";
@@ -377,4 +378,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     splashFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
+  e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
+    gmeFetcher,
 };
