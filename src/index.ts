@@ -50,6 +50,7 @@ import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
 import gldsnekFetcher from "./tokens/gldsnek";
 import gokeyFetcher from "./tokens/gokey";
+import gokeyv2Fetcher from "./tokens/gokeyv2";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
@@ -364,6 +365,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "1e76aaec4869308ef5b61e81ebf229f2e70f75a50223defa087f807b436c61726974792044414f20546f6b656e":
     clarityFetcher,
   "6947eccc74ebf8c1716339b97af768bfbc70d330a743b79bbc5ccdeb544554": tetFetcher,
+  ab0dec21aa7d939ad124ffaf95faf8ed72b1018ff72fffd8f9974907474f4b4559:
+    gokeyv2Fetcher,
   "83099a945e95a38d3dc3ab562af81671ed094becf493074251d3f45062616279536869747a75":
     babyshitzuFetcher,
   b17b04ec0b8fa48613d7c80bc09a810e8bc8297cbbb6e9f4949fd8424e4f454c: noelFetcher,
