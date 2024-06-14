@@ -113,6 +113,7 @@ import shenFetcher from "./tokens/shen";
 import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
+import snokFetcher from "./tokens/snok";
 import snowFetcher from "./tokens/snow";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
