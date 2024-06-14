@@ -106,7 +106,9 @@ import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rexFetcher from "./tokens/rex";
 import rjvFetcher from "./tokens/rjv";
+import rsbtcFetcher from "./tokens/rsbtc";
 import rsergFetcher from "./tokens/rserg";
+import rsrsnFetcher from "./tokens/rsrsn";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
 import shenFetcher from "./tokens/shen";
@@ -382,4 +384,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
   e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
     gmeFetcher,
+  "2dbc49f682ad21f6d18705cf446f9f7a277731ab70ae21a454f888b27273425443":
+    rsbtcFetcher,
+  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
+    rsrsnFetcher,
 };
