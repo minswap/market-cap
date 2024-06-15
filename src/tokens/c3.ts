@@ -1,4 +1,4 @@
-import { defaultFetcherOptions,SupplyFetcher } from "../types";
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const C3 =
