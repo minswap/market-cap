@@ -118,6 +118,7 @@ import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
 import splashFetcher from "./tokens/splash";
 import spxFetcher from "./tokens/spx";
+import ssssFetcher from "./tokens/ssss";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
@@ -138,7 +139,6 @@ import wrtFetcher from "./tokens/wrt";
 import xrayFetcher from "./tokens/xray";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
-import ssssFetcher from "./tokens/ssss";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
