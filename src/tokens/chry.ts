@@ -3,9 +3,8 @@ import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const CHRY = "75fcc276057db5fc48eae0e11453c773c8a54604c3086bf9d95ac1b743485259";
 const TREASURY_ADDRESSES = [
-  "stake1uxluurkaazlqyqfqn22acl6lprea52avn6da0q88yk46zfqrc93qj",
-  "stake1uxhksw267w4prvcvz4kw3xqy6jjwr04jv7n8vzjhzeu0fag2tgt9v",
-  "stake1u8ffzkegp8h48mare3g3ntf3xmjce3jqptsdtj38ee3yh3c9t4uum", // team tokens held at TosiDrop
+  "stake17ya8xvcc5h2mkeladwnw8vutr5qya3vau6z9dw7zgs6mmrgtqgz58",
+  "stake1u8ffzkegp8h48mare3g3ntf3xmjce3jqptsdtj38ee3yh3c9t4uum", // Comminuty incentives + team tokens held at TosiDrop
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
