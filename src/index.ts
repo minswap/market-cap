@@ -15,7 +15,6 @@ import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
 import boxFetcher from "./tokens/box";
-import bptFetcher from "./tokens/bpt";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
@@ -116,12 +115,10 @@ import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
 import snowFetcher from "./tokens/snow";
-import snukFetcher from "./tokens/snuk";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
 import splashFetcher from "./tokens/splash";
 import spxFetcher from "./tokens/spx";
-import ssssFetcher from "./tokens/ssss";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
@@ -377,12 +374,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     gokeyv2Fetcher,
   "83099a945e95a38d3dc3ab562af81671ed094becf493074251d3f45062616279536869747a75":
     babyshitzuFetcher,
-"246d6a8493dd02c1243ccae10b3275f318e4f3144140d05c4c28c422536e556b":
-    snukFetcher,
-  "4de3c5d6b555c99c7f56a1f917567288f025f337cdf233d99e462a1353737373":
-    ssssFetcher,
-  "d42729a8559b38c5d13009d653e4086404234bdb535a97b945c6ea78425054":
-    bptFetcher,
   "7d9aabc78703947e931e28273a96cf7412039fbd2e54a90ffb17239c42616279506f726b65":
     aceFetcher,
   b17b04ec0b8fa48613d7c80bc09a810e8bc8297cbbb6e9f4949fd8424e4f454c: noelFetcher,
