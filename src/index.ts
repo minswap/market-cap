@@ -115,6 +115,7 @@ import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
 import snowFetcher from "./tokens/snow";
+import snukFetcher from "./tokens/snuk";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
 import splashFetcher from "./tokens/splash";
@@ -385,6 +386,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     aceFetcher,
   "4de3c5d6b555c99c7f56a1f917567288f025f337cdf233d99e462a1353737373":
     ssssFetcher,
+  "246d6a8493dd02c1243ccae10b3275f318e4f3144140d05c4c28c422536e556b":
+    snukFetcher,
   "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
   e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
     gmeFetcher,
