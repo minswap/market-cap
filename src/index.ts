@@ -388,7 +388,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "4de3c5d6b555c99c7f56a1f917567288f025f337cdf233d99e462a1353737373":
     ssssFetcher,
   "7d9aabc78703947e931e28273a96cf7412039fbd2e54a90ffb17239c42616279506f726b65":
-   aceFetcher,
+    aceFetcher,
   "d42729a8559b38c5d13009d653e4086404234bdb535a97b945c6ea78425054":
-   bptFetcher,
+    bptFetcher,
+  
 };
