@@ -1,4 +1,5 @@
 import aadaFetcher from "./tokens/aada";
+import aceFetcher from "./tokens/ace";
 import adyFetcher from "./tokens/ady";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
@@ -14,6 +15,7 @@ import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
 import boxFetcher from "./tokens/box";
+import bptFetcher from "./tokens/bpt";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
@@ -385,4 +387,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     gmeFetcher,
   "4de3c5d6b555c99c7f56a1f917567288f025f337cdf233d99e462a1353737373":
     ssssFetcher,
+  "7d9aabc78703947e931e28273a96cf7412039fbd2e54a90ffb17239c42616279506f726b65":
+   aceFetcher,
+  "d42729a8559b38c5d13009d653e4086404234bdb535a97b945c6ea78425054":
+   bptFetcher,
 };
