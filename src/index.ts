@@ -385,4 +385,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
   e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
     gmeFetcher,
+
 };
