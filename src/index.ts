@@ -380,7 +380,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     splashFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
-  "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher
+  "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
   "7d9aabc78703947e931e28273a96cf7412039fbd2e54a90ffb17239c42616279506f726b65":
     aceFetcher,
   e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
