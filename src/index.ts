@@ -1,5 +1,4 @@
 import aadaFetcher from "./tokens/aada";
-import aceFetcher from "./tokens/ace";
 import adyFetcher from "./tokens/ady";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
