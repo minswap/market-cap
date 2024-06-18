@@ -16,7 +16,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "stake1u8xujuxpuj0wxjm2n6qqff9l4nrjgpfdjr3ffaj006s4wmckvk0wj", // $gokeyispo
     "stake1uyekd377dmet3vqyaawllvtz0xjjzxaq3k3ktl0g63zyrxch72pyc",
     "stake1u95ear6v2rkdkj2ul4zeet07m6rq33q8c6rk476u8l6fz3cng6mrt",
-    "stake1u97dxtu3597x64mtkx47uz47vzfwr7tmktrkjweutd7xsggawhhnn"
+    "stake1u97dxtu3597x64mtkx47uz47vzfwr7tmktrkjweutd7xsggawhhnn",
   ]);
   const treasury = Number(treasuryRaw) / 1e6;
 

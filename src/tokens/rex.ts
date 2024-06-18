@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const rex =
-  "61fe4feee9d051c75b20d11701c3154ae95d9857bd429ffb85087eae526578";
+const rex = "61fe4feee9d051c75b20d11701c3154ae95d9857bd429ffb85087eae526578";
 
 const rexFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
