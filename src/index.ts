@@ -21,6 +21,7 @@ import c4Fetcher from "./tokens/c4";
 import catskyFetcher from "./tokens/catsky";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
+import cerraFetcher from "./tokens/cerra";
 import cgiFetcher from "./tokens/cgi";
 import charlyFetcher from "./tokens/charly";
 import chryFetcher from "./tokens/chry";
@@ -107,7 +108,9 @@ import rakerFetcher from "./tokens/raker";
 import revuFetcher from "./tokens/revu";
 import rexFetcher from "./tokens/rex";
 import rjvFetcher from "./tokens/rjv";
+import rsbtcFetcher from "./tokens/rsbtc";
 import rsergFetcher from "./tokens/rserg";
+import rsrsnFetcher from "./tokens/rsrsn";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
 import shenFetcher from "./tokens/shen";
@@ -380,9 +383,15 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     splashFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
+  "4342a3d3c15545a592bf38294dc75c7a1dd3550388303e3a06f4416d4345525241":
+    cerraFetcher,
   "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
   e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
     gmeFetcher,
   "394d8a0021c8825ad9385c1112009994e37b7b53c0c406d389d452db47756d6d79":
     gummyFetcher,
+  "2dbc49f682ad21f6d18705cf446f9f7a277731ab70ae21a454f888b27273425443":
+    rsbtcFetcher,
+  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
+    rsrsnFetcher,
 };
