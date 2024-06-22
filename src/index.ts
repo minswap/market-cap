@@ -155,6 +155,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "338c17dffaaefdb97ace91100724836178c3f9dd994a4798a66f546d4d414e4e59":
     mannyFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
+  "9f452e23804df3040b352b478039357b506ad3b50d2ce0d7cbd5f806435456": ctvFetcher,
   "577f0b1342f8f8f4aed3388b80a8535812950c7a892495c0ecdf0f1e0014df10464c4454":
     fldtFetcher,
   f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc53541474958: agixFetcher,
@@ -406,6 +407,4 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsbtcFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
-  "9f452e23804df3040b352b478039357b506ad3b50d2ce0d7cbd5f806435456":
-    ctvFetcher,
 };
