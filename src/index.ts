@@ -406,4 +406,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsbtcFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
+  "9f452e23804df3040b352b478039357b506ad3b50d2ce0d7cbd5f806435456":
+    ctvFetcher,
 };
