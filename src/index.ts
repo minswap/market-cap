@@ -34,6 +34,7 @@ import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
+import cswapFetcher from "./tokens/ctv";
 import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
 import derpFetcher from "./tokens/derp";
