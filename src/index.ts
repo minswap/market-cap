@@ -36,6 +36,7 @@ import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
 import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
+import ddosFetcher from "./tokens/ddos";
 import derpFetcher from "./tokens/derp";
 import dgafFetcher from "./tokens/dgaf";
 import dingFetcher from "./tokens/ding";
@@ -352,6 +353,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     sharkyFetcher,
   "7507734918533b3b896241b4704f3d4ce805256b01da6fcede43043642616279534e454b":
     babysnekFetcher,
+  "94bb5aa2fedb3a4097c91934c79634407f4634aa192587699ef927b744446f53":
+    ddosFetcher,
   "6e6098846537ca48ff18eac70b7f5040c69ba2c5570521b6eb00fdf56461646479":
     daddyFetcher,
   ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473:
