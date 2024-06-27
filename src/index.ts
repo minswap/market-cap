@@ -53,6 +53,7 @@ import frenFetcher from "./tokens/fren";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
+import girlfrenFetcher from "./tokens/girlfren";
 import gldsnekFetcher from "./tokens/gldsnek";
 import gmeFetcher from "./tokens/gme";
 import gokeyFetcher from "./tokens/gokey";
@@ -408,6 +409,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsbtcFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
+  "20efaf13727eea5813e57530f1f9bb60fa8a986056b48c4b89d59b414769726c4672656e":
+    girlfrenFetcher,
   c80d335ae2206381ae3dfe07b1ef38e43af95736e7f5d4f150663c255241555349:
     rausiFetcher,
 };
