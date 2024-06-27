@@ -20,6 +20,7 @@ import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import c4Fetcher from "./tokens/c4";
+import catsFetcher from "./tokens/cats";
 import catskyFetcher from "./tokens/catsky";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
@@ -34,8 +35,10 @@ import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
+import ctvFetcher from "./tokens/ctv";
 import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
+import danzoFetcher from "./tokens/danzo";
 import ddosFetcher from "./tokens/ddos";
 import derpFetcher from "./tokens/derp";
 import dgafFetcher from "./tokens/dgaf";
@@ -53,6 +56,7 @@ import frenFetcher from "./tokens/fren";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
+import girlfrenFetcher from "./tokens/girlfren";
 import gldsnekFetcher from "./tokens/gldsnek";
 import gmeFetcher from "./tokens/gme";
 import gokeyFetcher from "./tokens/gokey";
@@ -68,6 +72,7 @@ import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import jellyFetcher from "./tokens/jelly";
+import jorgeFetcher from "./tokens/jorge";
 import jpgFetcher from "./tokens/jpg";
 import kitupFetcher from "./tokens/kitup";
 import lccFetcher from "./tokens/lcc";
@@ -92,6 +97,7 @@ import myusdFetcher from "./tokens/myusd";
 import nebulaFetcher from "./tokens/nebula";
 import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
+import nikeFetcher from "./tokens/nike";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import noelFetcher from "./tokens/noel";
@@ -108,6 +114,7 @@ import prsprFetcher from "./tokens/prspr";
 import pugchipFetcher from "./tokens/pugchip";
 import punksFetcher from "./tokens/punks";
 import rakerFetcher from "./tokens/raker";
+import rausiFetcher from "./tokens/rausi";
 import revuFetcher from "./tokens/revu";
 import rexFetcher from "./tokens/rex";
 import rjvFetcher from "./tokens/rjv";
@@ -120,6 +127,7 @@ import shenFetcher from "./tokens/shen";
 import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
+import snokFetcher from "./tokens/snok";
 import snowFetcher from "./tokens/snow";
 import snukFetcher from "./tokens/snuk";
 import societyFetcher from "./tokens/society";
@@ -305,6 +313,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snepeFetcher,
   "51a5e236c4de3af2b8020442e2a26f454fda3b04cb621c1294a0ef34424f4f4b":
     bookFetcher,
+  "9f452e23804df3040b352b478039357b506ad3b50d2ce0d7cbd5f806435456": ctvFetcher,
   "5c1c91a65bedac56f245b8184b5820ced3d2f1540e521dc1060fa6834a454c4c59":
     jellyFetcher,
   "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250":
@@ -408,4 +417,16 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsbtcFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
+  c881c20e49dbaca3ff6cef365969354150983230c39520b917f5cf7c4e696b65: nikeFetcher,
+  "03dc510dbd1d1321edc06d8ae013f55fdd79f390c7415e2a09b64797534e4f4b":
+    snokFetcher,
+  bf3e19192da77dfadc7c9065944e50ca7e1a439d90833e3ae58b720a44414e5a4f:
+    danzoFetcher,
+  c0a7eb16fa55a982c63976c34af6e42cb1b5aeb9ab2a7aaec06f6cd04a6f726765:
+    jorgeFetcher,
+  bbb0be3f57598bbf6a7d6ce18a60700beceb6904923a6a555ca0345443415453: catsFetcher,
+  "20efaf13727eea5813e57530f1f9bb60fa8a986056b48c4b89d59b414769726c4672656e":
+    girlfrenFetcher,
+  c80d335ae2206381ae3dfe07b1ef38e43af95736e7f5d4f150663c255241555349:
+    rausiFetcher,
 };
