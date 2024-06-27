@@ -107,6 +107,7 @@ import prsprFetcher from "./tokens/prspr";
 import pugchipFetcher from "./tokens/pugchip";
 import punksFetcher from "./tokens/punks";
 import rakerFetcher from "./tokens/raker";
+import rausiFetcher from "./tokens/rausi";
 import revuFetcher from "./tokens/revu";
 import rexFetcher from "./tokens/rex";
 import rjvFetcher from "./tokens/rjv";
@@ -405,4 +406,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsbtcFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
+  c80d335ae2206381ae3dfe07b1ef38e43af95736e7f5d4f150663c255241555349:
+    rausiFetcher,
 };
