@@ -52,6 +52,7 @@ import fetFetcher from "./tokens/fet";
 import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import fldtFetcher from "./tokens/fldt";
+import fleshFetcher from "./tokens/flesh";
 import frenFetcher from "./tokens/fren";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
@@ -429,4 +430,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     girlfrenFetcher,
   c80d335ae2206381ae3dfe07b1ef38e43af95736e7f5d4f150663c255241555349:
     rausiFetcher,
+  a1ce0414d79b040f986f3bcd187a7563fd26662390dece6b12262b52464c45534820544f4b454e:
+    fleshFetcher,
+  f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
 };
