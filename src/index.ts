@@ -115,6 +115,7 @@ import rsergFetcher from "./tokens/rserg";
 import rsrsnFetcher from "./tokens/rsrsn";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
+import sharlFetcher from "./tokens/sharl";
 import shenFetcher from "./tokens/shen";
 import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
@@ -403,6 +404,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     gummyFetcher,
   "2dbc49f682ad21f6d18705cf446f9f7a277731ab70ae21a454f888b27273425443":
     rsbtcFetcher,
+  "590f6d119b214cdcf7ef7751f8b7f1de615ff8f6de097a5ce62b257b534841524c":
+    sharlFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
 };
