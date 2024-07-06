@@ -123,7 +123,7 @@ import rjvFetcher from "./tokens/rjv";
 import rsbtcFetcher from "./tokens/rsbtc";
 import rsergFetcher from "./tokens/rserg";
 import rsrsnFetcher from "./tokens/rsrsn";
-import scale from "./tokens/scale";
+import scaleFetcher from "./tokens/scale";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
 import sharlFetcher from "./tokens/sharl";
