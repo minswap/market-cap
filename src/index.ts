@@ -439,6 +439,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rausiFetcher,
   a1ce0414d79b040f986f3bcd187a7563fd26662390dece6b12262b52464c45534820544f4b454e:
     fleshFetcher,
-  "1f01188ffed79a9296d824c49eec851c21ea860e7c4f88324de50f2c7363616c65": 
+  "1f01188ffed79a9296d824c49eec851c21ea860e7c4f88324de50f2c7363616c65":
     scaleFetcher,
 };
