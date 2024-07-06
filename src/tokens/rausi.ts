@@ -7,7 +7,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 8_000_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, RAUSI, [
-    "addr1wypryvmw8z8yn9yqlyact9njtrkndu0g0gvq9q5llq4rppc549g39", // Reserve, locked until 01-2025
+    "addr1wy3vkt9xxc98rllr3urvx8cy2ws02fr4rf88n7cdeyzw8wqaqtffw", // Reserve, locked until 01-2025, updated 6.7.2024.
     "addr1w9szsx54qadp2yqe2xqrh6fmta6vuvqwtd5zsk7ec6j9sasmxhv3w", // Reserve, locked until 06-2028
     ]);
 
