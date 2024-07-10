@@ -123,10 +123,12 @@ import rjvFetcher from "./tokens/rjv";
 import rsbtcFetcher from "./tokens/rsbtc";
 import rsergFetcher from "./tokens/rserg";
 import rsrsnFetcher from "./tokens/rsrsn";
+import scaleFetcher from "./tokens/scale";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
 import sharlFetcher from "./tokens/sharl";
 import shenFetcher from "./tokens/shen";
+import slopFetcher from "./tokens/slop";
 import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
@@ -438,4 +440,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rausiFetcher,
   a1ce0414d79b040f986f3bcd187a7563fd26662390dece6b12262b52464c45534820544f4b454e:
     fleshFetcher,
+  "1f01188ffed79a9296d824c49eec851c21ea860e7c4f88324de50f2c7363616c65":
+    scaleFetcher,
+  ea02c99c0668891d6b7cdc49e075cbddf9cd5b89404e5a8a8e5d7016534c4f5020436f696e:
+    slopFetcher,
 };
