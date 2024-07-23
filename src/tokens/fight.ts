@@ -9,10 +9,14 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const treasuryRaw = await getAmountInAddresses(blockFrost, FIGHT, [
     "stake1uygzdup55m354t6nx9nlj9eqhquh5rfue4tzm3yppaxr6vgz6cspc", // $fight.coin
   ]);
+  const burnRaw = await getAmountInAddresses(blockFrost, FIGHT, [
+    "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // $burnsnek
+  ]);
   const treasury = Number(treasuryRaw);
+  const burn = Number(burnRaw);
   return {
-    circulating: (total - treasury).toString(),
-    total: total.toString(),
+    circulating: (total - treasury - burn).toString(),
+    total: (total - burn).toString(),
   };
 };
 
