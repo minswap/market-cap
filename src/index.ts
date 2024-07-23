@@ -49,6 +49,7 @@ import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
 import fetFetcher from "./tokens/fet";
+import fightFetcher from "./tokens/fight";
 import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import fldtFetcher from "./tokens/fldt";
@@ -444,4 +445,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     scaleFetcher,
   ea02c99c0668891d6b7cdc49e075cbddf9cd5b89404e5a8a8e5d7016534c4f5020436f696e:
     slopFetcher,
+  "7d869e0e6f936c3299a8b8df2b8f13d5233801e11676ff06e78e8dbe4649474854":
+    fightFetcher,
 };
