@@ -1,18 +1,17 @@
-import { defaultFetcherOptions,SupplyFetcher } from "../types";
+import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const C3 =
-  "8e51398904a5d3fc129fbf4f1589701de23c7824d5c90fdb9490e15a434841524c4933";
+const XRAY = "86abe45be4d8fb2e8f28e8047d17d0ba5592f2a6c8c452fc88c2c14358524159";
 const TREASURY_ADDRESSES = [
-  "addr1q82wf56fmjxgv4xuhmdw5vsl8mkwvh8ag5q0hpm0t70kkj9kexs7kszymxq6f9400u4xkg5n428e92gkhk30x3m6h4ls6ya7lr",
+  "addr1qyc98ysmvxunqslu3y5t9gpt2mm8dp3puylpq7n5n908jldw8w6w5nmvw86ullauxldxdjsfauyrattxw6yevxp72nnsq3lt0u", // stage2 fund
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
+  const total = 324_922_240;
   const treasury =
-    Number(await getAmountInAddresses(blockFrost, C3, TREASURY_ADDRESSES)) /
+    Number(await getAmountInAddresses(blockFrost, XRAY, TREASURY_ADDRESSES)) /
     1e6;
-  const total = 100_000_000;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),
