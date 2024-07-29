@@ -406,6 +406,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   f9a491442678bb2f90a3be676d1f888ce87330003ab7151f9efb3b68424f58: boxFetcher,
   ececc92aeaaac1f5b665f567b01baec8bc2771804b4c21716a87a4e353504c415348:
     splashFetcher,
+  "097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b": 
+    squeakFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
   "7d9aabc78703947e931e28273a96cf7412039fbd2e54a90ffb17239c42616279506f726b65":
@@ -447,7 +449,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   ea02c99c0668891d6b7cdc49e075cbddf9cd5b89404e5a8a8e5d7016534c4f5020436f696e:
     slopFetcher,
   "7d869e0e6f936c3299a8b8df2b8f13d5233801e11676ff06e78e8dbe4649474854":
-    fightFetcher,
-  "097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b": 
-    squeakFetcher,
+    fightFetcher, 
 };
