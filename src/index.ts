@@ -261,8 +261,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a48455242: herbFetcher,
   "279c909f348e533da5808898f87f9a14bb2c3dfbbacccd631d927a3f534e454b":
     snekFetcher,
-   "097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b":
-    squeakFetcher,
   "64c3ebd40ed377989aa3069a2936e07c6ce82df46688c473d921520664676166":
     dgafFetcher,
   afc910d7a306d20c12903979d4935ae4307241d03245743548e767834153484942:
@@ -430,6 +428,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     sharlFetcher,
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
+  097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b:
+    squeakFetcher,
   c881c20e49dbaca3ff6cef365969354150983230c39520b917f5cf7c4e696b65: nikeFetcher,
   "03dc510dbd1d1321edc06d8ae013f55fdd79f390c7415e2a09b64797534e4f4b":
     snokFetcher,
