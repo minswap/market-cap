@@ -426,10 +426,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     rsbtcFetcher,
   "590f6d119b214cdcf7ef7751f8b7f1de615ff8f6de097a5ce62b257b534841524c":
     sharlFetcher,
-  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
-    rsrsnFetcher,
-  097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b:
-    squeakFetcher,
+  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e": rsrsnFetcher,
+  097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b: squeakFetcher,
   c881c20e49dbaca3ff6cef365969354150983230c39520b917f5cf7c4e696b65: nikeFetcher,
   "03dc510dbd1d1321edc06d8ae013f55fdd79f390c7415e2a09b64797534e4f4b":
     snokFetcher,
