@@ -3,7 +3,7 @@ import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
 const Squeak = "097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b";
 
-const squeakFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
+const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 1_000_000_000;
 
@@ -18,4 +18,4 @@ const squeakFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => 
   };
 };
 
-export default squeakFetcher;
+export default fetcher;
