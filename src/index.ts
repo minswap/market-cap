@@ -100,6 +100,7 @@ import nebulaFetcher from "./tokens/nebula";
 import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
 import nikeFetcher from "./tokens/nike";
+import squeakFetcher from "./tokens/squeak";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import noelFetcher from "./tokens/noel";
@@ -428,6 +429,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
     rsrsnFetcher,
   c881c20e49dbaca3ff6cef365969354150983230c39520b917f5cf7c4e696b65: nikeFetcher,
+  097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b: squeakFetcher,
   "03dc510dbd1d1321edc06d8ae013f55fdd79f390c7415e2a09b64797534e4f4b":
     snokFetcher,
   bf3e19192da77dfadc7c9065944e50ca7e1a439d90833e3ae58b720a44414e5a4f:
