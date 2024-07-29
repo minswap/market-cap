@@ -161,6 +161,7 @@ import wrtFetcher from "./tokens/wrt";
 import xrayFetcher from "./tokens/xray";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
+import squeakFetcher from "./tokens/squeak";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -260,6 +261,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a48455242: herbFetcher,
   "279c909f348e533da5808898f87f9a14bb2c3dfbbacccd631d927a3f534e454b":
     snekFetcher,
+   "097f37ef3f64a7967c645cb2a40b67594b0f6f4d187d654ff927403753717565616b":
+    squeakFetcher,
   "64c3ebd40ed377989aa3069a2936e07c6ce82df46688c473d921520664676166":
     dgafFetcher,
   afc910d7a306d20c12903979d4935ae4307241d03245743548e767834153484942:
