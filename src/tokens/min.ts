@@ -10,6 +10,7 @@ const TREASURY_ADDRESSES = [
   "addr1z9wdv59sq7zzy2l6gchq3247lz7ssfsxs45nj4njhwsp5uzj2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pqzygnta", // DAO
   "addr1z9mjhq5c4s0smv2c92g9yvecpju3p8cfaneu8jzwq97ry62j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pqw9pw55", // incentives & partnerships
   "addr1zx0wxal6dz7rjzxk2mwfvj9564rp9uajqrscftx44tp6ha6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq83j9cv", // yield farming treasury
+  "addr1q8zntywq3fldecrqk4vl593sznvj7483ejcajnavvh2qpsvftaax5f3wasl5m49rtjw5pen938vr7863w0lfz94h0lfqldx3pu", // $min.dao-hot aka DAO hot wallet
 ];
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {

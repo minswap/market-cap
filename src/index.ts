@@ -1,4 +1,5 @@
 import aadaFetcher from "./tokens/aada";
+import aceFetcher from "./tokens/ace";
 import adyFetcher from "./tokens/ady";
 import agcFetcher from "./tokens/agc";
 import agixFetcher from "./tokens/agix";
@@ -14,13 +15,16 @@ import betFetcher from "./tokens/bet";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
 import boxFetcher from "./tokens/box";
+import bptFetcher from "./tokens/bpt";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import c4Fetcher from "./tokens/c4";
+import catsFetcher from "./tokens/cats";
 import catskyFetcher from "./tokens/catsky";
 import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
+import cerraFetcher from "./tokens/cerra";
 import cgiFetcher from "./tokens/cgi";
 import charlyFetcher from "./tokens/charly";
 import chryFetcher from "./tokens/chry";
@@ -31,8 +35,11 @@ import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
+import ctvFetcher from "./tokens/ctv";
 import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
+import danzoFetcher from "./tokens/danzo";
+import ddosFetcher from "./tokens/ddos";
 import derpFetcher from "./tokens/derp";
 import dgafFetcher from "./tokens/dgaf";
 import dingFetcher from "./tokens/ding";
@@ -42,17 +49,21 @@ import empFetcher from "./tokens/emp";
 import encsFetcher from "./tokens/encs";
 import factFetcher from "./tokens/fact";
 import fetFetcher from "./tokens/fet";
+import fightFetcher from "./tokens/fight";
 import fireFetcher from "./tokens/fire";
 import flacFetcher from "./tokens/flac";
 import fldtFetcher from "./tokens/fldt";
+import fleshFetcher from "./tokens/flesh";
 import frenFetcher from "./tokens/fren";
 import gensFetcher from "./tokens/gens";
 import gensxFetcher from "./tokens/gensx";
 import geroFetcher from "./tokens/gero";
+import girlfrenFetcher from "./tokens/girlfren";
 import gldsnekFetcher from "./tokens/gldsnek";
 import gmeFetcher from "./tokens/gme";
 import gokeyFetcher from "./tokens/gokey";
 import gokeyv2Fetcher from "./tokens/gokeyv2";
+import gummyFetcher from "./tokens/gummy";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
@@ -63,6 +74,7 @@ import iethFetcher from "./tokens/ieth";
 import indyFetcher from "./tokens/indy";
 import iusdFetcher from "./tokens/iusd";
 import jellyFetcher from "./tokens/jelly";
+import jorgeFetcher from "./tokens/jorge";
 import jpgFetcher from "./tokens/jpg";
 import kitupFetcher from "./tokens/kitup";
 import lccFetcher from "./tokens/lcc";
@@ -87,6 +99,7 @@ import myusdFetcher from "./tokens/myusd";
 import nebulaFetcher from "./tokens/nebula";
 import newmFetcher from "./tokens/newm";
 import nftcFetcher from "./tokens/nftc";
+import nikeFetcher from "./tokens/nike";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import noelFetcher from "./tokens/noel";
@@ -103,21 +116,31 @@ import prsprFetcher from "./tokens/prspr";
 import pugchipFetcher from "./tokens/pugchip";
 import punksFetcher from "./tokens/punks";
 import rakerFetcher from "./tokens/raker";
+import rausiFetcher from "./tokens/rausi";
+import reitFetcher from "./tokens/reit";
 import revuFetcher from "./tokens/revu";
 import rexFetcher from "./tokens/rex";
 import rjvFetcher from "./tokens/rjv";
+import rsbtcFetcher from "./tokens/rsbtc";
 import rsergFetcher from "./tokens/rserg";
+import rsrsnFetcher from "./tokens/rsrsn";
+import scaleFetcher from "./tokens/scale";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
+import sharlFetcher from "./tokens/sharl";
 import shenFetcher from "./tokens/shen";
+import slopFetcher from "./tokens/slop";
 import smokeFetcher from "./tokens/smoke";
 import snekFetcher from "./tokens/snek";
 import snepeFetcher from "./tokens/snepe";
+import snokFetcher from "./tokens/snok";
 import snowFetcher from "./tokens/snow";
+import snukFetcher from "./tokens/snuk";
 import societyFetcher from "./tokens/society";
 import spfFetcher from "./tokens/spf";
 import splashFetcher from "./tokens/splash";
 import spxFetcher from "./tokens/spx";
+import ssssFetcher from "./tokens/ssss";
 import stableFetcher from "./tokens/stable";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
@@ -296,6 +319,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     snepeFetcher,
   "51a5e236c4de3af2b8020442e2a26f454fda3b04cb621c1294a0ef34424f4f4b":
     bookFetcher,
+  "9f452e23804df3040b352b478039357b506ad3b50d2ce0d7cbd5f806435456": ctvFetcher,
   "5c1c91a65bedac56f245b8184b5820ced3d2f1540e521dc1060fa6834a454c4c59":
     jellyFetcher,
   "961f2cac0bb1967d74691af179350c1e1062c7298d1f7be1e4696e312444455250":
@@ -303,6 +327,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749": cgiFetcher,
   fc11a9ef431f81b837736be5f53e4da29b9469c983d07f321262ce614652454e: frenFetcher,
   "61fe4feee9d051c75b20d11701c3154ae95d9857bd429ffb85087eae526578": rexFetcher,
+  "52d4b39c2407ce020ab4abb785d820a3ad5a2fa07600d07a205e509f52454954":
+    reitFetcher,
   "20cd68533b47565f3c61efb39c30fdace9963bfa4c0060b613448e3c50524f584945":
     proxiesFetcher,
   f6ac48c64aa7af16434d9f84e014d11fba38525b436acc338ff20b0d4d7463: mtcFetcher,
@@ -344,6 +370,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     sharkyFetcher,
   "7507734918533b3b896241b4704f3d4ce805256b01da6fcede43043642616279534e454b":
     babysnekFetcher,
+  "94bb5aa2fedb3a4097c91934c79634407f4634aa192587699ef927b744446f53":
+    ddosFetcher,
   "6e6098846537ca48ff18eac70b7f5040c69ba2c5570521b6eb00fdf56461646479":
     daddyFetcher,
   ea153b5d4864af15a1079a94a0e2486d6376fa28aafad272d15b243a0014df10536861726473:
@@ -379,7 +407,44 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     splashFetcher,
   "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc4d495241":
     miraFetcher,
+  "7d9aabc78703947e931e28273a96cf7412039fbd2e54a90ffb17239c42616279506f726b65":
+    aceFetcher,
+  "4de3c5d6b555c99c7f56a1f917567288f025f337cdf233d99e462a1353737373":
+    ssssFetcher,
+  "246d6a8493dd02c1243ccae10b3275f318e4f3144140d05c4c28c422536e556b":
+    snukFetcher,
+  d42729a8559b38c5d13009d653e4086404234bdb535a97b945c6ea78425054: bptFetcher,
+  "4342a3d3c15545a592bf38294dc75c7a1dd3550388303e3a06f4416d4345525241":
+    cerraFetcher,
   "548c390391253aff00af9c95ae310f00803fd28035a6ed6f17c1e5e2424147": bagFetcher,
   e4b8e9d247d9aa043bb9e13b38989b11b02c595450e6313aebdf6c1f47616d6553746f70:
     gmeFetcher,
+  "394d8a0021c8825ad9385c1112009994e37b7b53c0c406d389d452db47756d6d79":
+    gummyFetcher,
+  "2dbc49f682ad21f6d18705cf446f9f7a277731ab70ae21a454f888b27273425443":
+    rsbtcFetcher,
+  "590f6d119b214cdcf7ef7751f8b7f1de615ff8f6de097a5ce62b257b534841524c":
+    sharlFetcher,
+  "04b95368393c821f180deee8229fbd941baaf9bd748ebcdbf7adbb14727352534e":
+    rsrsnFetcher,
+  c881c20e49dbaca3ff6cef365969354150983230c39520b917f5cf7c4e696b65: nikeFetcher,
+  "03dc510dbd1d1321edc06d8ae013f55fdd79f390c7415e2a09b64797534e4f4b":
+    snokFetcher,
+  bf3e19192da77dfadc7c9065944e50ca7e1a439d90833e3ae58b720a44414e5a4f:
+    danzoFetcher,
+  c0a7eb16fa55a982c63976c34af6e42cb1b5aeb9ab2a7aaec06f6cd04a6f726765:
+    jorgeFetcher,
+  bbb0be3f57598bbf6a7d6ce18a60700beceb6904923a6a555ca0345443415453: catsFetcher,
+  "20efaf13727eea5813e57530f1f9bb60fa8a986056b48c4b89d59b414769726c4672656e":
+    girlfrenFetcher,
+  c80d335ae2206381ae3dfe07b1ef38e43af95736e7f5d4f150663c255241555349:
+    rausiFetcher,
+  a1ce0414d79b040f986f3bcd187a7563fd26662390dece6b12262b52464c45534820544f4b454e:
+    fleshFetcher,
+  "1f01188ffed79a9296d824c49eec851c21ea860e7c4f88324de50f2c7363616c65":
+    scaleFetcher,
+  ea02c99c0668891d6b7cdc49e075cbddf9cd5b89404e5a8a8e5d7016534c4f5020436f696e:
+    slopFetcher,
+  "7d869e0e6f936c3299a8b8df2b8f13d5233801e11676ff06e78e8dbe4649474854":
+    fightFetcher,
 };
