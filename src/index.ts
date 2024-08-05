@@ -27,7 +27,6 @@ import cbtcFetcher from "./tokens/cbtc";
 import cerraFetcher from "./tokens/cerra";
 import cgiFetcher from "./tokens/cgi";
 import charlyFetcher from "./tokens/charly";
-import chryFetcher from "./tokens/chry";
 import clapFetcher from "./tokens/clap";
 import clarityFetcher from "./tokens/clarity";
 import clayFetcher from "./tokens/clay";
@@ -103,6 +102,7 @@ import nikeFetcher from "./tokens/nike";
 import ninjazFetcher from "./tokens/ninjaz";
 import nmkrFetcher from "./tokens/nmkr";
 import noelFetcher from "./tokens/noel";
+import novaFetcher from "./tokens/nova";
 import ntxFetcher from "./tokens/ntx";
 import nvlFetcher from "./tokens/nvl";
 import optFetcher from "./tokens/opt";
@@ -185,7 +185,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "8fef2d34078659493ce161a6c7fba4b56afefa8535296a5743f6958741414441":
     aadaFetcher,
   "75fcc276057db5fc48eae0e11453c773c8a54604c3086bf9d95ac1b743485259":
-    chryFetcher,
+    novaFetcher,
   "89267e9a35153a419e1b8ffa23e511ac39ea4e3b00452e9d500f2982436176616c6965724b696e67436861726c6573":
     charlyFetcher,
   db30c7905f598ed0154de14f970de0f61f0cb3943ed82c891968480a434c4150: clapFetcher,
