@@ -1,3 +1,4 @@
+import Catnip from "./tokens/catnip";
 import aadaFetcher from "./tokens/aada";
 import aceFetcher from "./tokens/ace";
 import adyFetcher from "./tokens/ady";
