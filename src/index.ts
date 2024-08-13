@@ -125,6 +125,7 @@ import rjvFetcher from "./tokens/rjv";
 import rsbtcFetcher from "./tokens/rsbtc";
 import rsergFetcher from "./tokens/rserg";
 import rsrsnFetcher from "./tokens/rsrsn";
+import safeFetcher from "./tokens/safe";
 import scaleFetcher from "./tokens/scale";
 import shardsFetcher from "./tokens/shards";
 import sharkyFetcher from "./tokens/sharky";
@@ -453,4 +454,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     slopFetcher,
   "7d869e0e6f936c3299a8b8df2b8f13d5233801e11676ff06e78e8dbe4649474854":
     fightFetcher,
+  "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645":
+    safeFetcher,
 };
