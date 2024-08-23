@@ -164,6 +164,7 @@ import wrtFetcher from "./tokens/wrt";
 import xrayFetcher from "./tokens/xray";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
+import cultFetcher from "./tokens/cult";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
@@ -456,4 +457,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     fightFetcher,
   "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645":
     safeFetcher,
+  "dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74":
+    cultFetcher,
 };
