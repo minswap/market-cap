@@ -36,6 +36,7 @@ import cnetaFetcher from "./tokens/cneta";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
 import ctvFetcher from "./tokens/ctv";
+import cultFetcher from "./tokens/cult";
 import daddyFetcher from "./tokens/daddy";
 import danaFetcher from "./tokens/dana";
 import danzoFetcher from "./tokens/danzo";
@@ -456,4 +457,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     fightFetcher,
   "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645":
     safeFetcher,
+  dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74: cultFetcher,
 };
