@@ -33,6 +33,7 @@ import clarityFetcher from "./tokens/clarity";
 import clayFetcher from "./tokens/clay";
 import cnctFetcher from "./tokens/cnct";
 import cnetaFetcher from "./tokens/cneta";
+import meemFetcher from "./tokens/meem";
 import copiFetcher from "./tokens/copi";
 import cswapFetcher from "./tokens/cswap";
 import ctvFetcher from "./tokens/ctv";
@@ -458,4 +459,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645":
     safeFetcher,
   dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74: cultFetcher,
+  "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d":
+    meemFetcher,
 };
