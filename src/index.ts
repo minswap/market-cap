@@ -111,6 +111,7 @@ import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
 import pepeblueFetcher from "./tokens/pepeblue";
+import piguFetcher from "./tokens/pigu";
 import pirateFetcher from "./tokens/pirate";
 import porkeFetcher from "./tokens/porke";
 import proxiesFetcher from "./tokens/proxies";
@@ -458,4 +459,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645":
     safeFetcher,
   dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74: cultFetcher,
+  "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755":
+    piguFetcher,
 };
