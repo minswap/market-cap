@@ -111,6 +111,7 @@ import nvlFetcher from "./tokens/nvl";
 import optFetcher from "./tokens/opt";
 import optimFetcher from "./tokens/optim";
 import paviaFetcher from "./tokens/pavia";
+import peepeeFetcher from "./tokens/peepee";
 import pepeblueFetcher from "./tokens/pepeblue";
 import pirateFetcher from "./tokens/pirate";
 import porkeFetcher from "./tokens/porke";
@@ -459,6 +460,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645":
     safeFetcher,
   dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74: cultFetcher,
+  "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
   "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d":
     meemFetcher,
 };
