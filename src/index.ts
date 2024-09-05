@@ -85,6 +85,7 @@ import liqwidFetcher from "./tokens/lq";
 import lwhFetcher from "./tokens/lwh";
 import mannyFetcher from "./tokens/manny";
 import mayzFetcher from "./tokens/mayz";
+import meemFetcher from "./tokens/meem";
 import meldFetcher from "./tokens/meld";
 import milkFetcher from "./tokens/milk";
 import milkv2Fetcher from "./tokens/milkv2";
@@ -460,4 +461,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     safeFetcher,
   dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74: cultFetcher,
   "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
+  "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d":
+    meemFetcher,
 };
