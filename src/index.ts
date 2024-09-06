@@ -94,6 +94,7 @@ import mintFetcher from "./tokens/mint";
 import miraFetcher from "./tokens/mira";
 import mntFetcher from "./tokens/mnt";
 import moaiFetcher from "./tokens/moai";
+import momFetcher from "./tokens/mom";
 import mrHankeyFetcher from "./tokens/mrhankey";
 import mtcFetcher from "./tokens/mtc";
 import myieldFetcher from "./tokens/myield";
@@ -463,4 +464,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
   "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d":
     meemFetcher,
+  ed5517ccf67c60004355cee3c546c77226cd89a04b3aaeae6a65589e4d6f6d: momFetcher,
 };
