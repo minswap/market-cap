@@ -18,8 +18,8 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const treasury = Number(treasuryRaw);
   const burn = Number(burnRaw);
   return {
-    circulating: (total - treasury - burn).toString(),
-    total: (total - burn).toString(),
+    circulating: (total - treasury / 1e5 - burn / 1e5).toString(),
+    total: (total - burn / 1e5).toString(),
   };
 };
 
