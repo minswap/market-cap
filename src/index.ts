@@ -155,6 +155,7 @@ import tedyFetcher from "./tokens/tedy";
 import tetFetcher from "./tokens/tet";
 import toolFetcher from "./tokens/tool";
 import trtlFetcher from "./tokens/trtl";
+import usaFetcher from "./tokens/usa";
 import utilFetcher from "./tokens/util";
 import viperFetcher from "./tokens/viper";
 import vnmFetcher from "./tokens/vnm";
@@ -467,6 +468,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
   "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d":
     meemFetcher,
+  b9ae7e3566ad889aae93f500746869e7b3c71480329acd0a9bc01652555341: usaFetcher,
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755":
     piguFetcher,
 };
