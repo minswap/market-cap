@@ -148,6 +148,7 @@ import spxFetcher from "./tokens/spx";
 import squeakFetcher from "./tokens/squeak";
 import ssssFetcher from "./tokens/ssss";
 import stableFetcher from "./tokens/stable";
+import strikeFetcher from "./tokens/strike";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
 import tetFetcher from "./tokens/tet";
@@ -174,6 +175,8 @@ export * from "./types";
 export const supplyFetchers: Record<string, SupplyFetcher> = {
   "338c17dffaaefdb97ace91100724836178c3f9dd994a4798a66f546d4d414e4e59":
     mannyFetcher,
+  f13ac4d66b3ee19a6aa0f2a22298737bd907cc95121662fc971b5275535452494b45:
+    strikeFetcher,
   "633f2e2c5280417c6b76055eda54fc07de984c122c01573ea4a9e8234361746e6970":
     catnipFetcher,
   "29d222ce763455e3d7a09a665ce554f00ac89d2e99a1a83d267170c64d494e": minFetcher,
