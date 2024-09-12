@@ -13,6 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
 
   const burnRaw = await getAmountInAddresses(blockFrost, MOM, [
     "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", //$burnsnek
+    "addr1xxx0hhrmtccdh08vmmkytw3p8xhx82n59svftv9fm89q5yyvl0w8kh3smw7wehhvgkazzwdwvw48gtqcjkc2nkw2pggq4tws0m", // $burn.mom
   ]);
 
   const treasury = Number(treasuryRaw);
