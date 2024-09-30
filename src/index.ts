@@ -160,6 +160,7 @@ import usaFetcher from "./tokens/usa";
 import utilFetcher from "./tokens/util";
 import viperFetcher from "./tokens/viper";
 import vnmFetcher from "./tokens/vnm";
+import volumeFetcher from "./tokens/volume";
 import vyfiFetcher from "./tokens/vyfi";
 import wlkFetcher from "./tokens/wlk";
 import wmtFetcher from "./tokens/wmt";
@@ -471,6 +472,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     meemFetcher,
   ed5517ccf67c60004355cee3c546c77226cd89a04b3aaeae6a65589e4d6f6d: momFetcher,
   b9ae7e3566ad889aae93f500746869e7b3c71480329acd0a9bc01652555341: usaFetcher,
+  "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c": volumeFetcher,
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755":
     piguFetcher,
 };
