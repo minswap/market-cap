@@ -28,6 +28,7 @@ import cbtcFetcher from "./tokens/cbtc";
 import cerraFetcher from "./tokens/cerra";
 import cgiFetcher from "./tokens/cgi";
 import charlyFetcher from "./tokens/charly";
+import chipFetcher from "./tokens/chip";
 import clapFetcher from "./tokens/clap";
 import clarityFetcher from "./tokens/clarity";
 import clayFetcher from "./tokens/clay";
@@ -93,6 +94,7 @@ import minFetcher from "./tokens/min";
 import mintFetcher from "./tokens/mint";
 import miraFetcher from "./tokens/mira";
 import mntFetcher from "./tokens/mnt";
+import mntxFetcher from "./tokens/mntx";
 import moaiFetcher from "./tokens/moai";
 import momFetcher from "./tokens/mom";
 import mrHankeyFetcher from "./tokens/mrhankey";
@@ -160,6 +162,7 @@ import usaFetcher from "./tokens/usa";
 import utilFetcher from "./tokens/util";
 import viperFetcher from "./tokens/viper";
 import vnmFetcher from "./tokens/vnm";
+import volumeFetcher from "./tokens/volume";
 import vyfiFetcher from "./tokens/vyfi";
 import wlkFetcher from "./tokens/wlk";
 import wmtFetcher from "./tokens/wmt";
@@ -297,6 +300,8 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     awooFetcher,
   "43b07d4037f0d75ee10f9863097463fc02ff3c0b8b705ae61d9c75bf4d796e746820546f6b656e":
     mntFetcher,
+  "77cab21b1a0eb05886cb9fe8e3d297456e53c1d948dba42219a1b3804d796e746820546f6b656e2058":
+    mntxFetcher,
   "92776616f1f32c65a173392e4410a3d8c39dcf6ef768c73af164779c4d79555344":
     myusdFetcher,
   "1ddcb9c9de95361565392c5bdff64767492d61a96166cb16094e54be4f5054": optFetcher,
@@ -471,6 +476,9 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     meemFetcher,
   ed5517ccf67c60004355cee3c546c77226cd89a04b3aaeae6a65589e4d6f6d: momFetcher,
   b9ae7e3566ad889aae93f500746869e7b3c71480329acd0a9bc01652555341: usaFetcher,
+  "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c": volumeFetcher,
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755":
     piguFetcher,
+  "30d2ebdb2fec06142ee84e5120c2717b4d68a91bffd924420d94ddea43484950":
+    chipFetcher,
 };
