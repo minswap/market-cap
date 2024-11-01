@@ -11,8 +11,7 @@ const TREASURY_ADDRESSES = [
   const blockFrost = getBlockFrostInstance(options);
   const total = 1e9; // 1 billion
   const treasury =
-    Number(await getAmountInAddresses(blockFrost, TOKEN, TREASURY_ADDRESSES)) /
-    1;
+    Number(await getAmountInAddresses(blockFrost, TOKEN, TREASURY_ADDRESSES));
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),
