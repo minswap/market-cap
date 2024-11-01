@@ -11,14 +11,14 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     blockFrost,
     SHARL,
     [
-      "addr1x8mpnsx06npcg40wnrk0umup7qcvyfz0nq7s5fv7pxdhk20kr8qvl4xrs327ax8vlehcrupscgjylxpapgjeuzvm0v5s0xgeht", // community wallet
+      "addr1xxyyxezq2d2qkrusm2fvkztm696egu75yrjs2r5psgvkuzyggdjyq565pv8epk5jevyhh5t4j3eagg89q58grqsedcyqgcrtav", // community wallet
     ]
   );
 
   const uncirculated = Number(treasury_team_and_distributorsRaw);
 
   return {
-    circulating:  (total - uncirculated).toString(),
+    circulating: (total - uncirculated).toString(),
     total: total.toString(),
   };
 };
