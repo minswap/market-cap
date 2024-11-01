@@ -28,6 +28,7 @@ import cbtcFetcher from "./tokens/cbtc";
 import cerraFetcher from "./tokens/cerra";
 import cgiFetcher from "./tokens/cgi";
 import charlyFetcher from "./tokens/charly";
+import chipFetcher from "./tokens/chip";
 import clapFetcher from "./tokens/clap";
 import clarityFetcher from "./tokens/clarity";
 import clayFetcher from "./tokens/clay";
@@ -478,4 +479,6 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c": volumeFetcher,
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755":
     piguFetcher,
+  "30d2ebdb2fec06142ee84e5120c2717b4d68a91bffd924420d94ddea43484950":
+    chipFetcher,
 };
