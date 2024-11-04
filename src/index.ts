@@ -17,6 +17,7 @@ import boonFetcher from "./tokens/boon";
 import boxFetcher from "./tokens/box";
 import bptFetcher from "./tokens/bpt";
 import btnFetcher from "./tokens/btn";
+import burnzFetcher from "./tokens/burnz";
 import bubbleFetcher from "./tokens/bubble";
 import c3Fetcher from "./tokens/c3";
 import c4Fetcher from "./tokens/c4";
@@ -481,4 +482,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
     piguFetcher,
   "30d2ebdb2fec06142ee84e5120c2717b4d68a91bffd924420d94ddea43484950":
     chipFetcher,
+  "86340a33acf14b5c967584c9a20e984695ab3289696d138048f572be4255524e5a": burnzFetcher,
 };
