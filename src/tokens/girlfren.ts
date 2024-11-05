@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const GIRLFREN =
-  "20efaf13727eea5813e57530f1f9bb60fa8a986056b48c4b89d59b414769726c4672656e";
+const GIRLFREN = "20efaf13727eea5813e57530f1f9bb60fa8a986056b48c4b89d59b414769726c4672656e";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);

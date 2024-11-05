@@ -12,9 +12,7 @@ const TREASURY_ADDRESSES = [
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 1e9; // 1 billion
-  const treasury =
-    Number(await getAmountInAddresses(blockFrost, MIRA, TREASURY_ADDRESSES)) /
-    1e2;
+  const treasury = Number(await getAmountInAddresses(blockFrost, MIRA, TREASURY_ADDRESSES)) / 1e2;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),

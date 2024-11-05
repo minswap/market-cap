@@ -36,9 +36,7 @@ export async function getAmountInAddresses(
           ? await blockFrost.accountsAddressesAssetsAll(addr)
           : await blockFrost.addresses(addr).then((resp) => resp.amount);
 
-        const amount = value
-          .filter(({ unit }) => unit === token)
-          .reduce((sum, x) => sum + BigInt(x.quantity), 0n);
+        const amount = value.filter(({ unit }) => unit === token).reduce((sum, x) => sum + BigInt(x.quantity), 0n);
 
         return amount;
       })

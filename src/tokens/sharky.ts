@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const SHARKY =
-  "20fda53c96fc6ac5622ca94fd27a473c42c7ec56d0e96bceef926c91536861726b79";
+const SHARKY = "20fda53c96fc6ac5622ca94fd27a473c42c7ec56d0e96bceef926c91536861726b79";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);

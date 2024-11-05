@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const SNEPE =
-  "b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045";
+const SNEPE = "b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045";
 
 const snepeFetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);

@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const VIPER =
-  "caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552";
+const VIPER = "caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
