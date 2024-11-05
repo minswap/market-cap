@@ -18,6 +18,7 @@ import boxFetcher from "./tokens/box";
 import bptFetcher from "./tokens/bpt";
 import btnFetcher from "./tokens/btn";
 import bubbleFetcher from "./tokens/bubble";
+import burnzFetcher from "./tokens/burnz";
 import c3Fetcher from "./tokens/c3";
 import c4Fetcher from "./tokens/c4";
 import catnipFetcher from "./tokens/catnip";
@@ -356,4 +357,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c": volumeFetcher,
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755": piguFetcher,
   "30d2ebdb2fec06142ee84e5120c2717b4d68a91bffd924420d94ddea43484950": chipFetcher,
+  "86340a33acf14b5c967584c9a20e984695ab3289696d138048f572be4255524e5a": burnzFetcher,
 };
