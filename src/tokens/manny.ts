@@ -10,7 +10,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 10_000_000n;
   const totalOnCardano = 10_000_000n;
   const treasury = await getAmountInAddresses(blockFrost, MANNY, [
-    "stake1uxmvymdlwu7rp7r3gclva7m9tgzy60xp3tkqtj2kh7d35nqumsfd2"
+    "stake1uxmvymdlwu7rp7r3gclva7m9tgzy60xp3tkqtj2kh7d35nqumsfd2",
   ]);
   return {
     circulating: (totalOnCardano - treasury).toString(),

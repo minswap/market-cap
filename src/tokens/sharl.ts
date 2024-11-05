@@ -18,7 +18,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const uncirculated = Number(treasury_team_and_distributorsRaw);
 
   return {
-    circulating:  (total - uncirculated).toString(),
+    circulating: (total - uncirculated).toString(),
     total: total.toString(),
   };
 };

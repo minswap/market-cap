@@ -1,7 +1,8 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const VOLUME = "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c566f6c756d65";
+const VOLUME =
+  "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c566f6c756d65";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
