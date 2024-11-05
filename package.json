@@ -12,7 +12,7 @@
     "build": "rimraf build && rollup -c rollup.config.js",
     "test": "jest",
     "format": "prettier --write {src,internal}/**/*.ts && eslint --fix --ext .ts .",
-    "check-format": "prettier --check **/*.ts && eslint --ext .ts .",
+    "check-format": "prettier --check {src,internal}/**/*.ts && eslint --ext .ts .",
     "run-market-cap": "ts-node internal/main.ts",
     "prepare": "husky install"
   },
