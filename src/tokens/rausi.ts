@@ -9,7 +9,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const treasuryRaw = await getAmountInAddresses(blockFrost, RAUSI, [
     "addr1wy3vkt9xxc98rllr3urvx8cy2ws02fr4rf88n7cdeyzw8wqaqtffw", // Reserve, locked until 01-2025, updated 6.7.2024.
     "addr1w9szsx54qadp2yqe2xqrh6fmta6vuvqwtd5zsk7ec6j9sasmxhv3w", // Reserve, locked until 06-2028
-    ]);
+  ]);
 
   const burnRaw = await getAmountInAddresses(blockFrost, RAUSI, [
     "addr1w8qmxkacjdffxah0l3qg8hq2pmvs58q8lcy42zy9kda2ylc6dy5r4", // burnsnek address

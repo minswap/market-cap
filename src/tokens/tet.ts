@@ -13,9 +13,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1w96qxyn67hy2qgpz4tsulkpu0y3zv4wfq9fzgd38m07pnuq0w542k", // vesting address
   ];
 
-  const lockedAmount = Number(
-    await getAmountInAddresses(blockFrost, TET, lockAddresses)
-  );
+  const lockedAmount = Number(await getAmountInAddresses(blockFrost, TET, lockAddresses));
   return {
     circulating: Number(totalAmount - lockedAmount).toString(),
     total: totalAmount.toString(),

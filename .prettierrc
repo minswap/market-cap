@@ -1,4 +1,9 @@
 {
   "singleQuote": false,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "quoteProps": "as-needed",
+  "printWidth": 120,
+  "endOfLine": "lf"
 }

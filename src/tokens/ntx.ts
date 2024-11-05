@@ -6,9 +6,9 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const circulating = await axios(
     "https://tokensupply.singularitynet.io/tokensupply?tokensymbol=ntx&q=circulatingsupply"
   ).then((res) => res.data.toString());
-  const total = await axios(
-    "https://tokensupply.singularitynet.io/tokensupply?tokensymbol=ntx&q=totalsupply"
-  ).then((res) => res.data.toString());
+  const total = await axios("https://tokensupply.singularitynet.io/tokensupply?tokensymbol=ntx&q=totalsupply").then(
+    (res) => res.data.toString()
+  );
   return {
     circulating,
     total,

@@ -5,9 +5,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const axios = getAxiosInstance(options);
   const total = 97_739_924;
 
-  const circulating: number = await axios
-    .get("https://api.ergoplatform.com/info/supply")
-    .then((res) => res.data);
+  const circulating: number = await axios.get("https://api.ergoplatform.com/info/supply").then((res) => res.data);
 
   return {
     circulating: circulating.toString(),

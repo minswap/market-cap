@@ -8,7 +8,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 1_000_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, SLOP, [
     "stake1u8ugkt7a7p8wl4635lsjamepma9dvtyhye378g6z8vuvrqqujky50", // $slop
-    "stake1u9l00ughh8q2v7a6gd20fl3z2nq2ft0g4c2rr4pvucjwmvs2a9vfs", // $hogsweeper 
+    "stake1u9l00ughh8q2v7a6gd20fl3z2nq2ft0g4c2rr4pvucjwmvs2a9vfs", // $hogsweeper
   ]);
 
   const burnRaw = await getAmountInAddresses(blockFrost, SLOP, [

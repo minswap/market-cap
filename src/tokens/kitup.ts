@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const KITUP =
-  "b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550";
+const KITUP = "b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
@@ -18,9 +17,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     "addr1xxnuf0zhrtzv2rptr66748nmthugjxtnj0rply4marc4sj0pys7km7gms35hnwyps05y6un3jws0kuha9vl5c8tn94cq6d58kr",
   ];
 
-  const treasury = Number(
-    await getAmountInAddresses(blockFrost, KITUP, treasuryRaw)
-  );
+  const treasury = Number(await getAmountInAddresses(blockFrost, KITUP, treasuryRaw));
   const burn = Number(await getAmountInAddresses(blockFrost, KITUP, burnRaw));
 
   return {

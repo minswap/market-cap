@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const PAVIA =
-  "884892bcdc360bcef87d6b3f806e7f9cd5ac30d999d49970e7a903ae5041564941";
+const PAVIA = "884892bcdc360bcef87d6b3f806e7f9cd5ac30d999d49970e7a903ae5041564941";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 1e9;

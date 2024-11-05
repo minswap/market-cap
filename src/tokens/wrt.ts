@@ -12,8 +12,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
     .post(
       "https://api.mainnet.wingriders.com/graphql",
       {
-        query:
-          "{wrtDistribution {total {lockedWrt releasedWrt undistributedWrt}}}",
+        query: "{wrtDistribution {total {lockedWrt releasedWrt undistributedWrt}}}",
       },
       { headers }
     )

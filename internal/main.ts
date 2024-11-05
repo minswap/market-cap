@@ -29,10 +29,7 @@ async function main(): Promise<void> {
         },
         {
           retry(err, attempt): boolean {
-            console.error(
-              `fail to run fetcher for ${key}, retry ${attempt}...`,
-              err
-            );
+            console.error(`fail to run fetcher for ${key}, retry ${attempt}...`, err);
             return true;
           },
           numOfAttempts: 3,

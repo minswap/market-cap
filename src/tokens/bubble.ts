@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const BUBBLE =
-  "4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65";
+const BUBBLE = "4fde92c2f6dbcfa2879b44f7453872b31394cfb2f70f1d4c411169ac427562626c65";
 const TEAM_AND_DISTRIBUTORS = [
   "addr1qx42lkkh8qhnetve4cmx74mzqx4qkssxz9ltmsn8nmgcxxs6gw4tkslgkhp8m2pgkedxlhtx7e8k5dj5xn7yt88p54kq69nh0h", // team 1
   "addr1qxzngvw7el7kj9j0egldcmgeygjh93vy8s0q7llerp0kan6zhw8y7c92vew3fqwy7u4yrq66d2yt8wmd0tm3uyhsxapsxl5pm3", // team 2
@@ -18,10 +17,7 @@ const TEAM_AND_DISTRIBUTORS = [
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 100e6; // 100 million
-  const treasury =
-    Number(
-      await getAmountInAddresses(blockFrost, BUBBLE, TEAM_AND_DISTRIBUTORS)
-    ) / 1e6;
+  const treasury = Number(await getAmountInAddresses(blockFrost, BUBBLE, TEAM_AND_DISTRIBUTORS)) / 1e6;
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),

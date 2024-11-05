@@ -14,6 +14,4 @@ export type SupplyFetcherResponse = {
   circulating?: string;
 };
 
-export type SupplyFetcher = (
-  options?: FetcherOptions
-) => Promise<SupplyFetcherResponse>;
+export type SupplyFetcher = (options?: FetcherOptions) => Promise<SupplyFetcherResponse>;
