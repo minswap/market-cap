@@ -15,12 +15,8 @@ const FUTURE_BURN_ADDRESSES = [
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 69e6; // 69,000,000
-  const treasury = Number(
-    await getAmountInAddresses(blockFrost, MEEM, TREASURY_VAULT)
-  );
-  const burnt = Number(
-    await getAmountInAddresses(blockFrost, MEEM, FUTURE_BURN_ADDRESSES)
-  );
+  const treasury = Number(await getAmountInAddresses(blockFrost, MEEM, TREASURY_VAULT));
+  const burnt = Number(await getAmountInAddresses(blockFrost, MEEM, FUTURE_BURN_ADDRESSES));
   return {
     circulating: (total - treasury).toString(),
     total: (total - burnt).toString(),

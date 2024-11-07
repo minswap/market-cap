@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const PEPEBLUE =
-  "21abdf54f427b378fe9ba07419eff6e8e8fe0c5932e1fee2d3853b9350455045424c5545";
+const PEPEBLUE = "21abdf54f427b378fe9ba07419eff6e8e8fe0c5932e1fee2d3853b9350455045424c5545";
 
 const TREASURY_VAULT = [
   "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // Yield Farming Rewards
@@ -13,9 +12,7 @@ const TREASURY_VAULT = [
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 39e13; // 420T -> 390T
-  const treasury = Number(
-    await getAmountInAddresses(blockFrost, PEPEBLUE, TREASURY_VAULT)
-  );
+  const treasury = Number(await getAmountInAddresses(blockFrost, PEPEBLUE, TREASURY_VAULT));
   return {
     circulating: (total - treasury).toString(),
     total: total.toString(),

@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const LOBSTER =
-  "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552";
+const LOBSTER = "8654e8b350e298c80d2451beb5ed80fc9eee9f38ce6b039fb8706bc34c4f4253544552";
 
 const TREASURY_ADDRESSES = [
   "addr1qxkmr0m22xeqludcg5rjdmecjxasu9fat0680qehtcsnftaadgykewa9ufvegeuca9yyq03d9v7ea2y2zthgu7hfgjtsddp6gr", // yield farming bot
@@ -18,12 +17,8 @@ const BURN_ADDRESSES = [
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
   const total = 1e15; // 1T
-  const treasury = Number(
-    await getAmountInAddresses(blockFrost, LOBSTER, TREASURY_ADDRESSES)
-  );
-  const burnt = Number(
-    await getAmountInAddresses(blockFrost, LOBSTER, BURN_ADDRESSES)
-  );
+  const treasury = Number(await getAmountInAddresses(blockFrost, LOBSTER, TREASURY_ADDRESSES));
+  const burnt = Number(await getAmountInAddresses(blockFrost, LOBSTER, BURN_ADDRESSES));
   return {
     circulating: (total - burnt - treasury).toString(),
     total: (total - burnt).toString(),

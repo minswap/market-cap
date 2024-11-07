@@ -1,8 +1,7 @@
 import { defaultFetcherOptions, SupplyFetcher } from "../types";
 import { getAmountInAddresses, getBlockFrostInstance } from "../utils";
 
-const BOON =
-  "1cd92100fc05fce7416b3857a079780164eeaf8f5613f4b814f24e09426f6f6e436f696e";
+const BOON = "1cd92100fc05fce7416b3857a079780164eeaf8f5613f4b814f24e09426f6f6e436f696e";
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
@@ -45,16 +44,7 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const giveaway = Number(giveawayRaw);
 
   return {
-    circulating: (
-      total -
-      donation -
-      farming -
-      liquidityPool -
-      marketing -
-      presale -
-      reserve -
-      giveaway
-    ).toString(),
+    circulating: (total - donation - farming - liquidityPool - marketing - presale - reserve - giveaway).toString(),
     total: total.toString(),
   };
 };
