@@ -8,7 +8,6 @@ const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const total = 45_000_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, HYDR, [
     "stake1uywnmnftytaqp2wpx29qvmc6jf3ahhphxwvcrf2erzfa43cuee5fe", // $hydrodrip
-    "stake1u82ls6hlnx0hh8ph5fl6kqdxx7mvw9kqz2563l7ukhxwxec0mtv4y", // Farmbot
   ]);
 
   const burnRaw = await getAmountInAddresses(blockFrost, HYDR, [
