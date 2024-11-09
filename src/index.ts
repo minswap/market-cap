@@ -70,6 +70,7 @@ import gummyFetcher from "./tokens/gummy";
 import herbFetcher from "./tokens/herb";
 import hoskyFetcher from "./tokens/hosky";
 import huntFetcher from "./tokens/hunt";
+import hydrFetcher from "./tokens/hydr";
 import iagFetcher from "./tokens/iag";
 import ibtcFetcher from "./tokens/ibtc";
 import idpFetcher from "./tokens/idp";
@@ -354,8 +355,9 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d": meemFetcher,
   ed5517ccf67c60004355cee3c546c77226cd89a04b3aaeae6a65589e4d6f6d: momFetcher,
   b9ae7e3566ad889aae93f500746869e7b3c71480329acd0a9bc01652555341: usaFetcher,
-  "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c": volumeFetcher,
+  "8d94085182fb206c28850f194defe748e455a104d5ff7466d90f537c566f6c756d65": volumeFetcher,
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755": piguFetcher,
   "30d2ebdb2fec06142ee84e5120c2717b4d68a91bffd924420d94ddea43484950": chipFetcher,
   "86340a33acf14b5c967584c9a20e984695ab3289696d138048f572be4255524e5a": burnzFetcher,
+  "4a17babb62367c0def1615e0e75d20cda9f1b5c1cd4a55c86661777f48594452": hydrFetcher,
 };
