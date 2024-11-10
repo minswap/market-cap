@@ -158,6 +158,7 @@ import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
 import tetFetcher from "./tokens/tet";
 import toolFetcher from "./tokens/tool";
+import topdogFetcher from "./tokens/topdog";
 import trtlFetcher from "./tokens/trtl";
 import usaFetcher from "./tokens/usa";
 import utilFetcher from "./tokens/util";
@@ -292,6 +293,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "5ec2e9813fa385d9333d18186d8257d1b3ebea97bdec2dad74026d8d50554743484950": pugchipFetcher,
   c7dcfa416c127f630b263c7e0fe0564430cfa9c56bba43e1a37c6915474f4b4559: gokeyFetcher,
   ac015c38917f306a84748c2d646bed90bdd64421c592163e60702d735453555255: toolFetcher,
+  3ef23265aad75f280231012d401d41e84eab85f447f233db65e10aee544f50444f47 :topdogFetcher,
   a4da8764a57e66a0085b5bfcde96c89b798d92ee83a75f59237e375b46495245: fireFetcher,
   b166a1047a8cd275bf0a50201ece3d4f0b4da300094ffcc668a6f4084b49545550: kitupFetcher,
   a1b284d7218dd63772c67ca26ab73721a196b404929cddef595f9967574f4a414b424c5545: wojakblueFetcher,
