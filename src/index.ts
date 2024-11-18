@@ -154,6 +154,7 @@ import squeakFetcher from "./tokens/squeak";
 import ssssFetcher from "./tokens/ssss";
 import stableFetcher from "./tokens/stable";
 import strikeFetcher from "./tokens/strike";
+import sugarBushFetcher from "./tokens/sugarBush";
 import sundaeFetcher from "./tokens/sundae";
 import tedyFetcher from "./tokens/tedy";
 import tetFetcher from "./tokens/tet";
@@ -358,4 +359,5 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "9d8c863907e6e58823c9af13759e196dbf5da172b7d4ce37d5d1147950494755": piguFetcher,
   "30d2ebdb2fec06142ee84e5120c2717b4d68a91bffd924420d94ddea43484950": chipFetcher,
   "86340a33acf14b5c967584c9a20e984695ab3289696d138048f572be4255524e5a": burnzFetcher,
+  "766fce8055f39d40fcfc19721677b3deb2e7846950ae08dce757f1e753554741522042555348": sugarBushFetcher,
 };
