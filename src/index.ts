@@ -12,6 +12,7 @@ import babysnekFetcher from "./tokens/babysnek";
 import bagFetcher from "./tokens/bag";
 import bankFetcher from "./tokens/bank";
 import betFetcher from "./tokens/bet";
+import bodegaFetcher from "./tokens/bodega";
 import bookFetcher from "./tokens/book";
 import boonFetcher from "./tokens/boon";
 import boxFetcher from "./tokens/box";
@@ -272,6 +273,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "7c4389a89ae25d18c77c2347ee8df20b4a6278d34e6c550296eb710e4d7248616e6b6579": mrHankeyFetcher,
   "09f2d4e4a5c3662f4c1e6a7d9600e9605279dbdcedb22d4507cb6e75535046": spfFetcher,
   b3bd74dd43f83815519e387bdffd1cb9be411df8f2774f48e0fd3669534e455045: snepeFetcher,
+  "5deab590a137066fef0e56f06ef1b830f21bc5d544661ba570bdd2ae424f44454741": bodegaFetcher,
   "51a5e236c4de3af2b8020442e2a26f454fda3b04cb621c1294a0ef34424f4f4b": bookFetcher,
   "9f452e23804df3040b352b478039357b506ad3b50d2ce0d7cbd5f806435456": ctvFetcher,
   "5c1c91a65bedac56f245b8184b5820ced3d2f1540e521dc1060fa6834a454c4c59": jellyFetcher,
