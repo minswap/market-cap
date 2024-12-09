@@ -5,7 +5,7 @@ const CHAD = "97075bf380e65f3c63fb733267adbb7d42eec574428a754d2abca55b436861726c
 
 const fetcher: SupplyFetcher = async (options = defaultFetcherOptions) => {
   const blockFrost = getBlockFrostInstance(options);
-  const total = 1_000_000_000n;
+  const total = 1_000_000_000;
   const treasuryRaw = await getAmountInAddresses(blockFrost, CHAD, [
     "stake1uy0sgxfm8pzrkru97rg8pteu4j05c6dgwuwzemhg6k8te3g6h5due", // treasury
   ]);
