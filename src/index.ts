@@ -28,6 +28,7 @@ import cblpFetcher from "./tokens/cblp";
 import cbtcFetcher from "./tokens/cbtc";
 import cerraFetcher from "./tokens/cerra";
 import cgiFetcher from "./tokens/cgi";
+import chadFetcher from "./tokens/chad";
 import charlyFetcher from "./tokens/charly";
 import chipFetcher from "./tokens/chip";
 import clapFetcher from "./tokens/clap";
@@ -176,7 +177,6 @@ import wrtFetcher from "./tokens/wrt";
 import xrayFetcher from "./tokens/xray";
 import xvyfiFetcher from "./tokens/xvyfi";
 import yummiFetcher from "./tokens/yummi";
-import chadFetcher from "./tokens/chad";
 import { SupplyFetcher } from "./types";
 
 export * from "./types";
