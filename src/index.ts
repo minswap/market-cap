@@ -352,7 +352,7 @@ export const supplyFetchers: Record<string, SupplyFetcher> = {
   "7d869e0e6f936c3299a8b8df2b8f13d5233801e11676ff06e78e8dbe4649474854": fightFetcher,
   "81926a57a567c11f6dc502254c5ed2d11fdba4ed9f898916699c6f1753414645": safeFetcher,
   dce34158d07be7187401a756a3273b792f6476e2ea09c3f2ae7b229d63756c74: cultFetcher,
-  "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081": peepeeFetcher,
+  "07ccfad78099fef727bfc64de1cf2e684c0872aab3c3bb3bed5e1081706565706565": peepeeFetcher,
   "05c4bcecccff054c9aefff8bdc310e1edb8baa0756d912b47ae45d694d65656d": meemFetcher,
   ed5517ccf67c60004355cee3c546c77226cd89a04b3aaeae6a65589e4d6f6d: momFetcher,
   b9ae7e3566ad889aae93f500746869e7b3c71480329acd0a9bc01652555341: usaFetcher,
