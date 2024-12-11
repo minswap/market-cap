@@ -81,6 +81,7 @@ import jellyFetcher from "./tokens/jelly";
 import jorgeFetcher from "./tokens/jorge";
 import jpgFetcher from "./tokens/jpg";
 import kitupFetcher from "./tokens/kitup";
+import lemmiwinksFetcher from "./tokens/lemmiwinks.ts";
 import lccFetcher from "./tokens/lcc";
 import lifiFetcher from "./tokens/lifi";
 import lobsterFetcher from "./tokens/lobster";
