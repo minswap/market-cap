@@ -1,3 +1,5 @@
+# This repository is now deprecated and any and all current or future PRs and issues will be ignored and won't be merged. Please use [minswap-tokens](https://github.com/minswap/minswap-tokens) repository from now on.
+
 # Market Cap
 
 Transparent, accurate and open-sourced circulating supply and market cap calculation for Cardano's native tokens.
